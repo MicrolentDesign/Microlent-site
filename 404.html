@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting…</title>
+  <script>
+    (function () {
+      var path = window.location.pathname;
+      var origin = window.location.origin;
+
+      // Match /Microlent-site/services/:slug  OR  /services/:slug
+      var match = path.match(/\/services\/([^/]+)\/?$/);
+      if (match) {
+        var base = path.replace(/\/services\/.*$/, '');
+        window.location.replace(origin + base + '/service.html?s=' + match[1] + '&from=services%2F' + match[1]);
+        return;
+      }
+
+      // Fallback — show a minimal not-found message
+      document.write('<meta name="robots" content="noindex"><p style="font-family:sans-serif;padding:2rem">Page not found.</p>');
+    })();
+  </script>
+</head>
+<body></body>
+</html>

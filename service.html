@@ -269,7 +269,14 @@
   <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 <script src="assets/js/script.js"></script>
   <script>
-    var slug = window.location.pathname.split('/').filter(Boolean).pop() || new URLSearchParams(window.location.search).get('s') || 'web-application-development';
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get('s') || window.location.pathname.split('/').filter(Boolean).pop() || 'web-application-development';
+    // Restore clean URL if redirected through 404.html
+    var cleanPath = params.get('from');
+    if (cleanPath) {
+      var base = window.location.pathname.replace(/\/service\.html$/, '');
+      history.replaceState(null, '', base + '/' + cleanPath);
+    }
 
     fetch('assets/data/services.json')
       .then(function(r) { return r.json(); })
