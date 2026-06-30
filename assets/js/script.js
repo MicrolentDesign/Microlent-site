@@ -1,3 +1,12 @@
+/* ── Lenis smooth scroll ── */
+var lenis = new Lenis({
+  duration: 1.2,
+  easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+  smoothWheel: true,
+});
+function lenisRaf(time) { lenis.raf(time); requestAnimationFrame(lenisRaf); }
+requestAnimationFrame(lenisRaf);
+
 /* ── Page Loader ── */
 window.addEventListener('load', function () {
   setTimeout(function () {
@@ -9,8 +18,9 @@ window.addEventListener('load', function () {
 (function () {
   var nav = document.getElementById('main-nav');
   if (!nav) return;
-  function onScroll() {
-    if (window.scrollY > 10) {
+  function onScroll(e) {
+    var y = e ? e.scroll : window.scrollY;
+    if (y > 10) {
       nav.classList.add('bg-[#F8F8F6B3]', 'backdrop-blur-sm', 'shadow-sm');
       nav.style.top = '0';
     } else {
@@ -18,7 +28,7 @@ window.addEventListener('load', function () {
       nav.style.top = '';
     }
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
+  lenis.on('scroll', onScroll);
   onScroll();
 })();
 
@@ -26,9 +36,10 @@ window.addEventListener('load', function () {
 (function () {
   var btn = document.getElementById('back-to-top');
   if (!btn) return;
-  window.addEventListener('scroll', function () {
-    btn.classList.toggle('visible', window.scrollY > 400);
-  }, { passive: true });
+  lenis.on('scroll', function (e) {
+    btn.classList.toggle('visible', e.scroll > 400);
+  });
+  btn.addEventListener('click', function () { lenis.scrollTo(0); });
 })();
 
 /* ── Mobile Menu ── */
@@ -40,7 +51,7 @@ function toggleMobileMenu() {
   menu.classList.toggle('open', !isOpen);
   overlay.classList.toggle('open', !isOpen);
   if (icon) icon.className = isOpen ? 'fas fa-bars text-lg' : 'fas fa-times text-lg';
-  document.body.style.overflow = isOpen ? '' : 'hidden';
+  if (isOpen) { lenis.start(); } else { lenis.stop(); }
 }
 
 /* ── Mobile Services Accordion ── */
