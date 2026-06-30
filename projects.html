@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Projects – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" /></head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems" class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#0E78E9] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#0E78E9] transition-colors flex items-center gap-1">
+            Our Services
+          </a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a active text-[#0E78E9]">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact Us</a>
+        <a href="blog.html" class="nav-a hover:text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="contact.html" class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services </button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html?s=web-application-development" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section"> 
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link active-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation </a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+      
+      <h1 class="text-[clamp(28px,4vw,48px)] font-bold text-[#1e3a6e] leading-tight mb-3">Projects &amp; Case Studies</h1>
+    </div>
+  </div>
+
+  <!-- FILTERS + PROJECT LIST -->
+  <section class="py-14 bg-white">
+    <div class="container mx-auto px-4 lg:px-16">
+
+      <!-- Filter Panel -->
+      <div class="bg-white border border-[#E2E8F0] rounded-[24px] overflow-hidden mb-10 ">
+
+        <!-- Top row -->
+        <div class="flex items-center justify-between px-7 py-5 border-b border-[#F1F5F9] filter-top-bg">
+          <div>
+            <div class="text-[11px] font-semibold text-[#60A5FA] uppercase tracking-widest mb-1">Our Portfolio</div>
+            <div class="text-[17px] font-extrabold text-[#0F172A]">Browse Our <span class="text-[#0E78E9]">Work</span></div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1.5 bg-white border border-[#DBEAFE] rounded-full px-4 py-1.5 text-[13px] font-semibold text-[#64748B]">
+              <span id="proj-count" class="text-[#0E78E9] font-extrabold">12</span> projects
+            </div>
+            <button onclick="resetFilters()" class="bg-[#0E78E9] border border-[#0E78E9] rounded-full px-5 py-1.5 text-[12px] font-semibold text-white hover:bg-blue-600 transition-colors cursor-pointer flex items-center gap-1.5">
+              <i class="fas fa-rotate-left text-[10px]"></i> Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- Category filter -->
+        <div class="px-7 py-5">
+          <div class="text-[10px] font-bold text-[#94A3B8] uppercase tracking-widest mb-3">Filter by Category</div>
+          <div class="flex flex-wrap gap-2">
+            <button class="filter-pill px-4 py-1.5 rounded-full border border-[#E2E8F0] bg-[#F8FAFC] text-[13px] font-medium text-[#475569] cursor-pointer transition-all hover:border-[#BFDBFE] hover:bg-[#EEF6FF] hover:text-[#0E78E9] whitespace-nowrap" data-cat="all" onclick="filterProjects(this)">All</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full border border-[#E2E8F0] bg-[#F8FAFC] text-[13px] font-medium text-[#475569] cursor-pointer transition-all hover:border-[#BFDBFE] hover:bg-[#EEF6FF] hover:text-[#0E78E9] whitespace-nowrap" data-cat="web" onclick="filterProjects(this)">Web App</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full border border-[#E2E8F0] bg-[#F8FAFC] text-[13px] font-medium text-[#475569] cursor-pointer transition-all hover:border-[#BFDBFE] hover:bg-[#EEF6FF] hover:text-[#0E78E9] whitespace-nowrap" data-cat="enterprise" onclick="filterProjects(this)">Enterprise</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full border border-[#E2E8F0] bg-[#F8FAFC] text-[13px] font-medium text-[#475569] cursor-pointer transition-all hover:border-[#BFDBFE] hover:bg-[#EEF6FF] hover:text-[#0E78E9] whitespace-nowrap" data-cat="saas" onclick="filterProjects(this)">SaaS</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full border border-[#E2E8F0] bg-[#F8FAFC] text-[13px] font-medium text-[#475569] cursor-pointer transition-all hover:border-[#BFDBFE] hover:bg-[#EEF6FF] hover:text-[#0E78E9] whitespace-nowrap" data-cat="mobile" onclick="filterProjects(this)">Mobile App</button>
+            <button class="filter-pill px-4 py-1.5 rounded-full border border-[#E2E8F0] bg-[#F8FAFC] text-[13px] font-medium text-[#475569] cursor-pointer transition-all hover:border-[#BFDBFE] hover:bg-[#EEF6FF] hover:text-[#0E78E9] whitespace-nowrap" data-cat="uiux" onclick="filterProjects(this)">UI/UX</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Project Grid -->
+      <div id="proj-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Cards rendered by JS from assets/data/projects.json -->
+
+      </div>
+
+      <!-- No results -->
+      <div id="no-results" class="text-center py-16" style="display:none">
+        <div class="w-16 h-16 bg-[#EEF6FF] rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-search text-[#0E78E9] text-xl"></i>
+        </div>
+        <h3 class="text-[18px] font-bold text-[#0F172A] mb-2">No projects found</h3>
+        <p class="text-[14px] text-[#64748B] mb-4">Try adjusting your filters to see more results.</p>
+        <button onclick="resetFilters()" class="inline-flex items-center gap-2.5 text-xs bg-[#0E78E9] text-white font-semibold px-6 py-3 rounded-[20px] hover:bg-blue transition-all">
+          Reset Filters
+        </button>
+      </div>
+
+      <!-- Pagination -->
+      <div id="pagination" class="flex items-center justify-center gap-2 mt-10 flex-wrap"></div>
+
+    </div>
+  </section>
+
+  
+  <!-- FOOTER -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span></h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div><div class="text-body-sm text-[#64748B]">admin@microlent.com</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div><div class="text-body-sm text-[#64748B]">+91 97999 41913</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div><div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber Park, near Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</div></div>
+        </div>
+      </div>
+                  <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] font-medium bg-white px-5 border border-[#E2E8F0] py-2 rounded-full hover:bg-[#60A5FA] hover:text-white transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">&copy; 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    var ALL_PROJECTS = [];
+    var PAGE_SIZE = 12;
+    var currentPage = 1;
+    var activeCat = 'all';
+    var activeTech = 'all';
+
+    var PILL_DEFAULT = ['border-[#E2E8F0]', 'bg-[#F8FAFC]', 'text-[#475569]', 'font-medium'];
+    var PILL_ACTIVE  = ['bg-[#EEF6FF]', 'border-[#0E78E9]', 'text-[#0E78E9]', 'font-bold'];
+
+    function setPillActive(btn, isActive) {
+      if (isActive) {
+        PILL_DEFAULT.forEach(function(c) { btn.classList.remove(c); });
+        PILL_ACTIVE.forEach(function(c) { btn.classList.add(c); });
+      } else {
+        PILL_ACTIVE.forEach(function(c) { btn.classList.remove(c); });
+        PILL_DEFAULT.forEach(function(c) { btn.classList.add(c); });
+      }
+    }
+
+    function filterProjects(btn) {
+      if (btn.dataset.cat !== undefined) {
+        document.querySelectorAll('.filter-pill[data-cat]').forEach(function(b) { setPillActive(b, false); });
+        setPillActive(btn, true);
+        activeCat = btn.dataset.cat;
+      } else {
+        document.querySelectorAll('.filter-pill[data-tech]').forEach(function(b) { setPillActive(b, false); });
+        setPillActive(btn, true);
+        activeTech = btn.dataset.tech;
+      }
+      currentPage = 1;
+      renderPage(1);
+    }
+
+    function resetFilters() {
+      activeCat = 'all';
+      activeTech = 'all';
+      document.querySelectorAll('.filter-pill[data-cat]').forEach(function(b) { setPillActive(b, b.dataset.cat === 'all'); });
+      currentPage = 1;
+      renderPage(1);
+    }
+
+    function buildCardHTML(p, i) {
+      var delays = ['', 'sr-d1', 'sr-d2', 'sr-d3', 'sr-d4', 'sr-d5'];
+      var badges = (p.badges || []).map(function(b) {
+        return '<span class="text-[11px] font-semibold text-[#0E78E9] bg-[#EEF6FF] px-3 py-1 rounded-full">' + b + '</span>';
+      }).join('');
+      return '<div class="proj-card bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[24px] overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] ' + delays[i % delays.length] + '">'
+        + '<div class="relative overflow-hidden h-[240px] flex-shrink-0 bg-white flex items-center justify-center">'
+        + '<img src="assets/img/logo.png" class="w-[60%] h-[60%] object-contain" alt="' + p.title + '" />'
+        + '<div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-[#0E78E9] text-[11px] font-bold px-3 py-1 rounded-full">' + p.cat_label + '</div>'
+        + '</div>'
+        + '<div class="p-5 flex flex-col flex-1">'
+        + '<h3 class="text-[18px] font-bold text-[#0F172A] leading-snug mb-2">' + p.title + '</h3>'
+        + '<p class="text-[13px] text-[#64748B] leading-relaxed mb-3 flex-1 line-clamp-3">' + p.description + '</p>'
+        + '<div class="flex flex-wrap gap-1.5 mb-4">' + badges + '</div>'
+        + '<div><a href="https://microlent.com/portfolio.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-semibold bg-[#0E78E9] text-white px-5 py-2 rounded-[20px] hover:bg-blue transition-all">Know more <i class="fas fa-arrow-right text-[10px]"></i></a></div>'
+        + '</div></div>';
+    }
+
+    function getFilteredProjects() {
+      return ALL_PROJECTS.filter(function(p) {
+        var catMatch = activeCat === 'all' || p.category === activeCat;
+        var techMatch = activeTech === 'all' || p.category === activeTech;
+        return catMatch && techMatch;
+      });
+    }
+
+    function renderPage(page) {
+      currentPage = page;
+      var filtered = getFilteredProjects();
+      var totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+      var start = (page - 1) * PAGE_SIZE;
+      var pageItems = filtered.slice(start, start + PAGE_SIZE);
+      var grid = document.getElementById('proj-grid');
+      var html = '';
+      pageItems.forEach(function(p, i) { html += buildCardHTML(p, i); });
+      grid.innerHTML = html;
+      document.getElementById('proj-count').textContent = filtered.length;
+      document.getElementById('no-results').style.display = filtered.length === 0 ? 'block' : 'none';
+      renderPagination(page, totalPages);
+    }
+
+    function renderPagination(page, totalPages) {
+      var wrap = document.getElementById('pagination');
+      if (totalPages <= 1) { wrap.innerHTML = ''; return; }
+      var btnBase = 'inline-flex items-center justify-center w-9 h-9 rounded-full text-[13px] font-semibold border transition-all cursor-pointer ';
+      var btnDefault = btnBase + 'border-[#E2E8F0] bg-[#F8FAFC] text-[#475569] hover:border-[#0E78E9] hover:text-[#0E78E9]';
+      var btnActive  = btnBase + 'border-[#0E78E9] bg-[#0E78E9] text-white';
+      var btnArrow   = btnBase + 'border-[#E2E8F0] bg-[#F8FAFC] text-[#475569] hover:border-[#0E78E9] hover:text-[#0E78E9]';
+
+      var html = '';
+      // Prev
+      html += '<button class="' + btnArrow + '" onclick="renderPage(' + (page - 1) + ')" ' + (page === 1 ? 'disabled style="opacity:0.4;cursor:default"' : '') + '><i class="fas fa-chevron-left text-[10px]"></i></button>';
+
+      // Page numbers with ellipsis
+      var pages = [];
+      for (var i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= page - 2 && i <= page + 2)) {
+          pages.push(i);
+        } else if (pages[pages.length - 1] !== '...') {
+          pages.push('...');
+        }
+      }
+      pages.forEach(function(p) {
+        if (p === '...') {
+          html += '<span class="inline-flex items-center justify-center w-9 h-9 text-[13px] text-[#94A3B8]">…</span>';
+        } else {
+          html += '<button class="' + (p === page ? btnActive : btnDefault) + '" onclick="renderPage(' + p + ')">' + p + '</button>';
+        }
+      });
+
+      // Next
+      html += '<button class="' + btnArrow + '" onclick="renderPage(' + (page + 1) + ')" ' + (page === totalPages ? 'disabled style="opacity:0.4;cursor:default"' : '') + '><i class="fas fa-chevron-right text-[10px]"></i></button>';
+
+      wrap.innerHTML = html;
+    }
+
+    // Override applyFilter to use pagination
+    function applyFilter() {
+      currentPage = 1;
+      renderPage(1);
+    }
+
+    // Load JSON and init
+    fetch('assets/data/projects.json')
+      .then(function(r) { return r.json(); })
+      .then(function(projects) {
+        ALL_PROJECTS = projects;
+        renderPage(1);
+      });
+
+    // Initialise pill states on load
+    document.querySelectorAll('.filter-pill[data-cat]').forEach(function(b) {
+      setPillActive(b, b.dataset.cat === 'all');
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+

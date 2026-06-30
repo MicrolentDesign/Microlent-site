@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Careers – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems"
+        class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#0E78E9] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#0E78E9] transition-colors flex items-center gap-1">Our Services <i class="fas fa-chevron-down text-[9px]"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#0E78E9] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact Us</a>
+        <a href="blog.html" class="nav-a hover:text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+      <div class="flex items-center gap-3 flex-shrink-0">
+
+        <a href="contact.html" class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]"><i id="hamburger-icon" class="fas fa-bars text-lg"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header"><img src="assets/img/logo.png" alt="Microlent" class="mob-logo" /><button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button></div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a><a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div><a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a><a href="blog.html" class="mob-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══ HERO BANNER ═══ -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+      <h1 class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]">Careers</h1>
+    </div>
+  </div>
+
+
+
+  <!-- ═══ WHY JOIN US ═══ -->
+  <section class="relative bg-white py-20">
+    <div class="pointer-events-none absolute blob-services-blue"></div>
+    <div class="pointer-events-none absolute blob-services-orange"></div>
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+      <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-14">
+        <div class="lg:w-[38%] flex-shrink-0 sr">
+          <div class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">Why Microlent?</div>
+          <h2 class="text-[clamp(28px,3.5vw,42px)] font-bold text-[#0F172A] leading-tight">
+            Perks &amp; <span class="text-[#0E78E9]">Benefits</span>
+          </h2>
+        </div>
+        <p class="lg:w-[62%] text-[15px] text-[#64748B] leading-relaxed lg:pt-14 sr">
+          We invest in our people — because great products come from happy, empowered teams. Here's what you get when you join Microlent.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <div class="benefit-card sr sr-d1">
+          <div class="benefit-icon"><i class="fas fa-laptop-code text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Remote-Friendly</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Work from home, office, or anywhere. We trust results, not just hours clocked.</p>
+        </div>
+
+        <div class="benefit-card sr sr-d2">
+          <div class="benefit-icon"><i class="fas fa-chart-line text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Fast Career Growth</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Clear promotion paths, senior mentorship, and real ownership from day one.</p>
+        </div>
+
+        <div class="benefit-card sr sr-d3">
+          <div class="benefit-icon"><i class="fas fa-graduation-cap text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Learning Budget</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Annual budget for courses, certifications, books, and conferences to keep growing.</p>
+        </div>
+
+        <div class="benefit-card sr sr-d4">
+          <div class="benefit-icon"><i class="fas fa-heart-pulse text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Health Coverage</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Medical insurance for you and family, plus wellness programs and flexible leaves.</p>
+        </div>
+
+        <div class="benefit-card sr sr-d5">
+          <div class="benefit-icon"><i class="fas fa-people-group text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Great Culture</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Flat hierarchy, open communication, team outings, and everyone's voice is valued.</p>
+        </div>
+
+        <div class="benefit-card sr sr-d6">
+          <div class="benefit-icon"><i class="fas fa-indian-rupee-sign text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Competitive Pay</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Market salaries with performance bonuses and annual hikes based on impact.</p>
+        </div>
+
+        <div class="benefit-card sr sr-d1">
+          <div class="benefit-icon"><i class="fas fa-clock text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Flexible Hours</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Outcomes over hours. Work when you're most productive with flexible scheduling.</p>
+        </div>
+
+        <div class="benefit-card sr sr-d2">
+          <div class="benefit-icon"><i class="fas fa-rocket text-[#0E78E9] text-[20px]"></i></div>
+          <h3 class="text-[15px] font-bold text-[#0F172A] mb-2">Exciting Projects</h3>
+          <p class="text-[13px] text-[#64748B] leading-relaxed">Real-world products across web, mobile, AI, and IoT — for global clients.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ OPEN POSITIONS ═══ -->
+  <section id="open-positions" class="py-20 career-section-bg d-none" style="display: none;">
+    <div class="container mx-auto px-4 lg:px-16">
+
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-12 sr">
+        <div>
+          <div class="inline-flex items-center text-[#0E78E9] bg-white border border-[#BFDBFE] text-[12px] font-semibold px-4 py-1.5 rounded-full mb-4">
+            <span class="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></span> We're Hiring
+          </div>
+          <h2 class="text-[clamp(24px,3vw,38px)] font-bold text-[#0F172A]">Open <span class="text-[#0E78E9]">Positions</span></h2>
+        </div>
+        <p class="text-[14px] text-[#64748B]">Don't see a fit? Email us at <a href="mailto:careers@microlent.com" class="text-[#0E78E9] font-semibold">careers@microlent.com</a></p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+        <!-- Job 1 -->
+        <div class="job-card sr sr-d1">
+          <div class="job-inner">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-[14px] bg-[#EEF6FF] flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-code text-[#0E78E9] text-[18px]"></i>
+                </div>
+                <div>
+                  <h3 class="text-[17px] font-bold text-[#0F172A] leading-snug">Full Stack Developer</h3>
+                  <p class="text-[13px] text-[#64748B] mt-0.5">Engineering · Jodhpur / Remote</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-700 text-[#64748B] bg-[#F1F5F9] px-3 py-1 rounded-full whitespace-nowrap font-semibold">2–4 yrs</span>
+            </div>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Build scalable web apps using React, Node.js, and cloud platforms. Own features end-to-end and collaborate with product &amp; design teams.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="job-tag full-time"><i class="fas fa-circle text-[6px]"></i> Full Time</span>
+              <span class="job-tag remote"><i class="fas fa-wifi text-[9px]"></i> Remote</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-[#F1F5F9] mt-1">
+              <div><div class="text-[11px] text-[#94A3B8] mb-0.5">Annual CTC</div><div class="job-salary">₹6L – ₹12L</div></div>
+              <a href="#apply-form" class="job-apply">Apply Now <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="job-card sr sr-d2">
+          <div class="job-inner">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-[14px] bg-[#EEF6FF] flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-mobile-screen text-[#0E78E9] text-[18px]"></i>
+                </div>
+                <div>
+                  <h3 class="text-[17px] font-bold text-[#0F172A] leading-snug">Flutter Developer</h3>
+                  <p class="text-[13px] text-[#64748B] mt-0.5">Mobile · Jodhpur / Hybrid</p>
+                </div>
+              </div>
+              <span class="text-[11px] text-[#64748B] bg-[#F1F5F9] px-3 py-1 rounded-full whitespace-nowrap font-semibold">1–3 yrs</span>
+            </div>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Build high-performance cross-platform apps for iOS &amp; Android. Experience with BLoC/Provider state management is a plus.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="job-tag full-time"><i class="fas fa-circle text-[6px]"></i> Full Time</span>
+              <span class="job-tag hybrid"><i class="fas fa-building text-[9px]"></i> Hybrid</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-[#F1F5F9] mt-1">
+              <div><div class="text-[11px] text-[#94A3B8] mb-0.5">Annual CTC</div><div class="job-salary">₹4L – ₹9L</div></div>
+              <a href="#apply-form" class="job-apply">Apply Now <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="job-card sr sr-d3">
+          <div class="job-inner">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-[14px] bg-[#EEF6FF] flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-pen-ruler text-[#0E78E9] text-[18px]"></i>
+                </div>
+                <div>
+                  <h3 class="text-[17px] font-bold text-[#0F172A] leading-snug">UI/UX Designer</h3>
+                  <p class="text-[13px] text-[#64748B] mt-0.5">Design · Jodhpur / Remote</p>
+                </div>
+              </div>
+              <span class="text-[11px] text-[#64748B] bg-[#F1F5F9] px-3 py-1 rounded-full whitespace-nowrap font-semibold">2–4 yrs</span>
+            </div>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Create intuitive, stunning interfaces for web and mobile products. Proficiency in Figma, user research, and prototyping required.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="job-tag full-time"><i class="fas fa-circle text-[6px]"></i> Full Time</span>
+              <span class="job-tag remote"><i class="fas fa-wifi text-[9px]"></i> Remote</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-[#F1F5F9] mt-1">
+              <div><div class="text-[11px] text-[#94A3B8] mb-0.5">Annual CTC</div><div class="job-salary">₹5L – ₹10L</div></div>
+              <a href="#apply-form" class="job-apply">Apply Now <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="job-card sr sr-d4">
+          <div class="job-inner">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-[14px] bg-[#EEF6FF] flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-bullhorn text-[#0E78E9] text-[18px]"></i>
+                </div>
+                <div>
+                  <h3 class="text-[17px] font-bold text-[#0F172A] leading-snug">Digital Marketing Executive</h3>
+                  <p class="text-[13px] text-[#64748B] mt-0.5">Marketing · Jodhpur / Onsite</p>
+                </div>
+              </div>
+              <span class="text-[11px] text-[#64748B] bg-[#F1F5F9] px-3 py-1 rounded-full whitespace-nowrap font-semibold">1–2 yrs</span>
+            </div>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Drive growth via SEO, paid ads, social media, and content marketing. Analyze data and optimize campaigns for ROI.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="job-tag full-time"><i class="fas fa-circle text-[6px]"></i> Full Time</span>
+              <span class="job-tag onsite"><i class="fas fa-location-dot text-[9px]"></i> Onsite</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-[#F1F5F9] mt-1">
+              <div><div class="text-[11px] text-[#94A3B8] mb-0.5">Annual CTC</div><div class="job-salary">₹3L – ₹6L</div></div>
+              <a href="#apply-form" class="job-apply">Apply Now <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 5 -->
+        <div class="job-card sr sr-d5">
+          <div class="job-inner">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-[14px] bg-[#EEF6FF] flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-brain text-[#0E78E9] text-[18px]"></i>
+                </div>
+                <div>
+                  <h3 class="text-[17px] font-bold text-[#0F172A] leading-snug">AI / ML Engineer</h3>
+                  <p class="text-[13px] text-[#64748B] mt-0.5">Engineering · Remote</p>
+                </div>
+              </div>
+              <span class="text-[11px] text-[#64748B] bg-[#F1F5F9] px-3 py-1 rounded-full whitespace-nowrap font-semibold">3–5 yrs</span>
+            </div>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Build and deploy ML models and AI-powered features. Python, TensorFlow/PyTorch, and LLM integration experience preferred.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="job-tag full-time"><i class="fas fa-circle text-[6px]"></i> Full Time</span>
+              <span class="job-tag remote"><i class="fas fa-wifi text-[9px]"></i> Remote</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-[#F1F5F9] mt-1">
+              <div><div class="text-[11px] text-[#94A3B8] mb-0.5">Annual CTC</div><div class="job-salary">₹10L – ₹18L</div></div>
+              <a href="#apply-form" class="job-apply">Apply Now <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 6 -->
+        <div class="job-card sr sr-d6">
+          <div class="job-inner">
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-[14px] bg-[#EEF6FF] flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-vial text-[#0E78E9] text-[18px]"></i>
+                </div>
+                <div>
+                  <h3 class="text-[17px] font-bold text-[#0F172A] leading-snug">QA Engineer</h3>
+                  <p class="text-[13px] text-[#64748B] mt-0.5">Quality Assurance · Jodhpur / Hybrid</p>
+                </div>
+              </div>
+              <span class="text-[11px] text-[#64748B] bg-[#F1F5F9] px-3 py-1 rounded-full whitespace-nowrap font-semibold">1–3 yrs</span>
+            </div>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Ensure software quality through manual and automated testing. Write test plans, identify bugs, work closely with developers.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="job-tag full-time"><i class="fas fa-circle text-[6px]"></i> Full Time</span>
+              <span class="job-tag hybrid"><i class="fas fa-building text-[9px]"></i> Hybrid</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-[#F1F5F9] mt-1">
+              <div><div class="text-[11px] text-[#94A3B8] mb-0.5">Annual CTC</div><div class="job-salary">₹3.5L – ₹7L</div></div>
+              <a href="#apply-form" class="job-apply">Apply Now <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span></h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div><div class="text-body-sm text-[#64748B]">admin@microlent.com</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div><div class="text-body-sm text-[#64748B]">+91 97999 41913</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div><div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber Park, near Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</div></div>
+        </div>
+      </div>
+                  <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] font-medium bg-white px-5 border border-[#E2E8F0] py-2 rounded-full hover:bg-[#60A5FA] hover:text-white transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
+

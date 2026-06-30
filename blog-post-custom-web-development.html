@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Transform Your Business with Custom Web Development Solutions by Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-white">
+  <div id="read-progress"></div>
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems" class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#0E78E9] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#0E78E9] transition-colors flex items-center gap-1">Our Services <i class="fas fa-chevron-down text-[9px]"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#0E78E9] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact us</a>
+        <a href="blog.html" class="nav-a active text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="contact.html" class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link active-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+      <div class="flex items-center gap-2 text-[#1e3a6e]/60 text-[12px] font-medium mb-4"><a href="index.html" class="hover:text-[#0E78E9] transition-colors">Home</a><i class="fas fa-chevron-right text-[9px]"></i><a href="blog.html" class="hover:text-[#0E78E9] transition-colors">Blog</a><i class="fas fa-chevron-right text-[9px]"></i><span class="text-[#1e3a6e]">Custom Web Development</span></div><h1 class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]">Transform Your Business with Custom Web Development Solutions</h1>
+    </div>
+  </div>
+
+  <section class="py-14">
+    <div class="container mx-auto px-4 lg:px-16">
+      <div class="flex flex-col lg:flex-row gap-10 lg:gap-14">
+
+        <article class="flex-1 min-w-0">
+          <div class="w-full aspect-[16/9] overflow-hidden rounded-[16px] mb-8"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=768&h=439&fit=crop&auto=format" alt="Transform Your Business with Custom Web Development" class="w-full h-full object-cover" /></div>
+
+          <div class="flex items-center gap-4 mb-8 pb-8 border-b border-[#F1F5F9]">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#0E78E9] to-[#60A5FA] flex items-center justify-center text-white font-bold text-[16px] flex-shrink-0">RR</div>
+            <div>
+              <div class="text-[14px] font-700 text-[#0F172A]">Dr. Rajesh Rolen</div>
+            </div>
+            <div class="ml-auto flex items-center gap-4 text-[12px] text-[#94A3B8]">
+              <span><i class="fas fa-calendar mr-1"></i> December 10, 2024</span>
+              <span><i class="fas fa-clock mr-1"></i> 7 min read</span>
+            </div>
+          </div>
+
+          <div class="toc-wrap sr">
+            <div class="toc-title">In this article</div>
+            <ul class="toc-list">
+                    <li><a href="#why-custom-web-development-matters">Why Custom Web Development Matters</a></li>
+                    <li><a href="#microlent-your-partner">Microlent Systems: Your Partner in Custom Web Development</a></li>
+                    <li><a href="#benefits-of-choosing-microlent">Benefits of Choosing Microlent Systems</a></li>
+                    <li><a href="#industries-we-serve">Industries We Serve</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+          </div>
+
+          <div class="post-body">
+            <p>In today's digital age, businesses must stay competitive by adopting innovative and custom solutions that address their unique needs. At Microlent Systems, we specialize in custom web development solutions designed to transform your business and drive long-term success.</p>
+            <p>Whether you're a startup, an SME, or an established enterprise, a customized website tailored to your goals is a powerful tool to enhance your online presence, streamline operations, and increase revenue.</p>
+            <h2 id="why-custom-web-development-matters">Why Custom Web Development Matters</h2>
+            <p>Off-the-shelf solutions often fall short of meeting specific business requirements. Here's where custom web development shines:</p>
+            <ol>
+                <li><strong>Tailored to Your Needs:</strong> Custom web development ensures your website aligns with your business goals, offering unique features that generic templates cannot provide.</li>
+                <li><strong>Enhanced User Experience:</strong> With a focus on usability and design, custom solutions provide seamless navigation and functionality, leading to higher engagement and conversions.</li>
+                <li><strong>Scalability:</strong> Custom-built websites grow with your business, adapting to new features and demands without limitations.</li>
+                <li><strong>Competitive Advantage:</strong> Stand out from the competition with a distinct digital presence that reflects your brand identity.</li>
+            </ol>
+            <h2 id="microlent-your-partner">Microlent Systems: Your Partner in Custom Web Development</h2>
+            <p>At Microlent Systems, we combine expertise with cutting-edge technology to deliver exceptional web development services. Here's why businesses trust us:</p>
+            <ol>
+                <li><strong>End-to-End Development Solutions:</strong> From initial consultation and planning to design, development, and post-launch support, our team handles every aspect of your project with precision.</li>
+                <li><strong>Expertise in Modern Technologies:</strong> We leverage advanced technologies like React.js, Angular, Node.js, Python, PHP, and more to create robust and high-performing websites.</li>
+                <li><strong>Mobile-Responsive Design:</strong> In an era where mobile browsing dominates, we ensure your website looks and functions flawlessly across all devices.</li>
+                <li><strong>Search Engine Optimization (SEO) Integration:</strong> Our custom web solutions are built with SEO best practices, helping your business rank higher on search engines and attract more organic traffic.</li>
+                <li><strong>Timely Delivery and Cost-Effectiveness:</strong> We adhere to timelines without compromising on quality, offering cost-effective solutions tailored to your budget.</li>
+            </ol>
+            <h2 id="benefits-of-choosing-microlent">Benefits of Choosing Microlent Systems</h2>
+            <ol>
+                <li><strong>Improved Efficiency:</strong> Custom solutions streamline operations, saving time and resources.</li>
+                <li><strong>Enhanced Security:</strong> With custom code, your website is less susceptible to common vulnerabilities found in generic templates.</li>
+                <li><strong>Better ROI:</strong> A website designed to meet your specific goals translates into higher returns on your investment.</li>
+                <li><strong>24/7 Support:</strong> Our dedicated support team ensures your website runs smoothly at all times.</li>
+            </ol>
+            <h2 id="industries-we-serve">Industries We Serve</h2>
+            <p>At Microlent Systems, we have successfully delivered custom web solutions across various industries, including:</p>
+            <ul>
+                <li>E-commerce</li>
+                <li>Healthcare</li>
+                <li>Education</li>
+                <li>Finance</li>
+                <li>Hospitality</li>
+                <li>Real Estate</li>
+            </ul>
+            <h2 id="conclusion">Conclusion</h2>
+            <p>Your website is often the first impression customers have of your business. Why settle for average when you can have a customized, high-performing, and scalable solution tailored to your specific needs?</p>
+            <p>Partner with Microlent Systems to harness the power of custom web development and take your business to new heights. Contact us today to discuss your project and discover how we can help you achieve your digital goals.</p>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mt-10 pt-8 border-t border-[#F1F5F9]">
+            <span class="post-tag">Custom Web Development</span>
+            <span class="post-tag">Web Solutions</span>
+            <span class="post-tag">Business Growth</span>
+            <span class="post-tag">Digital Transformation</span>
+          </div>
+
+          <div class="author-card mt-10 sr">
+            <div class="author-avatar">RR</div>
+            <div>
+              <div class="text-[16px] font-800 text-[#0F172A] mb-1">Dr. Rajesh Rolen</div>
+              <p class="text-[13.5px] text-[#64748B] leading-relaxed">Dr. Rajesh Rolen is the founder and CEO of Microlent Systems, a full-service digital solutions company based in Jodhpur, India. With over 15 years of experience in web development, SaaS architecture, and digital strategy, he helps businesses worldwide build scalable, high-performance digital products.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 lg:px-16">
+    <div class="container mx-auto">
+      <div class="rounded-[24px] px-8 lg:px-16 py-14 text-center relative overflow-hidden blogpost-cta-mid">
+        <div class="pointer-events-none absolute top-0 right-0 w-80 h-80 rounded-full opacity-10 blogpost-glow"></div>
+        <div class="relative z-10">
+          <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full text-white/80 text-[12px] font-600 mb-5">
+            <i class="fas fa-rocket text-[#60A5FA] text-[11px]"></i> Let's Build Together
+          </div>
+          <h2 class="text-[clamp(22px,3vw,36px)] font-black text-white mb-4 leading-tight">
+            Have a project in mind?<br/>Let's make it happen.
+          </h2>
+          <p class="text-white/60 text-[15px] max-w-lg mx-auto mb-8">
+            From web apps to mobile and AI solutions — Microlent Systems turns your ideas into production-ready products.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="contact.html" class="inline-flex items-center gap-2.5 text-xs bg-[#0E78E9] text-white font-semibold px-6 py-3 rounded-[20px] hover:bg-blue transition-all">
+              Get a Free Quote <i class="fas fa-arrow-right text-xs"></i>
+            </a>
+            <a href="services.html" class="inline-flex items-center gap-2.5 text-xs border-2 border-white/30 bg-white/10 text-white font-semibold px-6 py-3 rounded-[20px] hover:bg-white/20 transition-all">
+              Explore Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">
+            Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span>
+          </h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div>
+            <div class="text-body-sm text-[#64748B]">admin@microlent.com</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div>
+            <div class="text-body-sm text-[#64748B]">+91 97999 41913</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div>
+            <div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB-6 RIICO Cyber Park, Jodhpur, Rajasthan 342003</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+  <script src="assets/js/script.js"></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const scrollTop = doc.scrollTop || document.body.scrollTop;
+      const scrollHeight = doc.scrollHeight - doc.clientHeight;
+      const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      document.getElementById('read-progress').style.width = progress + '%';
+    });
+  </script>
+</body>
+</html>

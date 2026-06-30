@@ -1,0 +1,12 @@
+# Netlify clean URLs — .html removal handled automatically via Pretty URLs setting
+# Enable in Netlify Dashboard > Site Settings > Build & Deploy > Pretty URLs
+
+/index          /               301
+/about          /about          200
+/contact        /contact        200
+/blog           /blog           200
+/projects       /projects       200
+/careers        /careers        200
+/services       /services       200
+/media-coverage /media-coverage 200
+/service-web-app /service-web-app 200

@@ -1,0 +1,1956 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Microlent Systems – Drive Your Business Forward with Technology That Delivers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems" class="loader-img" />
+      <div class="loader-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- 
+     NAVBAR
+ -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+
+      <!-- Nav links -->
+      <div
+        class="hidden lg:flex items-center gap-6 text-nav-link font-medium text-black flex-1 justify-center whitespace-nowrap">
+        <a href="index.html" class="nav-a active text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#60A5FA] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#60A5FA] transition-colors flex items-center gap-1">
+            Our Services <i class="fas fa-chevron-down text-[9px] text-black"></i>
+          </a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br />End to End</div>
+
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#60A5FA] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#60A5FA] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#60A5FA] transition-colors">Contact us</a>
+        <a href="blog.html" class="nav-a hover:text-[#60A5FA] transition-colors">Blog</a>
+      </div>
+
+      <!-- Right actions -->
+      <div class="flex items-center gap-3 flex-shrink-0">
+
+        <a href="contact.html"
+          class="hidden sm:flex bg-[#0E78E9] text-white text-btn font-semibold px-5 py-2.5 rounded-[30px]  hover:bg-blue transition-all items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <!-- Hamburger -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu">
+    <!-- Header -->
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn">
+        <i class="fas fa-times text-sm"></i>
+      </button>
+    </div>
+
+    <!-- Links -->
+    <div class="mob-links">
+      <a href="index.html" class="mob-link active-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i
+          class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link">Blog</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="mob-cta-wrap">
+      <a href="#" class="mob-cta-btn">
+        Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+      </a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 
+     HERO SECTION
+ -->
+  <section
+    class="bg-hero bg-center bg-cover bg-no-repeat relative pt-[68px] min-h-screen overflow-hidden m-4 rounded-[10px]">
+    <div class="m-fade-top"></div>
+    <!-- Full height flex row -->
+    <div
+      class="relative  container mx-auto px-4 lg:px-16 flex flex-col lg:flex-row lg:items-center min-h-[calc(100vh-68px)]">
+
+      <!-- â”€â”€ LEFT: Text content â”€â”€ -->
+      <div class="w-full lg:w-[48%] flex-shrink-0 pt-10 lg:pt-0 lg:pb-[160px]">
+
+        <!-- Badge -->
+        <div
+          class="inline-flex items-center gap-1.5 bg-[#0081e94d] text-white text-label font-normal px-4 py-1.5 rounded-[30px] border border-white/20 mb-6 anim-fadeup anim-d1">
+          <i class="fas fa-sparkles text-[10px]"></i>
+          Custom IT Solutions &middot; ISO 9001:2015 Certified
+        </div>
+
+        <!-- Heading -->
+        <h1
+          class="text-[clamp(28px,4.8vw,48px)] font-semibold leading-tight tracking-tight text-[#0F172A] anim-fadeup anim-d2">
+        Custom Application Development  <span class="text-[#0E78E9]">Built to Scale
+</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="mt-5 text-[#64748B] text-body-default max-w-[480px] anim-fadeup anim-d3">
+Microlent Systems is a consulting and SaaS product development company. We advise on architecture, stack selection, and product strategy before development begins. One partner. From idea to scale.        </p>
+
+        <!-- CTA Buttons -->
+        <div class="mt-8 flex flex-wrap gap-3 anim-fadeup anim-d4">
+          <a href="services.html"
+            class="inline-flex items-center gap-2.5 text-xs border-2 border-[#E2E8F0] bg-white text-[#0F172A] font-semibold px-6 py-3 rounded-[20px] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+            <i class="fa-solid fa-list-check text-xs"></i>
+            Explore Our Services
+          </a>
+          <a href="contact.html"
+            class="inline-flex items-center gap-2.5 text-xs bg-[#0E78E9] text-white font-semibold px-6 py-3 rounded-[20px] hover:bg-blue transition-all">
+            <i class="fas fa-chevron-right text-xs"></i>
+            Start Your Project
+          </a>
+        </div>
+
+      </div>
+      <!-- â”€â”€ RIGHT: Masonry showcase â”€â”€ -->
+      <!-- Mobile: horizontal strip -->
+      <div class="block lg:hidden w-full mt-8 overflow-hidden ticker-mask">
+        <div class="strip-track">
+          <div class="strip-card"><img src="./assets/img/1.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/2.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/3.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/4.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/5.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/6.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/7.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/8.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/9.png" alt="" /></div>
+          <!-- duplicate for seamless loop -->
+          <div class="strip-card"><img src="./assets/img/1.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/2.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/3.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/4.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/5.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/6.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/7.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/8.png" alt="" /></div>
+          <div class="strip-card"><img src="./assets/img/9.png" alt="" /></div>
+        </div>
+      </div>
+      <!-- â”€â”€ RIGHT: Masonry showcase â”€â”€ -->
+      <div class="hidden lg:block absolute right-0 -top-[80px] w-[50%] h-full overflow-hidden"
+        style="   transform: rotate(15deg); mask-image:linear-gradient(to left, #000000 0% 0%, #000000 18%, #000000 100%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 12%, black 87%, transparent 100%);mask-composite:intersect;-webkit-mask-image:linear-gradient(to left, #000000 0% 0%, #000000 18%, #000000 100%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 12%, black 87%, transparent 100%);-webkit-mask-composite:destination-in;">
+        <div class="masonry-stage">
+
+          <!-- Col 1 &mdash; up -->
+          <div class="m-col">
+            <div class="m-inner m-up" style="animation-duration:22s">
+              <div class="m-card"><img src="./assets/img/1.png" alt="" /></div>
+              <div class="m-card"><img src="./assets/img/2.png" alt="" /></div>
+              <div class="m-card"><img src="./assets/img/3.png" alt="" /></div>
+              <!-- <div class="m-card" style="height:170px"><img src="./assets/img/4.png" alt=""/></div>
+              <div class="m-card" style="height:240px"><img src="./assets/img/5.png" alt=""/></div> -->
+              <!-- duplicate -->
+              <div class="m-card"><img src="./assets/img/1.png" alt="" /></div>
+              <div class="m-card"><img src="./assets/img/2.png" alt="" /></div>
+              <div class="m-card"><img src="./assets/img/3.png" alt="" /></div>
+              <!-- <div class="m-card" style="height:170px"><img src="./assets/img/4.png" alt=""/></div>
+              <div class="m-card" style="height:240px"><img src="./assets/img/5.png" alt=""/></div> -->
+            </div>
+          </div>
+
+          <!-- Col 2 &mdash; merged wide (paired rows) -->
+          <div class="m-col m-col-wide">
+            
+            <div class="m-inner m-down" style="animation-duration:26s">
+              <div class="m-pair">
+                <div>
+                  <div class="m-card"><img src="./assets/img/4.png" alt="" /></div>
+                  <div class="m-card"><img src="./assets/img/5.png" alt="" /></div>
+                </div>
+                <div>
+
+                  <div class="m-card"><img src="./assets/img/7.png" alt="" /></div>
+                  <div class="m-card"><img src="./assets/img/10.png" alt="" /></div>
+                </div>
+              </div>
+              <div class="m-pair">
+                <div class="m-card"><img src="./assets/img/8.png" alt="" /></div>
+              </div>
+              <div class="m-pair">
+                <div class="m-card"><img src="./assets/img/6.png" alt="" /></div>
+                <div class="m-card"><img src="./assets/img/9.png" alt="" /></div>
+              </div>
+              <!-- duplicate -->
+              <div class="m-pair">
+                <div>
+                  <div class="m-card"><img src="./assets/img/4.png" alt="" /></div>
+                  <div class="m-card"><img src="./assets/img/5.png" alt="" /></div>
+                </div>
+              <div>
+
+                  <div class="m-card"><img src="./assets/img/7.png" alt="" /></div>
+                  <div class="m-card"><img src="./assets/img/10.png" alt="" /></div>
+                </div>
+              </div>
+              <div class="m-pair">
+                <div class="m-card"><img src="./assets/img/5.png" alt="" /></div>
+                <div class="m-card"><img src="./assets/img/8.png" alt="" /></div>
+              </div>
+              <div class="m-pair">
+                <div class="m-card"><img src="./assets/img/6.png" alt="" /></div>
+                <div class="m-card"><img src="./assets/img/9.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- â”€â”€ Tech strip â”€â”€ -->
+      <div class="z-10 px-4 lg:px-16 relative lg:absolute lg:bottom-0 lg:left-0 lg:right-0 py-6 mt-8 lg:mt-0">
+        <div
+          class="container mx-auto flex items-stretch min-h-[90px] rounded-[20px] p-4 bg-[#0081e91f] overflow-hidden" style="backdrop-filter: blur(10px);">
+
+          <!-- Label -->
+          <div
+            class="flex flex-shrink-0 items-center justify-center px-3 sm:px-6 bg-[#60A5FA] text-white text-center font-semibold text-[10px] sm:text-caption leading-tight min-w-[120px] sm:min-w-[180px] rounded-[10px]">
+            Technologies we use to<br />build scalable solutions
+          </div>
+
+          <!-- Scrolling logos -->
+          <div class="overflow-hidden flex-1 flex items-center ">
+            <div class="flex gap-[60px] w-max animate-ticker items-center">
+              <!-- Set 1 -->
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-angular text-white text-2xl"></i> Angular
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-node-js text-white text-2xl"></i> node
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-aws text-white text-2xl"></i> 
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <span class="font-black text-blue text-[17px]">.NET</span>
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fa-brands fa-flutter text-white text-xl"></i> Flutter
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-react text-white text-2xl"></i> React
+              </div>
+              <!-- Set 2 (duplicate for seamless loop) -->
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-angular text-white text-2xl"></i> Angular
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-node-js text-white text-2xl"></i> node
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-aws text-white text-2xl"></i> 
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <span class="font-black text-white text-[17px]">.NET</span>
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fa-brands fa-flutter text-white text-xl"></i> Flutter
+              </div>
+              <div
+                class="flex items-center gap-2 text-white font-bold text-base">
+                <i class="fab fa-react text-white text-2xl"></i> React
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- 
+     FULL-STACK SOLUTIONS SECTION
+ -->
+  <section class="relative bg-white py-20 ">
+
+    <!-- Figma: radial #FA8219 60%â†’0% right + #0081E9 50%â†’0% left -->
+    <!-- Blue radial &mdash; left side -->
+    <div class="pointer-events-none absolute blob-services-blue">
+    </div>
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-services-orange">
+    </div>
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+
+      <!-- Top row: heading left + description right -->
+      <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-14">
+
+        <div class="lg:w-[38%] flex-shrink-0">
+          <!-- Label pill &mdash; border, accent text -->
+          <div
+            class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+            Services we offer
+          </div>
+          <h2 class="text-[clamp(28px,3.5vw,45px)] font-semibold text-[#0F172A] leading-tight tracking-tight">
+            Full-Stack Solutions,<br />
+            <span class="text-[#0E78E9]">End to End</span>
+          </h2>
+        </div>
+
+        <p class="lg:w-[62%] text-body-default text-[#64748B] leading-relaxed lg:pt-16">
+          We design, develop, and scale technology products that solve real business problems. Whether you need a
+          consumer mobile app, an enterprise platform, or a complete digital strategy &mdash; our teams handle it all
+          under
+          one roof.
+        </p>
+
+      </div>
+
+      <!-- 4 Service cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
+
+        <!-- Card template &mdash; image tall, white body, filled blue arrow -->
+        <a href="service.html?s=web-application-development"
+          class="bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[24px] overflow-hidden hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] backdrop-filter:blur(4px) hover:-translate-y-1.5 transition-all duration-300 flex flex-col">
+          <div class="h-[240px] overflow-hidden flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=400&h=240&fit=crop"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              alt="Web App Development" />
+          </div>
+          <div class="p-5 flex flex-col flex-1">
+            <h3 class="text-[18px] font-bold text-[#0F172A] mb-2 leading-snug">Web Development</h3>
+            <p class="text-body-sm text-[#64748B] leading-relaxed line-clamp-3">Custom web applications, SaaS platforms, and internal business tools built on React, Angular, Node.js, and .NET. Every project starts with technical discovery. No guesswork. No generic templates.</p>
+            <div class="mt-5">
+              <span
+                class="w-10 h-10 rounded-full bg-[#60A5FA] flex items-center justify-center hover:bg-blue transition-colors ">
+                <i class="fas fa-arrow-right -rotate-45 text-white text-sm"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="service.html?s=mobile-app-development"
+          class="bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[24px] overflow-hidden hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] hover:[backdrop-filter:blur(4px)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col">
+          <div class="h-[240px] overflow-hidden flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=240&fit=crop"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              alt="Mobile App Development" />
+          </div>
+          <div class="p-5 flex flex-col flex-1">
+            <h3 class="text-[18px] font-bold text-[#0F172A] mb-2 leading-snug">Mobile and Design</h3>
+            <p class="text-body-sm text-[#64748B] leading-relaxed line-clamp-3">iOS and Android apps built on Flutter and React Native, backed by a UI-UX process that starts with user research, not assumptions. One team. One relationship. No handoffs.</p>
+            <div class="mt-5">
+              <span
+                class="w-10 h-10 rounded-full bg-[#60A5FA] flex items-center justify-center hover:bg-blue transition-colors shadow-md shadow-accent/30">
+                <i class="fas fa-arrow-right -rotate-45 text-white text-sm"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="service.html?s=ai-ml-solutions"
+          class="bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[24px] overflow-hidden hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] hover:[backdrop-filter:blur(4px)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col">
+          <div class="h-[240px] overflow-hidden flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=240&fit=crop"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              alt="UI-UX Design Solution" />
+          </div>
+          <div class="p-5 flex flex-col flex-1">
+            <h3 class="text-[18px] font-bold text-[#0F172A] mb-2 leading-snug">Technology</h3>
+            <p class="text-body-sm text-[#64748B] leading-relaxed line-clamp-3">AI, ML, and IoT solutions for businesses that need intelligence built directly into their products. Every solution integrates into your existing workflow. Not a standalone tool.</p>
+            <div class="mt-5">
+              <span
+                class="w-10 h-10 rounded-full bg-[#60A5FA] flex items-center justify-center hover:bg-blue transition-colors shadow-md shadow-accent/30">
+                <i class="fas fa-arrow-right -rotate-45 text-white text-sm"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="service.html?s=erp-crm"
+          class="bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[24px] overflow-hidden hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] hover:[backdrop-filter:blur(4px)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col">
+          <div class="h-[240px] overflow-hidden flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=240&fit=crop"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              alt="Digital Marketing Solution" />
+          </div>
+          <div class="p-5 flex flex-col flex-1">
+            <h3 class="text-[18px] font-bold text-[#0F172A] mb-2 leading-snug">Business Solutions</h3>
+            <p class="text-body-sm text-[#64748B] leading-relaxed line-clamp-3">ERP and CRM systems implemented and customized around how your business actually runs. Sales, finance, and operations connected in one system. No more spreadsheets. No more guesswork.</p>
+            <div class="mt-5">
+              <span
+                class="w-10 h-10 rounded-full bg-[#60A5FA] flex items-center justify-center hover:bg-blue transition-colors shadow-md shadow-accent/30">
+                <i class="fas fa-arrow-right -rotate-45 text-white text-sm"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Bottom CTA row -->
+      <!-- <div class="flex items-center justify-center gap-3">
+        <a href="contact.html"
+          class="inline-flex items-center gap-2.5 text-xs border-2 border-[#E2E8F0] bg-white text-[#0F172A] font-semibold px-6 py-3 rounded-[20px] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+          Start Your Project
+          <i class="fas fa-th-large text-xs"></i>
+        </a>
+        <a href="#"
+          class="inline-flex items-center gap-2.5 text-xs bg-[#0E78E9] border-[#0E78E9] text-white font-semibold px-6 py-3 rounded-[20px] hover:bg-blue transition-all">
+          Call us
+          <i class="fas fa-chevron-right text-xs"></i>
+        </a>
+      </div> -->
+
+    </div>
+  </section>
+
+
+  <!-- 
+     ABOUT US SECTION
+ -->
+  <section class="relative py-20 ">
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-about-blue-tr">
+    </div>
+
+    <!-- Radial gradient bg &mdash; blue left, orange right (same as services) -->
+    <div class="pointer-events-none absolute blob-about-blue-bl">
+    </div>
+    <!-- Radial gradient bg &mdash; blue left, orange right (same as services) -->
+    <div class="pointer-events-none absolute blob-about-orange-tl">
+    </div>
+    <div class="relative z-10 container mx-auto px-6">
+
+
+      <!-- Main card &mdash; F8F8F6 70% + border + 3 Figma drop shadows -->
+      <div class="bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] overflow-hidden
+                  shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)]">
+        <!-- Top row: badge+heading LEFT, description RIGHT -->
+        <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-4 p-7">
+
+          <div class="lg:w-[45%] flex-shrink-0">
+            <div
+              class="inline-flex items-center bg-white border border-[#E2E8F0] text-[#64748B] text-label font-medium px-4 py-1.5 rounded-full mb-5">
+              About Us
+            </div>
+            <h2 class="text-[clamp(28px,3vw,38px)] font-bold text-[#0F172A] leading-tight tracking-tight">
+              <span class="text-[#0E78E9]">Real Experience.</span><br />Built to Deliver.
+            </h2>
+          </div>
+
+          <p class="lg:w-[55%] text-body-default text-[#64748B] leading-relaxed lg:pt-14">
+            Microlent Systems is a custom software development and consulting company based in Jodhpur, India. Since 2013, we have helped startups, mid-size businesses, and enterprises across the USA, UK, and Australia turn product ideas into working technology.
+          </p>
+
+        </div>
+
+        <div class="flex flex-col lg:flex-row">
+
+          <!-- Left: dark image card -->
+          <div
+            class="lg:w-[45%] relative bg-[#0F172A] rounded-[20px] m-4 overflow-hidden min-h-[320px] flex flex-col justify-end p-7">
+            <!-- Abstract warm bg &mdash; use your own image by replacing the src -->
+            <img src="./assets/img/image_1.png" alt=""
+              class="absolute inset-0 w-full h-full object-cover opacity-70 pointer-events-none" />
+            <!-- fallback warm gradient if image missing -->
+            <div class="absolute inset-0 pointer-events-none about-dark-overlay"></div>
+            <div class="relative z-10">
+              <h3 class="text-[20px] font-bold text-white mb-2 leading-snug">Smart Digital Solutions for Modern
+                Businesses</h3>
+              <p class="text-body-sm text-white/60 leading-relaxed">We design and develop custom web and mobile
+                applications that enhance user experience, streamline operations, and drive business growth.</p>
+            </div>
+          </div>
+
+          <!-- Right: partner info + stats -->
+          <div class="lg:w-[55%] p-6 flex flex-col justify-between gap-6">
+
+            <!-- Partner card -->
+            <div class="bg-white rounded-[16px]  p-6">
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <h3 class="text-[20px] font-bold text-[#0E78E9] leading-snug">Your Trusted Technology Partner</h3>
+                <!-- <button
+                  class="w-9 h-9 bg-[#60A5FA] rounded-full flex items-center justify-center flex-shrink-0 hover:bg-brand transition-colors">
+                  <i class="fas fa-arrow-right -rotate-45 text-white text-xs"></i>
+                </button> -->
+              </div>
+              <p class="text-body-sm text-[#64748B] leading-relaxed">We do not just write code. We consult on what to build, how to build it, and how to keep it running. One accountable team from first decision to final deployment.</p>
+            </div>
+
+            <!-- Stats row -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-white rounded-[16px] p-6 text-center">
+              <div>
+                <div class="text-[28px] font-semibold text-[#21539A] leading-none counter" data-target="450"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Projects Delivered</div>
+              </div>
+              <div>
+                <div class="text-[28px] font-semibold text-[#21539A] leading-none counter" data-target="50"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Global Clients</div>
+              </div>
+              <div>
+                <div class="text-[28px] font-semibold text-[#21539A] leading-none counter" data-target="12"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Years of Experience</div>
+              </div>
+              <div>
+                <div class="text-[28px] font-semibold text-[#21539A] leading-none counter" data-target="70"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Expert Developers</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 
+     TECHNOLOGY CAPABILITIES SECTION
+ -->
+  <section class="relative py-20">
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-tech-orange-tr">
+    </div>
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-tech-orange-ml">
+    </div>
+
+
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+
+      <!-- Badge + Heading -->
+      <div class="mb-10">
+        <div
+          class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+          Technology Capabilities
+        </div>
+
+        <h2 class="text-[clamp(28px,3vw,38px)] font-bold leading-tight tracking-tight">
+          <span class="text-[#0F172A]">The Stack We Build With.</span><br /><span class="text-[#60A5FA]">The Results You Build On.</span>
+        </h2>
+      </div>
+
+      <!-- Main card -->
+      <div class="bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] overflow-hidden
+                  shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)]">
+
+        <!-- Logo grid &mdash; shown per active tab -->
+        <div class="p-6 min-h-[280px]">
+          <div id="tab-panel-uiux"
+            class="tech-panel grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 content-start">
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@v11/icons/figma.svg"
+                class="w-7 h-7 icon-figma-filter" alt="Figma" />
+              <span class="font-semibold text-[#0F172A] text-[15px]">Figma</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span
+                class="w-7 h-7 rounded-[6px] flex items-center justify-center text-white font-black text-sm flex-shrink-0 icon-xd-bg">
+                <span class="icon-xd-text">Xd</span>
+              </span>
+              <span class="font-semibold text-[#0F172A] text-[15px]">ADOBE XD</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span class="w-7 h-7 rounded-[6px] flex items-center justify-center font-black text-white text-xs flex-shrink-0 bg-yellow-400">S</span>
+              <span class="font-semibold text-[#0F172A] text-[15px]">Sketch</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span
+                class="w-7 h-7 rounded-[6px] flex items-center justify-center font-black text-white text-xs flex-shrink-0 icon-invision-bg">in</span>
+              <span class="font-semibold text-[#0F172A] text-[15px]">InVision</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span
+                class="w-7 h-7 rounded-[6px] flex items-center justify-center font-black text-white text-xs flex-shrink-0 icon-ps-bg">Ps</span>
+              <span class="font-semibold text-[#0F172A] text-[14px] leading-tight">Adobe<br />Photoshop</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span class="w-7 h-7 rounded-[6px] flex items-center justify-center font-black text-white text-xs flex-shrink-0 bg-blue-600">F</span>
+              <span class="font-semibold text-[#0F172A] text-[15px]">Framer</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span
+                class="w-7 h-7 rounded-[6px] flex items-center justify-center font-black text-white text-xs flex-shrink-0 icon-ai-bg">Ai</span>
+              <span class="font-semibold text-[#0F172A] text-[14px] leading-tight">Adobe<br />Illustrator</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span
+                class="w-7 h-7 flex items-center justify-center font-black text-[15px] flex-shrink-0 icon-canva-color">C</span>
+              <span class="font-semibold text-[15px] icon-canva-color">Canva</span>
+            </div>
+
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4">
+              <span class="w-7 h-7 rounded-[6px] flex items-center justify-center font-black text-white text-xs flex-shrink-0 bg-red-600">B</span>
+              <span class="font-semibold text-[#0F172A] text-[15px]">balsamiq</span>
+            </div>
+
+          </div>
+
+          <!-- Hidden panels for other tabs (same structure, different logos) -->
+          <div id="tab-panel-web" class="tech-panel hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-react text-cyan-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">React</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-angular text-red-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Angular</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-node-js text-green-600 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Node.js</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-vuejs text-emerald-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Vue.js</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><span
+                class="font-black text-blue-700 text-lg w-7">.NET</span><span
+                class="font-semibold text-[#0F172A] text-[15px]">.NET</span></div>
+          </div>
+
+          <div id="tab-panel-saas" class="tech-panel hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-aws text-yellow-600 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">AWS</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-stripe text-purple-600 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Stripe</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-database text-blue-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Supabase</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-google text-red-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Firebase</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-cloud text-sky-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Twilio</span></div>
+          </div>
+
+          <div id="tab-panel-mobile" class="tech-panel hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-mobile-alt text-sky-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Flutter</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-react text-cyan-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">React Native</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-apple text-gray-700 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Swift</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-android text-green-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Kotlin</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-layer-group text-indigo-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Ionic</span></div>
+          </div>
+
+          <div id="tab-panel-devops" class="tech-panel hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-docker text-blue-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Docker</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-aws text-yellow-600 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">AWS</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-github text-gray-800 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">GitHub CI</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-server text-slate-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Kubernetes</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-cloud-upload-alt text-purple-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Azure</span></div>
+          </div>
+
+          <div id="tab-panel-enterprise" class="tech-panel hidden grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-cube text-blue-600 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">SAP</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-salesforce text-blue-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Salesforce</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-project-diagram text-orange-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Odoo</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fab fa-microsoft text-blue-600 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">MS 365</span></div>
+            <div class="bg-white border border-[#E2E8F0] rounded-[16px] flex items-center gap-3 px-5 py-4"><i
+                class="fas fa-cogs text-gray-500 text-2xl w-7"></i><span
+                class="font-semibold text-[#0F172A] text-[15px]">Power BI</span></div>
+          </div>
+        </div>
+
+        <!-- Tab bar &mdash; bottom -->
+        <div class="border-t border-[#E2E8F0] flex overflow-x-auto">
+          <button onclick="switchTab('uiux')" data-tab="uiux"
+            class="tab-btn flex-1 text-center text-[13px] font-medium py-4 px-4 whitespace-nowrap text-[#60A5FA] border-t-2 border-accent transition-all">
+            UI/UX
+          </button>
+          <button onclick="switchTab('web')" data-tab="web"
+            class="tab-btn flex-1 text-center text-[13px] font-medium py-4 px-4 whitespace-nowrap text-[#64748B] border-t-2 border-transparent hover:text-[#60A5FA] transition-all">
+            Web Development
+          </button>
+          <button onclick="switchTab('saas')" data-tab="saas"
+            class="tab-btn flex-1 text-center text-[13px] font-medium py-4 px-4 whitespace-nowrap text-[#64748B] border-t-2 border-transparent hover:text-[#60A5FA] transition-all">
+            SaaS Solutions
+          </button>
+          <button onclick="switchTab('mobile')" data-tab="mobile"
+            class="tab-btn flex-1 text-center text-[13px] font-medium py-4 px-4 whitespace-nowrap text-[#64748B] border-t-2 border-transparent hover:text-[#60A5FA] transition-all">
+            Mobile Development
+          </button>
+          <button onclick="switchTab('devops')" data-tab="devops"
+            class="tab-btn flex-1 text-center text-[13px] font-medium py-4 px-4 whitespace-nowrap text-[#64748B] border-t-2 border-transparent hover:text-[#60A5FA] transition-all">
+            DevOps &amp; Cloud
+          </button>
+          <button onclick="switchTab('enterprise')" data-tab="enterprise"
+            class="tab-btn flex-1 text-center text-[13px] font-medium py-4 px-4 whitespace-nowrap text-[#64748B] border-t-2 border-transparent hover:text-[#60A5FA] transition-all">
+            Enterprise Apps
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 
+     OUR PROCESS SECTION
+ -->
+  <section class="relative  py-20">
+
+    <!-- Orange radial &mdash; bottom right -->
+    <div class="pointer-events-none absolute blob-process-orange">
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+
+      <!-- Two-col: image left, heading right -->
+      <div class="relative flex flex-col lg:flex-row gap-8 lg:gap-12 items-start ">
+
+        <!-- LEFT: image &mdash; tall, rounded -->
+        <div class="w-full lg:w-[62%] flex-shrink-0">
+          <div class="rounded-[24px] overflow-hidden process-img">
+            <img src="./assets/img/image_1.png" alt="Our team" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+        <!-- RIGHT: badge + heading -->
+        <div class="lg:w-[38%] lg:pt-8">
+          <div
+            class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+            Our Process
+          </div>
+
+          <h2 class="text-[clamp(28px,3.2vw,42px)] font-bold text-[#0F172A] leading-tight tracking-tight">
+            From Your First Idea<br /><span class="text-[#60A5FA]">To a Product That Ships</span>
+          </h2>
+        </div>
+
+        <!-- PROCESS CARD &mdash; absolute on desktop, static on mobile -->
+        <div class="w-full lg:absolute lg:bottom-[10%] lg:right-[4%] lg:w-[80%] z-10 bg-white/80 backdrop-blur-md border border-[#E2E8F0] rounded-[20px] px-8 py-7
+                 shadow-[0_20px_60px_rgba(0,0,0,0.08)]">
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+            <!-- Step 01 -->
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-0">
+                <!-- Circle number -->
+                <div
+                  class="w-10 h-10 rounded-full bg-[#1D3A6E] flex items-center justify-center text-white text-[13px] font-bold flex-shrink-0">
+                  01
+                </div>
+                <!-- Connector line -->
+                <div class="flex-1 h-[2px] bg-[#CBD5E1] sm:block hidden"></div>
+              </div>
+              <h4 class="text-[15px] font-bold text-[#0F172A] mt-1">Discovery and Research</h4>
+              <p class="text-[13px] text-[#64748B] leading-relaxed">We learn your business goals, user needs, and technical requirements. Every decision after this step is grounded in what your product actually needs to do.</p>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-0">
+                <div
+                  class="w-10 h-10 rounded-full bg-[#1D3A6E] flex items-center justify-center text-white text-[13px] font-bold flex-shrink-0">
+                  02
+                </div>
+                <div class="flex-1 h-[2px] bg-[#CBD5E1] sm:block hidden"></div>
+              </div>
+              <h4 class="text-[15px] font-bold text-[#0F172A] mt-1">Design and Prototype</h4>
+              <p class="text-[13px] text-[#64748B] leading-relaxed">Wireframes, user flows, and high-fidelity prototypes built before any code is written. You see exactly what you are getting before development begins.</p>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="flex flex-col gap-3">
+              <div class="flex items-center gap-0">
+                <div
+                  class="w-10 h-10 rounded-full bg-[#1D3A6E] flex items-center justify-center text-white text-[13px] font-bold flex-shrink-0">
+                  03
+                </div>
+              </div>
+              <h4 class="text-[15px] font-bold text-[#0F172A] mt-1">Test and Launch</h4>
+              <p class="text-[13px] text-[#64748B] leading-relaxed">Structured QA, performance testing, and deployment to your production environment. Your product goes live ready to handle real users from day one.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 
+     INDUSTRIES WE SERVE SECTION
+ -->
+  <section class="relative  py-20">
+    <div class="pointer-events-none absolute blob-industries-blue">
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+
+      <!-- Badge + Heading -->
+      <div class="mb-12">
+        <div
+          class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+          Industries We Serve
+        </div>
+        <h2 class="text-[clamp(28px,3.5vw,42px)] font-bold leading-tight tracking-tight">
+          <span class="text-[#60A5FA]">Real Projects.</span> <span class="text-[#0F172A]">Real Industries.</span><br /><span class="text-[#0F172A]">Real Results.</span>
+        </h2>
+      </div>
+
+      <!-- Two-col: sidebar left, map right -->
+      <div class="flex flex-col lg:flex-row gap-10 items-start">
+
+        <!-- LEFT: industry list -->
+        <div class="flex flex-row flex-wrap lg:flex-col gap-3 lg:w-[260px] flex-shrink-0" id="industry-list">
+          <button onclick="selectIndustry(this,'ecommerce')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center bg-white border border-[#E2E8F0] text-[14px] font-medium text-[#64748B] hover:border-[#60A5FA] hover:text-[#60A5FA] transition-all">
+            E-Commerce
+          </button>
+          <button onclick="selectIndustry(this,'fintech')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center text-[14px] font-medium transition-all" style="background:#0E78E9;color:#fff;border:1px solid transparent;">
+            Finance &amp; FinTech
+          </button>
+          <button onclick="selectIndustry(this,'healthcare')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center bg-white border border-[#E2E8F0] text-[14px] font-medium text-[#64748B] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+            Healthcare
+          </button>
+          <button onclick="selectIndustry(this,'education')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center bg-white border border-[#E2E8F0] text-[14px] font-medium text-[#64748B] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+            Education &amp; E-Learning
+          </button>
+          <button onclick="selectIndustry(this,'realestate')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center bg-white border border-[#E2E8F0] text-[14px] font-medium text-[#64748B] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+            Real Estate
+          </button>
+          <button onclick="selectIndustry(this,'logistics')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center bg-white border border-[#E2E8F0] text-[14px] font-medium text-[#64748B] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+            Logistics &amp; Transportation
+          </button>
+          <button onclick="selectIndustry(this,'enterprise')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center bg-white border border-[#E2E8F0] text-[14px] font-medium text-[#64748B] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+            Enterprise Solutions
+          </button>
+          <button onclick="selectIndustry(this,'saas')"
+            class="ind-btn px-5 py-3 rounded-[20px] text-center bg-white border border-[#E2E8F0] text-[14px] font-medium text-[#64748B] hover:border-[#0E78E9] hover:text-[#0E78E9] transition-all">
+            Startups &amp; SaaS Platforms
+          </button>
+        </div>
+
+        <!-- RIGHT: World map with floating cards -->
+        <div class="flex-1 relative world-map-wrap h-[500px]">
+
+          <img src='./assets/img/svg.svg' class='absolute inset-0 w-full h-full object-contain opacity-50'
+            alt='World map' />
+
+          <!-- Floating case study cards -->
+          <!-- Card 1 &mdash; North America -->
+          <div class="absolute bg-white border border-[#E2E8F0] rounded-[14px] px-4 py-3 flex items-center gap-3
+                      shadow-[0_4px_20px_rgba(0,0,0,0.08)] whitespace-nowrap map-card-1">
+            <span class="text-[13px] font-medium text-[#0F172A]">CAMS</span>
+            <a href="projects.html"
+              class="bg-[#60A5FA] text-white text-[12px] font-semibold px-4 py-1.5 rounded-full hover:bg-brand transition-colors">
+              View Case Study
+            </a>
+          </div>
+
+          <!-- Card 2 &mdash; Europe/Asia -->
+          <div class="absolute bg-white border border-[#E2E8F0] rounded-[14px] px-4 py-3 flex items-center gap-3
+                      shadow-[0_4px_20px_rgba(0,0,0,0.08)] whitespace-nowrap map-card-2">
+            <span class="text-[13px] font-medium text-[#0F172A]">Driving School
+</span>
+            <a href="projects.html"
+              class="bg-[#60A5FA] text-white text-[12px] font-semibold px-4 py-1.5 rounded-full hover:bg-brand transition-colors">
+              View Case Study
+            </a>
+          </div>
+
+          <!-- Card 3 &mdash; South/Southeast Asia -->
+          <div class="absolute bg-white border border-[#E2E8F0] rounded-[14px] px-4 py-3 flex items-center gap-3
+                      shadow-[0_4px_20px_rgba(0,0,0,0.08)] whitespace-nowrap map-card-3">
+            <span class="text-[13px] font-medium text-[#0F172A]">Mortgage</span>
+            <a href="projects.html"
+              class="bg-[#60A5FA] text-white text-[12px] font-semibold px-4 py-1.5 rounded-full hover:bg-brand transition-colors">
+              View Case Study
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 
+     LATEST PROJECTS & CASE STUDIES SECTION
+ -->
+  <section class="relative  py-20">
+
+
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+      <div class="flex flex-col lg:flex-row gap-12 items-start">
+
+        <!-- LEFT -->
+        <div class="w-full lg:w-[35%] flex-shrink-0 lg:sticky top-24">
+          <div
+            class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+            Our Latest Projects
+          </div>
+          <h2 class="text-[36px] font-extrabold leading-tight text-[#0F172A] mb-4">
+            Work That Speaks. <span class="text-[#60A5FA]">Projects That Delivered.</span>
+          </h2>
+          <p class="text-body-sm text-[#64748B] leading-relaxed mb-7">
+            A selection of custom software, web, and mobile projects delivered for businesses across the USA, UK, and Australia.
+          </p>
+          <a href="projects.html"
+            class="inline-flex items-center gap-2.5 text-xs bg-[#0E78E9] text-white font-semibold px-6 py-3 rounded-[20px] hover:bg-blue transition-all">
+            View All Projects <i class="fas fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- RIGHT: cards -->
+        <div class="w-full lg:w-[65%] flex-1 flex flex-col gap-4">
+
+          <!-- Card 1 -->
+          <div
+            class="flex flex-col sm:flex-row border border-[#E2E8F0] rounded-[20px] overflow-hidden bg-[#f8f8f6b3] hover:shadow-[0_20px_60px_rgba(0,0,0,0.09)] transition-shadow duration-300">
+            <div class="w-full sm:w-[290px] min-h-[200px] flex-shrink-0 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?w=600&h=400&fit=crop"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6 flex flex-col justify-center gap-2.5">
+              <h3 class="text-h4 font-bold text-[#0F172A]">Enterprise Dashboard Solution</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">UI/UX
+                  Designs</span>
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">Web
+                  Applications</span>
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">Data
+                  Analytics</span>
+              </div>
+              <p class="text-body-sm text-[#64748B] leading-relaxed">UI/UX Design, Web Applications, Data Analytics Microlent built a multi-module enterprise dashboard that gives business teams a single view of performance data, operational metrics, and analytics. Decision-makers get real-time visibility without switching between tools.</p>
+              <a href="projects.html"
+                class="inline-flex items-center gap-1.5 text-xs bg-[#0E78E9] text-white font-semibold px-5 py-2 rounded-[20px] hover:bg-blue transition-all w-fit">
+                View Case Study
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col sm:flex-row border border-[#E2E8F0] rounded-[20px] overflow-hidden bg-[#f8f8f6b3] hover:shadow-[0_20px_60px_rgba(0,0,0,0.09)] transition-shadow duration-300">
+            <div class="w-full sm:w-[290px] min-h-[200px] flex-shrink-0 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6 flex flex-col justify-center gap-2.5">
+              <h3 class="text-h4 font-bold text-[#0F172A]">Custom Business Management Platform</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">Custom
+                  Software</span>
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">Web
+                  Applications</span>
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">Mobile
+                  Applications</span>
+              </div>
+              <p class="text-body-sm text-[#64748B] leading-relaxed">Custom Software, Web Applications, Mobile Applications A fully custom platform built to replace disconnected tools across sales, operations, and workflow management. The result was faster task completion, fewer manual errors, and one system the whole team actually uses.</p>
+              <a href="projects.html"
+                class="inline-flex items-center gap-1.5 text-xs bg-[#0E78E9] text-white font-semibold px-5 py-2 rounded-[20px] hover:bg-blue transition-all w-fit">
+                View Case Study
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex flex-col sm:flex-row border border-[#E2E8F0] rounded-[20px] overflow-hidden bg-[#f8f8f6b3] hover:shadow-[0_20px_60px_rgba(0,0,0,0.09)] transition-shadow duration-300">
+            <div class="w-full sm:w-[290px] min-h-[200px] flex-shrink-0 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="p-6 flex flex-col justify-center gap-2.5">
+              <h3 class="text-h4 font-bold text-[#0F172A]">AI-Powered Automation System</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">AI/ML
+                  Solutions</span>
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">Automation</span>
+                <span class="text-label text-[#60A5FA] border border-[#E2E8F0] px-3 py-1 rounded-full">Enterprise</span>
+              </div>
+              <p class="text-body-sm text-[#64748B] leading-relaxed">AI/ML Solutions, Automation, Enterprise Microlent developed an intelligent automation system that replaced repetitive manual processes with reliable, auditable workflows. The client reduced operational overhead and gained accurate data insights without adding headcount.</p>
+              <a href="projects.html"
+                class="inline-flex items-center gap-1.5 text-xs bg-[#0E78E9] text-white font-semibold px-5 py-2 rounded-[20px] hover:bg-blue transition-all w-fit">
+                View Case Study
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 
+     CONTACT SECTION
+ -->
+  <section class="relative  py-20 ">
+
+
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+      <div class="pointer-events-none absolute blob-contact-orange-tl">
+      </div>
+      <div class="pointer-events-none absolute blob-contact-blue-mid">
+      </div>
+      <div class="pointer-events-none absolute blob-contact-blue-right">
+      </div>
+      <div class="flex flex-col lg:flex-row gap-14 items-start z-10 relative">
+
+        <!-- LEFT: form card -->
+        <div
+          class="w-full lg:w-[50%] flex-shrink-0 bg-[#f8f8f6e6] border border-[#E2E8F0] rounded-[24px] p-6 sm:p-10 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] backdrop-blur-[4px]">
+          <h2 class="text-[32px] font-extrabold text-[#0F172A] mb-3">
+            Let's <span class="text-[#60A5FA]">get started!</span>
+          </h2>
+          <p class="text-body-sm text-[#64748B] leading-relaxed mb-7">
+            Are you looking for a cutting-edge custom software solution? How about a user-friendly and feature-packed
+            mobile application to reach your audience? Microlent Systems can help
+          </p>
+
+          <form id="home-contact-form" novalidate onsubmit="event.preventDefault()">
+
+            <input type="hidden" name="subject" value="New Enquiry - Microlent Systems Website" />
+            <input type="checkbox" name="botcheck" style="display:none" />
+            <div class="mb-4">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Name</label>
+              <input type="text" name="name" placeholder="Name" required
+                class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors font-sans" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Email</label>
+              <input type="email" name="email" placeholder="you@company.com" required
+                class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors font-sans" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Phone number</label>
+              <input type="tel" name="phone" id="home-phone" placeholder="+91 00000-00000" maxlength="15"
+                oninput="this.value=this.value.replace(/[^\d\+\-\s]/g,'')"
+                class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors font-sans" / required>
+              <p id="home-phone-err" class="hidden mt-1.5 flex items-center gap-1.5 text-[12px] text-red-500 bg-red-50 border border-red-100 px-3 py-2 rounded-[8px]"><i class="fas fa-circle-exclamation text-[11px]"></i><span></span></p>
+            </div>
+            <div class="mb-6">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Message</label>
+              <textarea name="message" placeholder="Message" rows="4" required
+                class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors resize-none font-sans"></textarea>
+            </div>
+            <div id="home-form-msg" class="hidden mb-4 px-4 py-3 rounded-[12px] text-[13px] font-medium flex items-center gap-2"></div>
+            <button type="submit" id="home-submit-btn"
+              class="w-full py-3.5 bg-[#0E78E9] text-white font-semibold text-btn rounded-[12px] flex items-center justify-center gap-2 hover:bg-brand transition-colors cursor-pointer">
+              Send <i class="fas fa-paper-plane text-xs"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT: contact info -->
+        <div class="flex-1 pt-2">
+
+          <div class="mb-8">
+            <h3 class="text-h4 font-bold text-[#0F172A] mb-4">Email us</h3>
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-9 h-9 bg-[#F8F8F6] rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-envelope text-[#60A5FA] text-sm"></i>
+              </div>
+              <span class="text-[15px] font-medium text-[#0F172A]">admin@microlent.com</span>
+            </div>
+            <p class="text-caption text-disabled ml-12">Send us an email anytime</p>
+          </div>
+          <hr class="border-[#E2E8F0] mb-8" />
+
+          <div class="mb-8">
+            <h3 class="text-h4 font-bold text-[#0F172A] mb-4">Call us</h3>
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-9 h-9 bg-[#F8F8F6] rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-phone text-[#60A5FA] text-sm"></i>
+              </div>
+              <span class="text-[15px] font-medium text-[#0F172A]">+91 97999 41913</span>
+            </div>
+            <!-- <p class="text-caption text-disabled ml-12">Mon-Fri 9AM–6PM IST</p> -->
+          </div>
+          <hr class="border-[#E2E8F0] mb-8" />
+
+          <div class="mb-8">
+            <h3 class="text-h4 font-bold text-[#0F172A] mb-4">Office</h3>
+            <div class="flex items-start gap-3">
+              <div class="w-9 h-9 bg-[#F8F8F6] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="fas fa-map-marker-alt text-[#60A5FA] text-sm"></i>
+              </div>
+              <span class="text-[15px] font-medium text-[#0F172A] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber
+                Park, near Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 
+     BLOG / INSIGHTS SECTION
+ -->
+  <section class="relative bg-white py-20 ">
+    <div class="pointer-events-none absolute blob-blog-orange">
+    </div>
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+      <!-- Top row: heading left + desc right -->
+      <div class="flex flex-col lg:flex-row lg:items-start gap-6 mb-12 ">
+        <div class="lg:w-[50%] flex-shrink-0">
+          <div
+            class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+            Blog
+          </div>
+          <h2 class="text-[clamp(26px,3vw,38px)] font-bold text-[#0F172A] leading-tight tracking-tight">
+            Straight Talk on Tech,<br /><span class="text-[#60A5FA]">Business, and Growth.</span>
+          </h2>
+        </div>
+        <p class="lg:w-[50%] text-body-default text-[#64748B] leading-relaxed lg:pt-14">
+          Practical guides, product insights, and technology breakdowns written for founders and business owners making real decisions.
+        </p>
+      </div>
+
+      <!-- 3 Blog cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+
+        <!-- Card 1 -->
+        <div class="blog-card sr sr-d1">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" class="blog-card-img" alt="Custom Web Development" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 7 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Web Development</span>
+              <span class="blog-date-top">December 10, 2024</span>
+            </div>
+            <h3 class="blog-title">Transform Your Business with Custom Web Development Solutions by Microlent Systems</h3>
+            <p class="blog-excerpt">In today's digital age, businesses must stay competitive by adopting innovative and custom solutions that address their unique needs.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-custom-web-development.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="blog-card sr sr-d2">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" class="blog-card-img" alt="Website Development" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 6 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Web Development</span>
+              <span class="blog-date-top">December 5, 2024</span>
+            </div>
+            <h3 class="blog-title">Empower Your Business with Website Development by Microlent Systems</h3>
+            <p class="blog-excerpt">In the digital age, a website is more than just a platform — it's the gateway to your customers, your brand, and your growth.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-website-development.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="blog-card sr sr-d3">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&h=400&fit=crop" class="blog-card-img" alt="Local SEO" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 7 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Digital Marketing</span>
+              <span class="blog-date-top">November 27, 2024</span>
+            </div>
+            <h3 class="blog-title">Unlocking Growth: How Local SEO Can Boost Your Business Revenue with Microlent Systems</h3>
+            <p class="blog-excerpt">In today's competitive digital age, local businesses are constantly seeking ways to stand out. Local SEO can boost your business revenue with the right strategy.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-local-seo.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="flex justify-center">
+        <a href="blog.html"
+          class="inline-flex items-center gap-2.5 text-xs bg-[#0E78E9] text-white font-semibold px-6 py-3 rounded-[20px] hover:bg-blue transition-all">
+          Explore All Insights <i class="fas fa-chevron-right text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 
+     CLIENT STORIES / TESTIMONIALS SECTION
+ -->
+  <section class="relative bg-white py-20 ">
+
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-testimonial-blue">
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+
+      <!-- Top row -->
+      <div class="flex flex-col lg:flex-row lg:items-start gap-6 mb-12">
+        <div class="lg:w-[45%] flex-shrink-0">
+          <div
+            class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+            Client Stories
+          </div>
+          <h2 class="text-[clamp(26px,3vw,38px)] font-bold text-[#0F172A] leading-tight tracking-tight">
+            What Clients Say<br /><span class="text-[#0E78E9]">After We Deliver.</span>
+          </h2>
+        </div>
+        <p class="lg:w-[55%] text-body-default text-[#64748B] leading-relaxed lg:pt-14">
+          Microlent has worked with businesses across multiple countries and industries. Here is what they said about the experience and the work we delivered.
+        </p>
+      </div>
+
+      <!-- Carousel wrapper -->
+      <div class="relative">
+        <!-- Overflow clip -->
+        <div class="overflow-hidden">
+          <div id="testimonial-track" class="flex gap-6 transition-transform duration-500 ease-in-out">
+
+            <!-- Card 1 -->
+            <div class="relative rounded-[20px] overflow-hidden flex-shrink-0" style="width:calc((100% - 48px)/3);height:230px">
+              <!-- <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=600&h=500&fit=crop&facepad=3&face=1" class="absolute inset-0 w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div> -->
+              <div class="absolute bottom-0 left-0 right-0 m-4 bg-[#f8f8f6b3] backdrop-blur-md rounded-[16px] p-5" style="height:200px">
+                <i class="fas fa-quote-left text-[#60A5FA] text-2xl mb-2 block"></i>
+                <p class="text-body-sm text-[#0F172A] leading-relaxed mb-3 overflow-hidden" style="display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-clamp:3">The project was done in time and the developers did a great job. Covid in 2020 slowed the work due to lockdowns in Australia and in India but the work has been done to best quality.</p>
+                <div class="flex items-center gap-3">
+                  <!-- <img src="https://i.pravatar.cc/40?img=11" class="w-9 h-9 rounded-full object-cover flex-shrink-0" /> -->
+                  <div>
+                    <div class="text-caption font-bold text-[#60A5FA]">Dan M.</div>
+                    <div class="text-[11px] text-[#64748B]">Custom DB and Software</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative rounded-[20px] overflow-hidden flex-shrink-0" style="width:calc((100% - 48px)/3);height:230px">
+              <!-- <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=500&fit=crop&facepad=3" class="absolute inset-0 w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div> -->
+              <div class="absolute bottom-0 left-0 right-0 m-4 bg-[#f8f8f6b3] backdrop-blur-md rounded-[16px] p-5" style="height:200px">
+                <i class="fas fa-quote-left text-[#60A5FA] text-2xl mb-2 block"></i>
+                <p class="text-body-sm text-[#0F172A] leading-relaxed mb-3 overflow-hidden" style="display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-clamp:3">I have business relationship with these guys since many years. They have delivered many sophisticated and complex projects without fail. Undoubtedly i will keep hiring. Keep delivering as per your passion.</p>
+                <div class="flex items-center gap-3">
+                  <!-- <img src="https://i.pravatar.cc/40?img=53" class="w-9 h-9 rounded-full object-cover flex-shrink-0" /> -->
+                  <div>
+                    <div class="text-caption font-bold text-[#60A5FA]">Wu Wai B.</div>
+                    <div class="text-[11px] text-[#64748B]">Brunei Darussalam</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative rounded-[20px] overflow-hidden flex-shrink-0" style="width:calc((100% - 48px)/3);height:230px">
+              <!-- <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=500&fit=crop&facepad=3" class="absolute inset-0 w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div> -->
+              <div class="absolute bottom-0 left-0 right-0 m-4 bg-[#f8f8f6b3] backdrop-blur-md rounded-[16px] p-5" style="height:200px">
+                <i class="fas fa-quote-left text-[#60A5FA] text-2xl mb-2 block"></i>
+                <p class="text-body-sm text-[#0F172A] leading-relaxed mb-3 overflow-hidden" style="display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-clamp:3">These guys were like the SWAT team I didn't know I needed. Microlent was referred to me at the last minute to save a mission-critical project.</p>
+                <div class="flex items-center gap-3">
+                  <!-- <img src="https://i.pravatar.cc/40?img=47" class="w-9 h-9 rounded-full object-cover flex-shrink-0" /> -->
+                  <div>
+                    <div class="text-caption font-bold text-[#60A5FA]">Robert D.</div>
+                    <div class="text-[11px] text-[#64748B]">Vehicle Application</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="relative rounded-[20px] overflow-hidden flex-shrink-0" style="width:calc((100% - 48px)/3);height:230px">
+              <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=500&fit=crop&facepad=3" class="absolute inset-0 w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div> -->
+              <div class="absolute bottom-0 left-0 right-0 m-4 bg-[#f8f8f6b3] backdrop-blur-md rounded-[16px] p-5" style="height:200px">
+                <i class="fas fa-quote-left text-[#60A5FA] text-2xl mb-2 block"></i>
+                <p class="text-body-sm text-[#0F172A] leading-relaxed mb-3 overflow-hidden" style="display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-clamp:3">Very professional team, good quality code – delivery on time and to the point communication.</p>
+                <div class="flex items-center gap-3">
+                  <!-- <img src="https://i.pravatar.cc/40?img=12" class="w-9 h-9 rounded-full object-cover flex-shrink-0" /> -->
+                  <div>
+                    <div class="text-caption font-bold text-[#60A5FA]">Terraview P.</div>
+                    <div class="text-[11px] text-[#64748B]">Android Data Collection – APP</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="relative rounded-[20px] overflow-hidden flex-shrink-0" style="width:calc((100% - 48px)/3);height:230px">
+              <!-- <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=500&fit=crop&facepad=3" class="absolute inset-0 w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div> -->
+              <div class="absolute bottom-0 left-0 right-0 m-4 bg-[#f8f8f6b3] backdrop-blur-md rounded-[16px] p-5" style="height:200px">
+                <i class="fas fa-quote-left text-[#60A5FA] text-2xl mb-2 block"></i>
+                <p class="text-body-sm text-[#0F172A] leading-relaxed mb-3 overflow-hidden" style="display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-clamp:3">Rapid understanding of our requirements – Windows applications, Web applications, Screen design and graphics work – Excellent communication and attitude to achieve milestones – Good quality innovative artwork.</p>
+                <div class="flex items-center gap-3">
+                  <!-- <img src="https://i.pravatar.cc/40?img=33" class="w-9 h-9 rounded-full object-cover flex-shrink-0" /> -->
+                  <div>
+                    <div class="text-caption font-bold text-[#60A5FA]">Derek S.</div>
+                    <div class="text-[11px] text-[#64748B]">KIOSK Application</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="relative rounded-[20px] overflow-hidden flex-shrink-0" style="width:calc((100% - 48px)/3);height:230px">
+              <!-- <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=500&fit=crop&facepad=3" class="absolute inset-0 w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div> -->
+              <div class="absolute bottom-0 left-0 right-0 m-4 bg-[#f8f8f6b3] backdrop-blur-md rounded-[16px] p-5" style="height:200px">
+                <i class="fas fa-quote-left text-[#60A5FA] text-2xl mb-2 block"></i>
+                <p class="text-body-sm text-[#0F172A] leading-relaxed mb-3 overflow-hidden" style="display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;line-clamp:3">They were great to work with. Couldn't have done stuff without them. Will definitely be using them for more work!</p>
+                <div class="flex items-center gap-3">
+                  <!-- <img src="https://i.pravatar.cc/40?img=52" class="w-9 h-9 rounded-full object-cover flex-shrink-0" /> -->
+                  <div>
+                    <div class="text-caption font-bold text-[#60A5FA]">Cornelius B.</div>
+                    <div class="text-[11px] text-[#64748B]">OKTA Integration</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div id="testi-dots" class="flex items-center justify-center gap-2 mt-8"></div>
+      </div>
+
+      <script>
+        (function() {
+          var track = document.getElementById('testimonial-track');
+          var dotsWrap = document.getElementById('testi-dots');
+          var total = 6;
+          var cur = 0;
+          var timer;
+
+          function getPerPage() {
+            return window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+          }
+
+          function setCardWidths() {
+            var perPage = getPerPage();
+            var gap = 24;
+            var containerW = track.parentElement.offsetWidth;
+            var cardW = (containerW - gap * (perPage - 1)) / perPage;
+            Array.from(track.children).forEach(function(card) {
+              card.style.width = cardW + 'px';
+            });
+          }
+
+          function getPages() {
+            return Math.ceil(total / getPerPage());
+          }
+
+          function buildDots() {
+            var pages = getPages();
+            dotsWrap.innerHTML = '';
+            for (var i = 0; i < pages; i++) {
+              var d = document.createElement('button');
+              d.style.cssText = 'border:none;cursor:pointer;border-radius:999px;transition:all 0.3s;display:inline-block;' + (i === cur ? 'width:20px;height:12px;background:#0E78E9;' : 'width:10px;height:10px;background:#CBD5E1;');
+              d.setAttribute('data-i', i);
+              d.onclick = function() { goTo(+this.getAttribute('data-i')); resetTimer(); };
+              dotsWrap.appendChild(d);
+            }
+          }
+
+          function goTo(page) {
+            var pages = getPages();
+            cur = (page + pages) % pages;
+            var perPage = getPerPage();
+            var cardW = track.children[0].offsetWidth + 24;
+            track.style.transform = 'translateX(-' + (cur * perPage * cardW) + 'px)';
+            buildDots();
+          }
+
+          function next() { goTo(cur + 1); }
+
+          function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(next, 6000);
+          }
+
+          window.addEventListener('resize', function() { cur = 0; setCardWidths(); goTo(0); });
+
+          setCardWidths();
+          buildDots();
+          resetTimer();
+        })();
+      </script>
+    </div>
+  </section>
+
+  <!--  FAQ  -->
+  <section class="py-20  relative ">
+
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-faq-blue">
+    </div>
+    <div class="pointer-events-none absolute blob-faq-orange">
+    </div>
+    <div class="container mx-auto px-4 lg:px-16 relative z-10">
+
+      <!-- Section header -->
+        <div class="flex flex-col lg:flex-row lg:items-start gap-6 mb-12">
+        <div class="lg:w-[45%] flex-shrink-0">
+          <div
+            class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+         FAQ
+          </div>
+          <h2 class="text-[clamp(26px,3vw,38px)] font-bold text-[#0F172A] leading-tight tracking-tight">
+            Questions People Usually<br />Ask <span class="text-[#60A5FA]">Before Hiring Us</span>
+          </h2>
+        </div>
+        <p class="lg:w-[55%] text-body-default text-[#64748B] leading-relaxed lg:pt-14">
+       Find answers to common questions about software development, AI solutions, and digital transformation for
+          modern businesses.
+        </p>
+      </div>
+      
+
+      <!-- Two-column layout -->
+      <div class="flex flex-col lg:flex-row gap-10 items-start">
+
+        <!-- Accordion -->
+        <div class="flex-1 space-y-3">
+
+          <!-- Item 1 &mdash; open by default -->
+          <div class="faq-item bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[16px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
+              <span class="text-[15px] font-semibold text-[#0F172A]">Do you work with clients outside India?</span>
+              <span class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-[#60A5FA] transition-transform"><i class="fas fa-minus text-xs"></i></span>
+            </button>
+            <div class="faq-body px-6 pb-5">
+              <p class="text-body-sm text-[#64748B] leading-relaxed">Yes. Most of our clients are based in the US, UK, and Australia. We work across time zones and use async communication tools to keep projects running smoothly regardless of location.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[16px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
+              <span class="text-[15px] font-semibold text-[#0F172A]">How long does a typical project take?</span>
+              <span class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-[#60A5FA] transition-transform"><i class="fas fa-plus text-xs"></i></span>
+            </button>
+            <div class="faq-body hidden px-6 pb-5">
+              <p class="text-body-sm text-[#64748B] leading-relaxed">It depends on the scope. A standard web application takes 8 to 16 weeks. We give you a detailed timeline during the discovery phase so there are no surprises.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[16px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
+              <span class="text-[15px] font-semibold text-[#0F172A]">What if I already have a development team but need extra help?</span>
+              <span class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-[#60A5FA] transition-transform"><i class="fas fa-plus text-xs"></i></span>
+            </button>
+            <div class="faq-body hidden px-6 pb-5">
+              <p class="text-body-sm text-[#64748B] leading-relaxed">We work well as an extended team. Whether you need one developer or a full squad, we can plug into your existing process.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[16px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
+              <span class="text-[15px] font-semibold text-[#0F172A]">Can you handle both the tech and the marketing side?</span>
+              <span class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-[#60A5FA] transition-transform"><i class="fas fa-plus text-xs"></i></span>
+            </button>
+            <div class="faq-body hidden px-6 pb-5">
+              <p class="text-body-sm text-[#64748B] leading-relaxed">Yes. We have separate teams for development and digital marketing. Many clients start with one and add the other as they grow.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item bg-[#f8f8f6b3] border border-[#E2E8F0] rounded-[16px] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left gap-4">
+              <span class="text-[15px] font-semibold text-[#0F172A]">What does ISO 9001:2015 certification mean for my project?</span>
+              <span class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-[#60A5FA] transition-transform"><i class="fas fa-plus text-xs"></i></span>
+            </button>
+            <div class="faq-body hidden px-6 pb-5">
+              <p class="text-body-sm text-[#64748B] leading-relaxed">It means our project management, communication, and delivery processes meet an internationally verified quality standard. In practice, you will notice it in how organized and consistent our workflow is.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right image -->
+        <div class="hidden lg:block w-[320px] flex-shrink-0 rounded-[20px] overflow-hidden faq-img">
+          <img src="./assets/img/faq.png"
+            class="w-full h-full object-cover" alt="Team collaboration" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--  FOOTER  -->
+  <footer class="pt-10 px-6 relative">
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-footer-blue">
+    </div>
+    <!-- Orange radial &mdash; right side -->
+    <div class="pointer-events-none absolute blob-footer-orange">
+    </div>
+
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] rounded-bl-[0px] rounded-br-[0px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20
+">
+
+      <!-- Top row -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+
+        <!-- Left: logo + heading + tagline -->
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">
+            Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span
+              class="text-[#60A5FA]">Digitally</span>
+          </h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp;
+            UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+
+        <!-- Right: contact info 2x2 grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div>
+            <div class="text-body-sm text-[#64748B]">admin@microlent.com</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div>
+            <div class="text-body-sm text-[#64748B]">+91 97999 41913</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div>
+            <div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber Park, near
+              Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Nav links row -->
+      <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html"
+          class="text-body-sm text-[#64748B] font-medium bg-white px-5 border border-[#E2E8F0] py-2 rounded-full hover:bg-[#60A5FA] hover:text-white transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media
+          Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+
+      <!-- Bottom bar -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors">
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors">
+            <i class="fab fa-linkedin-in text-sm"></i>
+          </a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors">
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+<script>
+  // [title, url, top%, left%]
+  var INDUSTRY_PROJECTS = {
+    ecommerce:  [['Labels On Loan','https://microlent.com/our-portfolio/labels-on-loan/','20%','16%'],['Eagle Shop','https://microlent.com/our-portfolio/eagle-shop/','15%','58%'],['Buy Local','https://microlent.com/our-portfolio/buy-local/','62%','70%']],
+    fintech:    [['Mortgage','https://microlent.com/our-portfolio/mortgage/','25%','14%'],['Trading','https://microlent.com/our-portfolio/trading/','20%','55%'],['Loan Approval','https://microlent.com/our-portfolio/loan-approval/','48%','68%']],
+    healthcare: [['DentCraft','https://microlent.com/our-portfolio/dentcraft/','18%','12%'],['Medical Audit','https://microlent.com/our-portfolio/medical-audit/','22%','60%'],['MediSpark','https://microlent.com/our-portfolio/medispark/','42%','72%']],
+    education:  [['Driving School','https://microlent.com/our-portfolio/driving-school/','16%','54%'],['Dan Gaub Training','https://microlent.com/our-portfolio/dan-gaub-strategies-training/','22%','18%'],['CAMS','https://microlent.com/our-portfolio/cams/','55%','65%']],
+    realestate: [['Reservation Engine','https://microlent.com/our-portfolio/reservation-engine/','28%','20%'],['The Star & Garter','https://microlent.com/our-portfolio/the-star-garter-hotel/','18%','50%'],['On-Contractor','https://microlent.com/our-portfolio/on-contractor/','65%','68%']],
+    logistics:  [['TruckWeb','https://microlent.com/our-portfolio/truckweb/','22%','15%'],['Mari Trace','https://microlent.com/our-portfolio/mari-trace/','30%','62%'],['UNI Dispatch','https://microlent.com/our-portfolio/uni-dispatch-delivery/','58%','72%']],
+    enterprise: [['WCA','https://microlent.com/our-portfolio/wca/','20%','18%'],['LASP','https://microlent.com/our-portfolio/lasp/','25%','56%'],['CIS Services','https://microlent.com/our-portfolio/cis-services/','45%','70%']],
+    saas:       [['CAMS','https://microlent.com/our-portfolio/cams/','18%','16%'],['Work Anywhere','https://microlent.com/our-portfolio/work-anywhere/','20%','58%'],['Paypac','https://microlent.com/our-portfolio/paypac/','52%','66%']]
+  };
+
+  function selectIndustry(btn, key) {
+    document.querySelectorAll('.ind-btn').forEach(function(b) {
+      b.style.background = '#fff';
+      b.style.color = '#64748B';
+      b.style.border = '1px solid #E2E8F0';
+    });
+    btn.style.background = '#0E78E9';
+    btn.style.color = '#fff';
+    btn.style.border = '1px solid transparent';
+
+    var projects = INDUSTRY_PROJECTS[key];
+    if (!projects) return;
+    ['map-card-1','map-card-2','map-card-3'].forEach(function(cls, i) {
+      var card = document.querySelector('.' + cls);
+      if (!card) return;
+      var nameEl = card.querySelector('span');
+      var linkEl = card.querySelector('a');
+      if (nameEl) nameEl.textContent = projects[i][0];
+      if (linkEl) linkEl.href = projects[i][1];
+      card.style.top = projects[i][2];
+      card.style.left = projects[i][3];
+    });
+  }
+</script>
+
+<script>
+  var phoneErrStyle = 'display:flex;align-items:center;gap:8px;background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:10px 14px;border-radius:10px;font-size:12px;font-weight:500;margin-top:6px;';
+  function showPhoneErr(errEl, input, msg) {
+    errEl.style.cssText = phoneErrStyle;
+    errEl.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0;font-size:11px"></i><span>' + msg + '</span>';
+    input.style.borderColor = '#ef4444';
+  }
+  function validatePhone(input, errId) {
+    input.value = input.value.replace(/[^\d\+\-\s]/g, '');
+    var digits = input.value.replace(/\D/g, '');
+    var errEl = document.getElementById(errId);
+    if (input.value.trim().length === 0 || digits.length < 7) {
+      showPhoneErr(errEl, input, 'Phone number too short — minimum 7 digits required.');
+    } else if (digits.length > 13) {
+      showPhoneErr(errEl, input, 'Phone number too long — maximum 13 digits allowed.');
+    } else {
+      errEl.style.display = 'none';
+      input.style.borderColor = '';
+    }
+  }
+
+  function fieldErr(input, msg) {
+    input.style.borderColor = '#ef4444';
+    var next = input.nextElementSibling;
+    if (next && next.classList.contains('custom-field-err')) { next.style.cssText = phoneErrStyle; next.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0;font-size:11px"></i><span>' + msg + '</span>'; return; }
+    var el = document.createElement('p');
+    el.className = 'custom-field-err';
+    el.style.cssText = phoneErrStyle;
+    el.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0;font-size:11px"></i><span>' + msg + '</span>';
+    input.insertAdjacentElement('afterend', el);
+  }
+  function clearFieldErr(input) {
+    input.style.borderColor = '';
+    var next = input.nextElementSibling;
+    if (next && next.classList.contains('custom-field-err')) next.remove();
+  }
+
+  async function submitForm(e, formId, msgId) {
+    e.preventDefault();
+    var form = document.getElementById(formId);
+    var msgEl = document.getElementById(msgId);
+    var btn = form.querySelector('button[type="submit"]');
+
+    // Clear previous field errors
+    form.querySelectorAll('.custom-field-err').forEach(function(el){ el.remove(); });
+    form.querySelectorAll('input,textarea').forEach(function(el){ el.style.borderColor = ''; });
+
+    var valid = true;
+    var nameInput = form.querySelector('input[name="name"]');
+    if (nameInput && nameInput.value.trim().length === 0) { fieldErr(nameInput, 'Please enter your name.'); valid = false; }
+
+    var emailInput = form.querySelector('input[name="email"]');
+    if (emailInput && (emailInput.value.trim().length === 0 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim()))) { fieldErr(emailInput, 'Please enter a valid email address.'); valid = false; }
+
+    var phoneInput = form.querySelector('input[name="phone"]');
+    if (phoneInput) {
+      var digits = phoneInput.value.replace(/\D/g, '');
+      if (phoneInput.value.trim().length === 0 || digits.length < 7 || digits.length > 13) {
+        var errEl = document.getElementById(phoneInput.id + '-err');
+        if (errEl) showPhoneErr(errEl, phoneInput, 'Please enter a valid phone number (minimum 7 digits).');
+        else fieldErr(phoneInput, 'Please enter a valid phone number.');
+        valid = false;
+      }
+    }
+
+    var msgInput = form.querySelector('textarea[name="message"]');
+    if (msgInput && msgInput.value.trim().length === 0) { fieldErr(msgInput, 'Please enter your message.'); valid = false; }
+
+    if (!valid) return;
+    btn.disabled = true;
+    btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin text-xs"></i>';
+    var successStyle = 'display:flex;align-items:center;gap:10px;background:#f0fdf4;border:1px solid #bbf7d0;color:#15803d;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:500;margin-bottom:16px;';
+    var errorStyle   = 'display:flex;align-items:center;gap:10px;background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:500;margin-bottom:16px;';
+    var nameInput2 = form.querySelector('input[name="name"]');
+    var emailInput2 = form.querySelector('input[name="email"]');
+    var phoneInput2 = form.querySelector('input[name="phone"]');
+    var msgInput2 = form.querySelector('textarea[name="message"]');
+    try {
+      await emailjs.send('service_g1xzfqr', 'template_21wiehh', {
+        name: nameInput2 ? nameInput2.value.trim() : '',
+        email: emailInput2 ? emailInput2.value.trim() : '',
+        phone: phoneInput2 ? phoneInput2.value.trim() : '',
+        message: msgInput2 ? msgInput2.value.trim() : '',
+        title: 'New Enquiry'
+      });
+      msgEl.style.cssText = successStyle;
+      msgEl.innerHTML = '<i class="fas fa-circle-check" style="flex-shrink:0;color:#16a34a"></i><span>Message sent! We will get back to you soon.</span>';
+      form.reset();
+      setTimeout(function(){ msgEl.style.display = 'none'; }, 5000);
+    } catch(err) {
+      msgEl.style.cssText = errorStyle;
+      msgEl.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0"></i><span>Something went wrong. Please try again.</span>';
+    }
+    btn.disabled = false;
+    btn.innerHTML = 'Send <i class="fas fa-paper-plane text-xs"></i>';
+  }
+</script>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const body = item.querySelector('.faq-body');
+    const icon = item.querySelector('.faq-icon i');
+    const isOpen = !body.classList.contains('hidden');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.querySelector('.faq-body').classList.add('hidden');
+      i.querySelector('.faq-icon i').className = 'fas fa-plus text-xs';
+    });
+    if (!isOpen) {
+      body.classList.remove('hidden');
+      icon.className = 'fas fa-minus text-xs';
+    }
+  }
+
+  function switchTab(tab) {
+    document.querySelectorAll('.tech-panel').forEach(p => p.classList.add('hidden'));
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('text-[#0E78E9]', 'border-[#0E78E9]');
+      b.classList.add('text-[#64748B]', 'border-transparent');
+    });
+    document.getElementById('tab-panel-' + tab).classList.remove('hidden');
+    const btn = document.querySelector('[data-tab="' + tab + '"]');
+    btn.classList.add('text-[#0E78E9]', 'border-[#0E78E9]');
+    btn.classList.remove('text-[#64748B]', 'border-transparent');
+  }
+</script>
+
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init('AkHSQ7TiY1MY-P_C4');</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

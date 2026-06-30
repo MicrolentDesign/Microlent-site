@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Blog &amp; Insights – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems"
+        class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#0E78E9] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#0E78E9] transition-colors flex items-center gap-1">
+            Our Services <i class="fas fa-chevron-down text-[9px]"></i>
+          </a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#0E78E9] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact us</a>
+        <a href="blog.html" class="nav-a active text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+
+        <a href="contact.html"
+          class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link active-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══ HERO BANNER ═══ -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+      <h1 class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]">Blog &amp; Insights</h1>
+    </div>
+  </div>
+
+
+  <!-- ═══ CATEGORY FILTER + ALL POSTS ═══ -->
+  <section id="all-posts" class="py-16">
+    <div class="container mx-auto px-4 lg:px-16">
+
+      <!-- Category pills -->
+      <div class="flex flex-wrap gap-3 mb-10 sr">
+        <button class="cat-pill active">All Posts</button>
+        <button class="cat-pill">Web Development</button>
+        <button class="cat-pill">Digital Marketing</button>
+        <button class="cat-pill">Business</button>
+        <button class="cat-pill">Technology</button>
+        <button class="cat-pill">UI/UX Design</button>
+      </div>
+
+      <!-- Blog grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Post 1 -->
+        <div class="blog-card sr sr-d1">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="Custom Web Development" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 7 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Web Development</span>
+              <span class="blog-date-top">December 10, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-custom-web-development.html" style="text-decoration:none;color:inherit">Transform Your Business with Custom Web Development Solutions by Microlent Systems</a></h3>
+            <p class="blog-excerpt">In today's digital age, businesses must stay competitive by adopting innovative and custom solutions that address their unique needs.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-custom-web-development.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="blog-card sr sr-d2">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="Website Development" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 6 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Web Development</span>
+              <span class="blog-date-top">December 5, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-website-development.html" style="text-decoration:none;color:inherit">Empower Your Business with Website Development by Microlent Systems</a></h3>
+            <p class="blog-excerpt">In the digital age, a website is more than just a platform — it's the gateway to your customers, your brand, and your growth.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-website-development.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="blog-card sr sr-d3">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="Local SEO" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 7 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Digital Marketing</span>
+              <span class="blog-date-top">November 27, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-local-seo.html" style="text-decoration:none;color:inherit">Unlocking Growth: How Local SEO Can Boost Your Business Revenue with Microlent Systems</a></h3>
+            <p class="blog-excerpt">In today's competitive digital age, local businesses are constantly seeking ways to stand out. Local SEO can boost your business revenue with the right strategy.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-local-seo.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 4 -->
+        <div class="blog-card sr sr-d4">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="SaaS vs Off-shelf" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 8 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Business</span>
+              <span class="blog-date-top">November 26, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-saas-vs-offshelf.html" style="text-decoration:none;color:inherit">Custom SaaS Development vs. Off-the-Shelf Software: Which Fits Your Business?</a></h3>
+            <p class="blog-excerpt">Choosing the right software is pivotal for businesses aiming to streamline operations, improve efficiency, and stay ahead of the competition.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-saas-vs-offshelf.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 5 -->
+        <div class="blog-card sr sr-d5">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="IT Sustainability" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 6 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Business</span>
+              <span class="blog-date-top">November 25, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-it-sustainable.html" style="text-decoration:none;color:inherit">The Role of IT in Building Sustainable Business Practices</a></h3>
+            <p class="blog-excerpt">In recent years, the demand for sustainability has grown exponentially. Organizations worldwide are focusing on reducing their carbon footprint and adopting eco-friendly practices.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-it-sustainable.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 6 -->
+        <div class="blog-card sr sr-d6">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="SaaS Technology" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 7 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Technology</span>
+              <span class="blog-date-top">November 21, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-saas-technology.html" style="text-decoration:none;color:inherit">Unleashing the Potential of SaaS Technology for Modern Businesses</a></h3>
+            <p class="blog-excerpt">In today's dynamic digital landscape, SaaS technology (Software as a Service) has revolutionized how businesses operate, collaborate, and scale their operations.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-saas-technology.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 7 -->
+        <div class="blog-card sr sr-d1">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="Shopify" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 8 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Web Development</span>
+              <span class="blog-date-top">August 8, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-shopify.html" style="text-decoration:none;color:inherit">Unlocking the Power of Shopify: Customized Solutions for Success in E-Commerce</a></h3>
+            <p class="blog-excerpt">When it comes to e-commerce, Shopify is the leading platform that businesses rely on for creating powerful and user-friendly online stores.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-shopify.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 8 -->
+        <div class="blog-card sr sr-d2">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="Custom Software" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 7 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">Web Development</span>
+              <span class="blog-date-top">August 5, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-custom-software.html" style="text-decoration:none;color:inherit">Maximize Efficiency and Security: The Benefits of Custom Software Development for Your Business</a></h3>
+            <p class="blog-excerpt">Nowadays, organisations are constantly looking for ways to improve their efficiency, productivity, and competitiveness as they navigate an increasingly digital world.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-custom-software.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 9 -->
+        <div class="blog-card sr sr-d3">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=768&h=439&fit=crop&auto=format" class="blog-card-img" alt="UI/UX Design" />
+            <div class="blog-img-badge"><i class="fas fa-clock text-[#0E78E9] text-[10px]"></i> 5 min read</div>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-cat-row">
+              <span class="blog-cat">UI/UX Design</span>
+              <span class="blog-date-top">July 29, 2024</span>
+            </div>
+            <h3 class="blog-title"><a href="blog-post-uiux-design.html" style="text-decoration:none;color:inherit">The Importance of UI/UX Design</a></h3>
+            <p class="blog-excerpt">When you interact with a digital product, like a website, mobile app, or any other platform, its design defines your experience — and that's the power of UI/UX.</p>
+            <div class="blog-divider"></div>
+            <div class="blog-meta">
+              <div class="blog-author">
+                <div class="blog-author-avatar">RR</div>
+                <div class="blog-author-name">Dr. Rajesh Rolen</div>
+              </div>
+              <a href="blog-post-uiux-design.html" class="blog-read-link">Read <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     
+    </div>
+  </section>
+
+
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] rounded-bl-[0px] rounded-br-[0px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">
+            Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span>
+          </h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div>
+            <div class="text-body-sm text-[#64748B]">admin@microlent.com</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div>
+            <div class="text-body-sm text-[#64748B]">+91 97999 41913</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div>
+            <div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber Park, near Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</div>
+          </div>
+        </div>
+      </div>
+
+                  <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+  <script>
+    // Category filter
+    const blogCards = Array.from(document.querySelectorAll('#all-posts .blog-card'));
+    document.querySelectorAll('.cat-pill').forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        document.querySelectorAll('.cat-pill').forEach(function(p) { p.classList.remove('active'); });
+        this.classList.add('active');
+        const selectedCategory = this.textContent.trim();
+        blogCards.forEach(function(card) {
+          const cardCategory = card.querySelector('.blog-cat')?.textContent.trim();
+          const shouldShow = selectedCategory === 'All Posts' || cardCategory === selectedCategory;
+          card.classList.toggle('hidden', !shouldShow);
+        });
+      });
+    });
+  </script>
+
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>
+

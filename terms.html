@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Terms and Conditions – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems" class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#0E78E9] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#0E78E9] transition-colors flex items-center gap-1">Our Services <i class="fas fa-chevron-down text-[9px]"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#0E78E9] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact Us</a>
+        <a href="blog.html" class="nav-a hover:text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="contact.html" class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html?s=web-application-development" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+      <div class="flex items-center gap-2 text-[#1e3a6e]/60 text-[12px] font-medium mb-4">
+        <a href="index.html" class="hover:text-[#0E78E9] transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-[9px]"></i>
+        <span class="text-[#1e3a6e]">Terms and Conditions</span>
+      </div>
+      <h1 class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]">Terms and Conditions</h1>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 lg:px-16 max-w-4xl">
+
+      <div class="bg-[#F8FAFF] border border-[#E2E8F0] rounded-[20px] p-6 mb-10 flex items-start gap-4">
+        <i class="fas fa-info-circle text-[#0E78E9] text-xl mt-0.5 flex-shrink-0"></i>
+        <p class="text-[14px] text-[#475569] leading-relaxed">Welcome to Microlent! These Terms and Conditions ("Terms") govern your access to and use of our website, products, and IT services, including but not limited to website development, app development, SaaS solutions, and digital marketing. By engaging with Microlent, you agree to comply with these Terms. Please read them carefully. If you disagree with any part of these Terms, you are advised not to use our services.</p>
+      </div>
+
+      <div class="flex flex-col gap-8">
+
+        <!-- Section 1 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">1</span>
+            Definitions
+          </h2>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span><strong class="text-[#0F172A]">"Microlent"</strong> refers to the company headquartered in Jodhpur, Rajasthan, offering IT-based solutions.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span><strong class="text-[#0F172A]">"Services"</strong> include all development, consulting, and digital marketing services provided by Microlent.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span><strong class="text-[#0F172A]">"User/Client"</strong> refers to any individual or business entity engaging with Microlent.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">2</span>
+            Acceptance of Terms
+          </h2>
+          <p class="text-[15px] text-[#475569] mb-3">By using Microlent's services, you confirm that:</p>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>You are at least 18 years old.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>You are authorized to represent your company or business (if applicable).</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>All information provided to us is accurate and up to date.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">3</span>
+            Scope of Services
+          </h2>
+          <p class="text-[15px] text-[#475569] mb-3">Microlent offers a variety of IT solutions, including but not limited to:</p>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed mb-4">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Website Development</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Android and iOS App Development</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>SaaS Development</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Digital Marketing and SEO Services</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Customized IT Consulting</span></li>
+          </ul>
+          <p class="text-[15px] text-[#475569]">The scope of work for each project will be outlined in a formal agreement before project initiation.</p>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">4</span>
+            Payment Terms
+          </h2>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Payment schedules will be specified in the service agreement.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Invoices must be paid on or before the due date mentioned.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Refunds (if applicable) are subject to the terms outlined in the service agreement.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Late payments may incur additional charges or suspension of services.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">5</span>
+            Intellectual Property
+          </h2>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>All work delivered by Microlent remains the intellectual property of the company until full payment is received.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Source code, designs, and digital assets transferred to the client will be clearly outlined in the agreement.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Unauthorized use of Microlent's proprietary materials is prohibited.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">6</span>
+            Confidentiality
+          </h2>
+          <p class="text-[15px] text-[#475569] mb-3">Microlent respects the confidentiality of your information. We will ensure:</p>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>All client data, project details, and sensitive information remain secure.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Non-disclosure agreements (NDAs) can be signed upon request.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">7</span>
+            Retention of Data
+          </h2>
+          <p class="text-[15px] text-[#475569]">We retain personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law.</p>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">8</span>
+            Limitation of Liability
+          </h2>
+          <p class="text-[15px] text-[#475569] mb-3">Microlent will not be held responsible for:</p>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Any indirect, incidental, or consequential damages arising from the use of our services.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Data loss or security breaches caused by third-party systems or improper client configurations.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">9</span>
+            User Responsibilities
+          </h2>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Ensure all project requirements are communicated clearly and on time.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Provide necessary access to systems or credentials as required.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Avoid engaging in illegal activities using Microlent-developed platforms or services.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">10</span>
+            Termination
+          </h2>
+          <p class="text-[15px] text-[#475569] mb-3">Microlent reserves the right to terminate or suspend services if:</p>
+          <ul class="flex flex-col gap-2 text-[15px] text-[#475569] leading-relaxed">
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Terms are violated.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Payments are delayed or not received.</span></li>
+            <li class="flex items-start gap-2"><i class="fas fa-minus text-[#0E78E9] text-[10px] mt-1.5 flex-shrink-0"></i><span>Illegal or unethical activities are detected.</span></li>
+          </ul>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="border-b border-[#F1F5F9] pb-8">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">11</span>
+            Amendments to Terms
+          </h2>
+          <p class="text-[15px] text-[#475569]">Microlent reserves the right to modify these Terms at any time. Users will be notified of significant changes. Continued use of our services constitutes acceptance of updated Terms.</p>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="pb-4">
+          <h2 class="text-[20px] font-bold text-[#0F172A] mb-4 flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-bold flex items-center justify-center flex-shrink-0">12</span>
+            Governing Law
+          </h2>
+          <p class="text-[15px] text-[#475569]">These Terms are governed by and construed in accordance with the laws of India. Any disputes will be subject to the jurisdiction of courts in Jodhpur, Rajasthan.</p>
+        </div>
+
+      </div>
+
+      <!-- Contact CTA -->
+      <div class="mt-12 bg-[#EEF6FF] border border-[#BFDBFE] rounded-[20px] p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-[18px] font-bold text-[#0F172A] mb-1">Have questions about our Terms?</h3>
+          <p class="text-[14px] text-[#64748B]">Feel free to reach out — we're happy to clarify anything.</p>
+        </div>
+        <a href="contact.html" class="flex-shrink-0 inline-flex items-center gap-2 bg-[#0E78E9] text-white text-[14px] font-semibold px-6 py-3 rounded-[20px] hover:bg-[#0a5fc7] transition-all">
+          Contact Us <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span></h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div><div class="text-body-sm text-[#64748B]">admin@microlent.com</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div><div class="text-body-sm text-[#64748B]">+91 97999 41913</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div><div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB-6 RIICO Cyber Park, near Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</div></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] font-medium bg-white px-5 border border-[#E2E8F0] py-2 rounded-full hover:bg-[#60A5FA] hover:text-white transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">&copy; 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

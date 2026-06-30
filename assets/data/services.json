@@ -1,0 +1,1681 @@
+[
+  {
+    "slug": "web-application-development",
+    "title": "Web Application Development",
+    "badge": "Web Development",
+    "icon": "fas fa-globe",
+    "intro_heading": "Scalable Web Apps,<br/><span class=\"text-[#0E78E9]\">Built to Perform</span>",
+    "intro_desc": "Microlent's expert web application development services are designed to unlock your business's full potential. Our experienced programmers focus on crafting personalized websites that not only enhance the user experience and increase operational efficiency but also ensure your company stays ahead in the digital era.",
+    "tech_desc": "We use a modern, proven technology stack to build fast, secure, and scalable web applications tailored to your business needs.",
+    "offerings": [
+      {
+        "icon": "fas fa-building",
+        "title": "World-Class Web Application Development Solutions",
+        "desc": "Our custom enterprise web application development solutions, such as CRM, asset management, ERP, document management, inventory management, etc., can help automate and standardize a host of business processes and synchronize data across the organization. With support for multiple simultaneous users and seamless availability, our enterprise solutions empower your business processes, ensuring streamlined operations and revolutionary advancements."
+      },
+      {
+        "icon": "fas fa-layer-group",
+        "title": "Custom Web Portals and Applications",
+        "desc": "At Microlent, we offer web application development services that range from the creation of high-performing custom web portals designed to suit your business needs to improving its level of operation. They facilitate smooth interactions and serve as a strong foundation for supporting intricate processes. Our models are meant to drive value by enhancing the user experience as well as bring efficiency to businesses, making them flexible enough to be used as customer support systems or content management solutions."
+      },
+      {
+        "icon": "fas fa-store",
+        "title": "E-commerce and Web Application Development Solutions",
+        "desc": "Do you plan to have your own e-business portal? Microlent will take care of everything, from the development and deployment of your site to comprehensive testing, and will also provide extensive training packs. We are always there with you so that you can make maximum use of our offerings throughout a trouble-free online business venture."
+      },
+      {
+        "icon": "fas fa-industry",
+        "title": "Industry-Specific Web Application Development Solutions",
+        "desc": "Microlent has been partnering with companies of various scales and sectors (e.g., healthcare, manufacturing, banking, telecommunications, retail, insurance, marketing, public services, and professional services) over the years. We have expertise in different industries' requirements, and we use our wide knowledge to provide efficient web applications that will help your company expand and thrive according to its individual goals."
+      }
+    ],
+    "tech": ["React", "Angular", "Vue.js", "Next.js", "Node.js", "Laravel", "Python", "Django", "MongoDB", "PostgreSQL", "MySQL", "AWS", "Docker", "TypeScript", "Redis"],
+    "why": [
+      {
+        "title": "Customized Solutions for Your Business",
+        "desc": "We work with our clients to build web applications that are fully dedicated to their needs and expectations. It will be unique Web Application Development, that focuses on the specific purposes of your business, enhancing efficiency, performance and overall business success."
+      },
+      {
+        "title": "Enhanced Data Protection",
+        "desc": "Custom web application development offers the highest level of safety, especially when compared to off-the-shelf solutions. The existing solutions are open to the market and thus more susceptible to cyberattacks. It is easier for attackers to discover weak points in such off-the-shelf solutions. If you are concerned about data safety, a custom web application development service like ours is what you need."
+      },
+      {
+        "title": "Instant Scalability",
+        "desc": "With the rising adoption of cloud computing, many of the web apps now come with cloud compatibility. But while such solutions might align with some of your requirements, they are not as scalable as a custom web app. A custom web application development solution is designed as per the current and future needs of a specific business, making it a smarter investment to future-proof your operations."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "subtitle": "Research Stage",
+        "desc": "In the research stage, the focus is on gathering inputs to define project goals and understand user needs. This phase involves interviews, surveys, competitive research, and exploration of technologies."
+      },
+      {
+        "step": "02",
+        "title": "Define",
+        "subtitle": "Problem Identification Stage",
+        "desc": "In the problem identification stage, the primary focus is on understanding the challenges and issues faced by users or stakeholders. This involves gathering feedback, conducting surveys, and analyzing data to pinpoint specific pain points that the software aims to address."
+      },
+      {
+        "step": "03",
+        "title": "Design",
+        "subtitle": "Problem Solving Stage",
+        "desc": "In the problem-solving stage, the focus shifts towards devising solutions to the identified challenges. This involves brainstorming, designing prototypes, and evaluating potential approaches to address the problems effectively."
+      },
+      {
+        "step": "04",
+        "title": "Deliver",
+        "subtitle": "Delivery Stage",
+        "desc": "In the delivery stage, the focus is on completing and deploying the developed solutions to end-users. This phase involves coding, testing, and refining the software to ensure it meets quality standards before release."
+      }
+    ],
+    "faq": [
+      { "q": "How long does it take to build a web application?", "a": "Timeline depends on complexity. A simple web app takes 6–10 weeks; a full enterprise platform can take 4–6 months. We provide a detailed estimate after the discovery phase." },
+      { "q": "Do you provide post-launch support?", "a": "Yes. We offer monthly maintenance contracts covering bug fixes, security patches, performance monitoring, and feature updates." },
+      { "q": "Can you work with our existing codebase?", "a": "Absolutely. Our team is experienced in code audits, legacy modernization, and extending existing applications with new features." },
+      { "q": "What technologies do you use?", "a": "We work with React, Angular, Vue.js, Next.js on the frontend and Node.js, Laravel, Python/Django on the backend — chosen based on your project's needs." }
+    ]
+  },
+  {
+    "slug": "mobile-app-development",
+    "title": "Mobile App Development",
+    "badge": "Mobile Development",
+    "icon": "fas fa-mobile-alt",
+    "intro_heading": "Mobile Apps That<br/><span class=\"text-[#0E78E9]\">Drive Engagement</span>",
+    "intro_desc": "Microlent builds high-performance iOS and Android applications that deliver seamless user experiences. From concept to launch, we craft mobile solutions that help businesses connect with their customers anywhere, anytime.",
+    "tech_desc": "We use cutting-edge mobile technologies to build apps that are fast, secure, and scalable across all platforms.",
+    "offerings": [
+      {
+        "icon": "fas fa-apple-alt",
+        "title": "iOS App Development",
+        "desc": "We build native iOS applications using Swift and Objective-C, optimized for iPhone and iPad. Our apps are designed to leverage the full capabilities of Apple's ecosystem, ensuring smooth performance and intuitive UX."
+      },
+      {
+        "icon": "fab fa-android",
+        "title": "Android App Development",
+        "desc": "Our Android development team builds robust, scalable apps using Kotlin and Java for the full range of Android devices. We follow Google's best practices to ensure quality, security, and performance."
+      },
+      {
+        "icon": "fas fa-layer-group",
+        "title": "Cross-Platform Development",
+        "desc": "Using React Native and Flutter, we build a single codebase that runs natively on both iOS and Android — reducing development time and cost without compromising on user experience or performance."
+      },
+      {
+        "icon": "fas fa-shopping-cart",
+        "title": "eCommerce Mobile Apps",
+        "desc": "We build feature-rich mobile shopping apps with secure payment gateways, real-time order tracking, push notifications, and personalized product recommendations to boost conversions and customer loyalty."
+      },
+      {
+        "icon": "fas fa-cogs",
+        "title": "Enterprise Mobile Solutions",
+        "desc": "Our enterprise mobility solutions help businesses streamline internal processes, improve team collaboration, and increase productivity through custom mobile apps for field teams, operations, and management."
+      },
+      {
+        "icon": "fas fa-headset",
+        "title": "Maintenance & Support",
+        "desc": "We provide ongoing maintenance, performance monitoring, OS compatibility updates, and feature enhancements to keep your mobile application running smoothly after launch."
+      }
+    ],
+    "tech": ["Swift", "Kotlin", "React Native", "Flutter", "Dart", "Java", "Firebase", "AWS Amplify", "GraphQL", "REST APIs", "SQLite", "Xcode", "Android Studio"],
+    "faq": [
+      { "q": "Do you build for both iOS and Android?", "a": "Yes. We develop native apps for both platforms as well as cross-platform solutions using React Native and Flutter." },
+      { "q": "How long does mobile app development take?", "a": "A standard app typically takes 3–5 months. Complex apps with custom backends may take 6–9 months." },
+      { "q": "Will you publish the app to App Store and Play Store?", "a": "Yes, we handle the full submission process including store listing setup, screenshots, and compliance checks." },
+      { "q": "Do you offer post-launch support?", "a": "Absolutely. We provide maintenance packages that include bug fixes, OS updates, and feature additions." }
+    ]
+  },
+  {
+    "slug": "uiux-design",
+    "title": "UI/UX Designing",
+    "badge": "Design",
+    "icon": "fas fa-pencil-ruler",
+    "intro_heading": "Designs That Delight<br/><span class=\"text-[#0E78E9]\">Users & Drive Results</span>",
+    "intro_desc": "Microlent's design team creates intuitive, visually compelling digital experiences that users love. We combine user research, data-driven insights, and creative design to build interfaces that convert visitors into loyal customers.",
+    "tech_desc": "We use industry-leading design and prototyping tools to deliver pixel-perfect, research-backed UI/UX solutions.",
+    "offerings": [
+      {
+        "icon": "fas fa-search",
+        "title": "User Research & Discovery",
+        "desc": "We start by deeply understanding your users through interviews, surveys, usability testing, and analytics. These insights guide every design decision, ensuring your product solves real problems effectively."
+      },
+      {
+        "icon": "fas fa-sitemap",
+        "title": "Information Architecture",
+        "desc": "We structure content and navigation logically so users can find what they need effortlessly. Well-planned IA reduces cognitive load and is the backbone of every great user experience."
+      },
+      {
+        "icon": "fas fa-draw-polygon",
+        "title": "Wireframing & Prototyping",
+        "desc": "From low-fidelity wireframes to high-fidelity interactive prototypes, we validate design concepts early — saving development time and cost by catching usability issues before a single line of code is written."
+      },
+      {
+        "icon": "fas fa-palette",
+        "title": "Visual & Brand Design",
+        "desc": "Our designers craft visually stunning interfaces that align with your brand identity. Typography, color, spacing, and imagery are carefully chosen to communicate your brand's values and build trust."
+      },
+      {
+        "icon": "fas fa-universal-access",
+        "title": "Accessibility & Responsive Design",
+        "desc": "We design for all users across all devices — ensuring WCAG accessibility standards are met and experiences are fully responsive on mobile, tablet, and desktop screens."
+      },
+      {
+        "icon": "fas fa-vial",
+        "title": "Usability Testing & Iteration",
+        "desc": "We test designs with real users, collect feedback, and iterate rapidly. This continuous improvement loop ensures the final product is not just beautiful but genuinely easy to use."
+      }
+    ],
+    "tech": ["Figma", "Adobe XD", "Sketch", "InVision", "Framer", "Zeplin", "Miro", "Hotjar", "Maze", "Lottie", "Principle", "Webflow"],
+    "faq": [
+      { "q": "What is your design process?", "a": "We follow a 5-step process: Research → Define → Design → Test → Iterate. We keep you involved at every stage with regular reviews and feedback sessions." },
+      { "q": "Do you design for mobile as well?", "a": "Yes. All our designs are mobile-first and fully responsive across all screen sizes and devices." },
+      { "q": "Can you redesign our existing product?", "a": "Absolutely. We conduct a UX audit of your current product, identify pain points, and redesign for improved usability and conversion." },
+      { "q": "Do you provide design system / style guides?", "a": "Yes. We deliver complete design systems with component libraries, color tokens, typography scales, and usage guidelines." }
+    ]
+  },
+  {
+    "slug": "ai-ml-solutions",
+    "title": "AI & ML Solutions",
+    "badge": "Artificial Intelligence",
+    "icon": "fas fa-brain",
+    "intro_heading": "Intelligent Solutions<br/><span class=\"text-[#0E78E9]\">Powered by AI & ML</span>",
+    "intro_desc": "Microlent helps businesses harness the power of artificial intelligence and machine learning to automate processes, uncover insights, and build smarter products. From predictive analytics to NLP and computer vision, we bring AI innovation to your doorstep.",
+    "tech_desc": "We work with the most advanced AI/ML frameworks and cloud platforms to build production-grade intelligent systems.",
+    "offerings": [
+      {
+        "icon": "fas fa-chart-bar",
+        "title": "Predictive Analytics",
+        "desc": "We build ML models that analyze historical data to predict future trends, customer behavior, demand patterns, and business outcomes — giving you a competitive edge through data-driven decision making."
+      },
+      {
+        "icon": "fas fa-comments",
+        "title": "Natural Language Processing",
+        "desc": "From chatbots and sentiment analysis to document classification and intelligent search, our NLP solutions help you extract meaningful insights from unstructured text data at scale."
+      },
+      {
+        "icon": "fas fa-eye",
+        "title": "Computer Vision",
+        "desc": "We develop image recognition, object detection, and video analysis solutions for industries like manufacturing, healthcare, retail, and security — automating visual inspection and analysis tasks."
+      },
+      {
+        "icon": "fas fa-robot",
+        "title": "AI-Powered Automation",
+        "desc": "We integrate AI into your business workflows to automate repetitive tasks, reduce errors, and free up your team for high-value work. From intelligent document processing to decision automation, we make your operations smarter."
+      },
+      {
+        "icon": "fas fa-database",
+        "title": "Data Engineering & Pipelines",
+        "desc": "Great AI starts with great data. We design and build scalable data pipelines, warehouses, and lakes that ensure your data is clean, accessible, and ready for ML model training and inference."
+      },
+      {
+        "icon": "fas fa-flask",
+        "title": "Custom ML Model Development",
+        "desc": "Our data scientists design, train, and deploy custom machine learning models tailored to your specific business problem — from recommendation engines and fraud detection to demand forecasting and churn prediction."
+      }
+    ],
+    "tech": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "OpenAI API", "LangChain", "Hugging Face", "Apache Spark", "AWS SageMaker", "Google Vertex AI", "FastAPI", "Kubernetes"],
+    "faq": [
+      { "q": "Do we need a large dataset to get started with AI?", "a": "Not necessarily. We can work with smaller datasets using transfer learning and data augmentation techniques, and help you define a data collection strategy." },
+      { "q": "How long does an AI/ML project take?", "a": "A typical ML project (proof of concept to production) takes 3–6 months depending on data availability and complexity." },
+      { "q": "Can you integrate AI into our existing software?", "a": "Yes. We expose ML models via APIs and integrate them seamlessly into your existing applications and workflows." },
+      { "q": "How do you ensure model accuracy and reliability?", "a": "We use rigorous training, validation, and testing processes, including cross-validation, A/B testing, and continuous monitoring in production." }
+    ]
+  },
+  {
+    "slug": "software-development",
+    "title": "Software Development",
+    "badge": "Software Engineering",
+    "icon": "fas fa-laptop-code",
+    "intro_heading": "Custom Software,<br/><span class=\"text-[#0E78E9]\">Built to Last</span>",
+    "intro_desc": "Microlent develops robust, scalable custom software solutions that solve complex business challenges. From initial concept and architecture to deployment and support, we deliver high-quality software that drives operational efficiency and business growth.",
+    "tech_desc": "We use modern software engineering practices and a flexible technology stack to deliver reliable, maintainable solutions.",
+    "offerings": [
+      {
+        "icon": "fas fa-cogs",
+        "title": "Custom Software Development",
+        "desc": "We design and build bespoke software solutions tailored to your unique business processes — replacing inefficient spreadsheets, legacy systems, and off-the-shelf tools that no longer meet your needs."
+      },
+      {
+        "icon": "fas fa-sync-alt",
+        "title": "Legacy System Modernization",
+        "desc": "We help businesses modernize outdated software by migrating to modern architectures, improving performance, adding new features, and reducing technical debt — without disrupting day-to-day operations."
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "Cloud-Native Development",
+        "desc": "We build cloud-native applications on AWS, Azure, and GCP using microservices, serverless functions, and containerized deployments that scale with your business demands and minimize infrastructure costs."
+      },
+      {
+        "icon": "fas fa-exchange-alt",
+        "title": "System Integration",
+        "desc": "We connect disparate software systems — ERPs, CRMs, third-party APIs, data warehouses — into a unified ecosystem, eliminating data silos and enabling seamless information flow across your organization."
+      },
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Security-First Development",
+        "desc": "Security is built into every layer of our development process. We follow OWASP guidelines, conduct regular security audits, and implement encryption, access controls, and vulnerability scanning from day one."
+      },
+      {
+        "icon": "fas fa-tools",
+        "title": "Maintenance & Support",
+        "desc": "We provide ongoing software maintenance, performance tuning, security patches, and feature development to ensure your software continues to deliver value long after the initial launch."
+      }
+    ],
+    "tech": ["Java", "C#", ".NET", "Python", "Node.js", "Go", "PostgreSQL", "MySQL", "Redis", "Docker", "Kubernetes", "AWS", "Azure", "CI/CD", "Git"],
+    "faq": [
+      { "q": "How do you handle project requirements?", "a": "We begin with a detailed discovery phase — workshops, interviews, and documentation — to fully understand your needs before writing any code." },
+      { "q": "Do you follow agile methodology?", "a": "Yes. We work in 2-week sprints with regular demos, retrospectives, and ongoing collaboration to ensure the product evolves with your feedback." },
+      { "q": "What happens after the software is delivered?", "a": "We provide a warranty period followed by flexible maintenance contracts for bug fixes, updates, and new feature development." },
+      { "q": "Can you help with software architecture planning?", "a": "Absolutely. Our architects work with you to design scalable, maintainable systems before development begins." }
+    ]
+  },
+  {
+    "slug": "digital-marketing",
+    "title": "Digital Marketing",
+    "badge": "Marketing",
+    "icon": "fas fa-bullhorn",
+    "intro_heading": "Marketing That<br/><span class=\"text-[#0E78E9]\">Grows Your Business</span>",
+    "intro_desc": "Microlent's digital marketing team helps businesses build their online presence, attract qualified traffic, and convert visitors into customers. Our data-driven strategies are designed to deliver measurable ROI across all digital channels.",
+    "tech_desc": "We leverage the best marketing platforms and analytics tools to plan, execute, and optimize campaigns that drive real results.",
+    "offerings": [
+      {
+        "icon": "fas fa-search",
+        "title": "Search Engine Optimization",
+        "desc": "We improve your website's organic visibility through technical SEO, on-page optimization, keyword research, content strategy, and high-quality link building — driving sustainable, long-term traffic growth."
+      },
+      {
+        "icon": "fas fa-ad",
+        "title": "Pay-Per-Click Advertising",
+        "desc": "Our PPC specialists manage Google Ads and Bing Ads campaigns that maximize ROI. From keyword selection and ad copywriting to bid management and conversion tracking, we ensure every rupee works harder."
+      },
+      {
+        "icon": "fab fa-instagram",
+        "title": "Social Media Marketing",
+        "desc": "We create and manage strategic social media campaigns across Facebook, Instagram, LinkedIn, and Twitter that build brand awareness, engage your audience, and drive measurable business outcomes."
+      },
+      {
+        "icon": "fas fa-envelope-open-text",
+        "title": "Email Marketing",
+        "desc": "From drip campaigns and newsletters to re-engagement sequences and transactional emails, we design and automate email marketing workflows that nurture leads and retain customers effectively."
+      },
+      {
+        "icon": "fas fa-pen-nib",
+        "title": "Content Marketing",
+        "desc": "We create SEO-optimized blogs, case studies, whitepapers, videos, and infographics that establish your brand as an authority in your industry and consistently attract and convert your target audience."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "Analytics & Reporting",
+        "desc": "We set up comprehensive analytics tracking and provide clear, actionable monthly reports on key metrics — traffic, conversions, ROAS, CTR — so you always know exactly what's working and where to invest next."
+      }
+    ],
+    "tech": ["Google Analytics 4", "Google Ads", "Meta Ads", "SEMrush", "Ahrefs", "HubSpot", "Mailchimp", "Klaviyo", "Hotjar", "Search Console", "Google Tag Manager", "Looker Studio"],
+    "faq": [
+      { "q": "How long before we see results from SEO?", "a": "SEO is a long-term strategy. You can expect to see meaningful results in 3–6 months, with significant growth in 6–12 months." },
+      { "q": "What is your minimum budget for PPC campaigns?", "a": "We recommend a minimum ad spend of ₹30,000/month for effective PPC campaigns. Our management fee is separate." },
+      { "q": "Do you provide monthly reports?", "a": "Yes. Every month you receive a detailed report covering all KPIs, campaign performance, and our recommendations for the next month." },
+      { "q": "Can you manage all our digital marketing channels?", "a": "Absolutely. We offer integrated digital marketing packages covering SEO, PPC, social media, email, and content — coordinated under one strategy." }
+    ]
+  },
+  {
+    "slug": "ai-chat-bot-development-services",
+    "title": "AI Chat Bot Development",
+    "badge": "AI Chatbot",
+    "icon": "fas fa-comment-dots",
+    "intro_heading": "Smart Chatbots That<br/><span class=\"text-[#0E78E9]\">Engage & Convert</span>",
+    "intro_desc": "You can create an effective and engaging AI chatbot tailored to your business needs. Microlent builds intelligent chatbots powered by the latest AI technologies that automate customer support, generate leads, and deliver personalized experiences 24/7.",
+    "tech_desc": "We build AI chatbots using the most advanced NLP frameworks and integration platforms to deliver human-like conversational experiences.",
+    "offerings": [
+      {
+        "icon": "fas fa-headset",
+        "title": "Customer Support Chatbots",
+        "desc": "We develop AI-powered support bots that handle FAQs, troubleshoot issues, and escalate complex queries to human agents — reducing support costs while improving response time and customer satisfaction."
+      },
+      {
+        "icon": "fas fa-funnel-dollar",
+        "title": "Lead Generation Chatbots",
+        "desc": "Our lead-gen bots engage website visitors in real time, qualify prospects through dynamic conversations, and capture contact information — automating the top of your sales funnel around the clock."
+      },
+      {
+        "icon": "fas fa-shopping-bag",
+        "title": "eCommerce Chatbots",
+        "desc": "We build product recommendation bots, order tracking assistants, and cart recovery bots that enhance the shopping experience, reduce abandonment, and boost revenue for your online store."
+      },
+      {
+        "icon": "fas fa-robot",
+        "title": "Custom AI Conversational Agents",
+        "desc": "Beyond standard bots, we build fully custom conversational AI agents trained on your business data — capable of multi-turn dialogue, contextual understanding, and seamless CRM integration."
+      },
+      {
+        "icon": "fab fa-whatsapp",
+        "title": "Omnichannel Bot Deployment",
+        "desc": "We deploy your chatbot across all major channels — website, WhatsApp, Facebook Messenger, Slack, and mobile apps — ensuring a consistent and connected experience wherever your customers are."
+      },
+      {
+        "icon": "fas fa-chart-pie",
+        "title": "Analytics & Conversation Insights",
+        "desc": "We set up dashboards that track bot performance, user drop-off points, satisfaction scores, and resolution rates — giving you the data to continuously improve your chatbot's effectiveness."
+      }
+    ],
+    "tech": ["OpenAI GPT", "Dialogflow", "Rasa", "LangChain", "Botpress", "Twilio", "WhatsApp Business API", "Node.js", "Python", "FastAPI", "MongoDB", "WebSockets"],
+    "why": [
+      {
+        "title": "Always-On Customer Service",
+        "desc": "Our AI chatbots are available 24/7, handling thousands of simultaneous conversations without any increase in cost. Your customers get instant answers at any hour, dramatically improving satisfaction and loyalty."
+      },
+      {
+        "title": "Trained on Your Business Data",
+        "desc": "We train and fine-tune each chatbot on your specific products, services, FAQs, and brand voice — ensuring responses are accurate, relevant, and aligned with your business goals."
+      },
+      {
+        "title": "Seamless Human Handoff",
+        "desc": "Our bots intelligently detect when a conversation needs human attention and hand off to a live agent with full context — so customers never have to repeat themselves and agents can focus on complex issues."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "subtitle": "Requirements & Use Cases",
+        "desc": "We analyze your business processes, customer journey, and support workflows to define the chatbot's scope, conversation flows, and success metrics."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "subtitle": "Conversation Flow Design",
+        "desc": "We design conversation trees, fallback strategies, and personality guidelines that align with your brand — creating a chatbot experience users find natural and helpful."
+      },
+      {
+        "step": "03",
+        "title": "Develop",
+        "subtitle": "Build & Train",
+        "desc": "We build and train the bot using NLP models and your business data, integrating it with your CRM, helpdesk, or database for real-time information access."
+      },
+      {
+        "step": "04",
+        "title": "Deploy",
+        "subtitle": "Launch & Optimize",
+        "desc": "We deploy the chatbot across your chosen channels, monitor real conversations, and continuously optimize responses based on user feedback and analytics."
+      }
+    ],
+    "faq": [
+      { "q": "Can the chatbot understand multiple languages?", "a": "Yes. We can build multilingual chatbots supporting English, Hindi, and other languages based on your customer base." },
+      { "q": "How long does it take to build a chatbot?", "a": "A standard chatbot takes 4–8 weeks. Complex AI agents with custom training and multiple integrations may take 3–4 months." },
+      { "q": "Can the bot integrate with our CRM or helpdesk?", "a": "Absolutely. We integrate with Salesforce, HubSpot, Zoho, Freshdesk, Zendesk, and other platforms via APIs." },
+      { "q": "What if the bot doesn't know the answer?", "a": "We build robust fallback flows that gracefully handle unknown queries and offer options like human handoff, search, or callback requests." }
+    ]
+  },
+  {
+    "slug": "shopify-services",
+    "title": "Shopify Services",
+    "badge": "eCommerce",
+    "icon": "fab fa-shopify",
+    "intro_heading": "Powerful Shopify Stores<br/><span class=\"text-[#0E78E9]\">Built to Sell</span>",
+    "intro_desc": "Are you looking for an e-commerce solution that is easy to set up and use, yet powerful enough to handle the demands of your growing business? Microlent's Shopify experts build and optimize online stores that drive conversions, scale effortlessly, and deliver exceptional shopping experiences.",
+    "tech_desc": "We use the full Shopify ecosystem — from Shopify Plus to custom apps and integrations — to build stores that perform.",
+    "offerings": [
+      {
+        "icon": "fas fa-store",
+        "title": "Custom Shopify Store Development",
+        "desc": "We build tailored Shopify stores from the ground up — custom themes, unique layouts, and optimized UX — designed to reflect your brand identity and convert visitors into buyers."
+      },
+      {
+        "icon": "fas fa-paint-brush",
+        "title": "Theme Customization",
+        "desc": "We customize existing Shopify themes or build bespoke themes using Liquid, HTML, CSS, and JavaScript — creating a unique storefront that stands out from competitors and feels native to your brand."
+      },
+      {
+        "icon": "fas fa-puzzle-piece",
+        "title": "Shopify App Development",
+        "desc": "We build custom Shopify apps and private plugins to add features your store needs — from custom checkout logic and loyalty programs to advanced inventory management and B2B portals."
+      },
+      {
+        "icon": "fas fa-exchange-alt",
+        "title": "Platform Migration to Shopify",
+        "desc": "We migrate your existing store from WooCommerce, Magento, or any other platform to Shopify with zero data loss — preserving products, orders, customers, and SEO rankings throughout the transition."
+      },
+      {
+        "icon": "fas fa-link",
+        "title": "Third-Party Integrations",
+        "desc": "We connect your Shopify store with ERP systems, payment gateways, shipping providers, email marketing tools, and CRMs — creating a unified, automated commerce ecosystem."
+      },
+      {
+        "icon": "fas fa-tachometer-alt",
+        "title": "Shopify Optimization & Support",
+        "desc": "We audit and optimize your store's speed, conversion rate, and SEO — and provide ongoing support to keep your store updated, secure, and performing at its best."
+      }
+    ],
+    "tech": ["Shopify", "Shopify Plus", "Liquid", "Hydrogen", "React", "Node.js", "GraphQL", "REST APIs", "Shopify CLI", "Klaviyo", "Stripe", "PayPal", "ShipStation"],
+    "why": [
+      {
+        "title": "Shopify-Certified Experts",
+        "desc": "Our Shopify developers have hands-on experience across dozens of successful store launches. We know the platform's strengths, limitations, and best practices — ensuring your project is done right the first time."
+      },
+      {
+        "title": "Conversion-Focused Design",
+        "desc": "We don't just build beautiful stores — we build stores that sell. Every layout decision, button placement, and checkout flow is designed with conversion optimization in mind."
+      },
+      {
+        "title": "End-to-End Service",
+        "desc": "From initial design and development to payment setup, shipping configuration, and post-launch support — we handle the complete store setup so you can focus on running your business."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "subtitle": "Business & Audience Analysis",
+        "desc": "We understand your products, target audience, competitors, and business goals to define the ideal store structure, features, and design direction."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "subtitle": "UX & Visual Design",
+        "desc": "We create wireframes and high-fidelity mockups for your store's key pages — ensuring the design is both visually appealing and optimized for conversion before development begins."
+      },
+      {
+        "step": "03",
+        "title": "Develop",
+        "subtitle": "Build & Integrate",
+        "desc": "We build your Shopify store, configure apps, integrate payment gateways and shipping solutions, and ensure everything works seamlessly across all devices."
+      },
+      {
+        "step": "04",
+        "title": "Launch",
+        "subtitle": "Testing & Go Live",
+        "desc": "We conduct thorough QA testing across browsers and devices, then launch your store with full SEO setup, analytics tracking, and a post-launch support window."
+      }
+    ],
+    "faq": [
+      { "q": "Which Shopify plan do I need?", "a": "It depends on your order volume and features. We help you choose between Basic, Shopify, Advanced, and Shopify Plus based on your business size and requirements." },
+      { "q": "Can you migrate my existing store to Shopify?", "a": "Yes. We handle full migrations from WooCommerce, Magento, BigCommerce, and other platforms — including product data, customer records, and order history." },
+      { "q": "Do you offer SEO setup with the store?", "a": "Yes. Every store we build includes on-page SEO setup — meta tags, structured data, sitemap, robots.txt, and speed optimization." },
+      { "q": "Can you add custom features not available in Shopify apps?", "a": "Absolutely. We build custom Shopify apps and private plugins to add any feature your store needs that isn't available out of the box." }
+    ]
+  },
+  {
+    "slug": "business-solutions",
+    "title": "Business Solutions",
+    "badge": "Business Technology",
+    "icon": "fas fa-briefcase",
+    "intro_heading": "Digital Solutions<br/><span class=\"text-[#0E78E9]\">Built for Your Business</span>",
+    "intro_desc": "With the business landscape becoming more competitive and challenging than ever, digital solutions need to exclusively focus on the requirements of your organization. Microlent delivers customized business solutions that streamline operations, reduce costs, and accelerate growth.",
+    "tech_desc": "We leverage modern business technology platforms to build solutions that transform how your organization operates.",
+    "offerings": [
+      {
+        "icon": "fas fa-sitemap",
+        "title": "ERP Solutions",
+        "desc": "We implement and customize enterprise resource planning systems that unify your finance, HR, inventory, procurement, and operations into a single platform — giving you real-time visibility across your entire business."
+      },
+      {
+        "icon": "fas fa-users",
+        "title": "CRM Solutions",
+        "desc": "We build and configure customer relationship management systems that help your sales and support teams manage leads, track interactions, and close more deals with less effort."
+      },
+      {
+        "icon": "fas fa-tasks",
+        "title": "Business Process Automation",
+        "desc": "We identify manual, repetitive processes in your organization and replace them with automated digital workflows — reducing errors, cutting processing time, and freeing your team for strategic work."
+      },
+      {
+        "icon": "fas fa-chart-bar",
+        "title": "Business Intelligence & Reporting",
+        "desc": "We build custom dashboards and BI solutions that consolidate data from multiple sources — giving leadership real-time insights to make faster, more confident business decisions."
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "Cloud Business Solutions",
+        "desc": "We help businesses migrate to the cloud and adopt SaaS platforms — improving collaboration, reducing IT costs, and enabling your team to work from anywhere without compromising security."
+      },
+      {
+        "icon": "fas fa-handshake",
+        "title": "Digital Transformation Consulting",
+        "desc": "We work as a strategic partner to assess your current technology landscape, identify gaps, and create a roadmap for digital transformation that aligns with your business goals and budget."
+      }
+    ],
+    "tech": ["SAP", "Salesforce", "Microsoft Dynamics", "Odoo", "HubSpot", "Power BI", "Tableau", "AWS", "Azure", "Google Workspace", "Zapier", "Monday.com"],
+    "why": [
+      {
+        "title": "Industry-Specific Expertise",
+        "desc": "We have delivered business solutions across manufacturing, retail, healthcare, finance, and professional services — bringing domain knowledge that ensures our solutions address your industry's unique challenges."
+      },
+      {
+        "title": "Tailored to Your Workflows",
+        "desc": "Unlike off-the-shelf software, our solutions are built around your actual business processes — not the other way around. We adapt technology to fit your organization, not force your team to adapt to technology."
+      },
+      {
+        "title": "Measurable ROI",
+        "desc": "Every business solution we deliver is designed with clear KPIs and ROI targets. We measure success by real business outcomes — cost savings, productivity gains, and revenue growth."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Assess",
+        "subtitle": "Business Analysis",
+        "desc": "We conduct a thorough analysis of your current processes, technology stack, pain points, and strategic goals to identify the highest-impact areas for digital investment."
+      },
+      {
+        "step": "02",
+        "title": "Plan",
+        "subtitle": "Solution Design",
+        "desc": "We design a tailored solution architecture and implementation roadmap — selecting the right platforms and customizations to meet your specific needs and budget."
+      },
+      {
+        "step": "03",
+        "title": "Build",
+        "subtitle": "Implementation & Integration",
+        "desc": "We implement, configure, and integrate the solution with your existing systems — with change management support to ensure smooth adoption across your team."
+      },
+      {
+        "step": "04",
+        "title": "Optimize",
+        "subtitle": "Monitor & Improve",
+        "desc": "Post-launch, we monitor performance against agreed KPIs, gather user feedback, and continuously optimize the solution to maximize business value."
+      }
+    ],
+    "faq": [
+      { "q": "How do you identify which digital solution we need?", "a": "We start with a business analysis workshop to map your current processes, identify pain points, and prioritize opportunities where technology can deliver the highest ROI." },
+      { "q": "Can you integrate with our existing systems?", "a": "Yes. We specialize in integrating new solutions with existing ERPs, CRMs, databases, and third-party tools to create a unified technology ecosystem." },
+      { "q": "How long does implementation take?", "a": "Simple automation projects take 4–8 weeks. Full ERP or CRM implementations typically run 3–6 months depending on complexity and organizational size." },
+      { "q": "Do you provide training for our team?", "a": "Absolutely. We include comprehensive user training, documentation, and a hypercare support period to ensure your team confidently adopts the new solution." }
+    ]
+  },
+  {
+    "slug": "software-architecture-designing-solutions",
+    "title": "Software Architecture Designing",
+    "badge": "Architecture",
+    "icon": "fas fa-drafting-compass",
+    "intro_heading": "Architecture That<br/><span class=\"text-[#0E78E9]\">Scales with You</span>",
+    "intro_desc": "Searching for a reputed systems architect? Microlent can help. Custom software solutions are only as good as their design. We provide expert software architecture services that lay a solid, scalable, and maintainable foundation for your most critical systems.",
+    "tech_desc": "We design architectures using proven patterns and modern cloud-native technologies that support long-term growth and maintainability.",
+    "offerings": [
+      {
+        "icon": "fas fa-project-diagram",
+        "title": "System Architecture Design",
+        "desc": "We design comprehensive system architectures that define how components interact, how data flows, and how the system scales — creating a blueprint that guides development teams and reduces technical risk."
+      },
+      {
+        "icon": "fas fa-cubes",
+        "title": "Microservices Architecture",
+        "desc": "We architect microservices-based systems that decompose monolithic applications into independent, deployable services — enabling faster development cycles, independent scaling, and improved fault isolation."
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "Cloud Architecture Design",
+        "desc": "We design cloud-native architectures on AWS, Azure, and GCP — leveraging managed services, auto-scaling, serverless functions, and multi-region deployments for maximum performance and reliability."
+      },
+      {
+        "icon": "fas fa-database",
+        "title": "Data Architecture & Modeling",
+        "desc": "We design data models, database schemas, and data flow architectures that ensure your application's data layer is efficient, consistent, and ready to support analytics and reporting at scale."
+      },
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Security Architecture",
+        "desc": "We integrate security into your architecture from day one — designing authentication, authorization, encryption, and network security layers that protect your application against modern threats."
+      },
+      {
+        "icon": "fas fa-file-alt",
+        "title": "Architecture Reviews & Audits",
+        "desc": "We audit existing system architectures to identify bottlenecks, single points of failure, scalability limits, and security vulnerabilities — providing a detailed report and improvement roadmap."
+      }
+    ],
+    "tech": ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "Terraform", "Apache Kafka", "Redis", "PostgreSQL", "MongoDB", "GraphQL", "gRPC", "Istio", "NGINX"],
+    "why": [
+      {
+        "title": "Foundation for Long-Term Success",
+        "desc": "A well-designed architecture prevents costly rework down the road. Our architects think beyond the immediate requirements to design systems that remain maintainable and extensible as your business evolves."
+      },
+      {
+        "title": "Proven Architectural Patterns",
+        "desc": "We apply battle-tested patterns — CQRS, Event Sourcing, Saga, Hexagonal Architecture — selecting the right approach for your use case rather than defaulting to the latest trend."
+      },
+      {
+        "title": "Collaborative & Documented",
+        "desc": "We work closely with your development team, producing clear architecture diagrams, ADRs (Architecture Decision Records), and technical documentation that keeps everyone aligned throughout the project."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "subtitle": "Requirements & Constraints",
+        "desc": "We gather functional requirements, non-functional requirements (performance, scalability, availability), technology constraints, and team capabilities to inform architectural decisions."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "subtitle": "Architecture Blueprint",
+        "desc": "We create detailed architecture diagrams, component definitions, data flow maps, and API contracts — providing a comprehensive blueprint before development begins."
+      },
+      {
+        "step": "03",
+        "title": "Validate",
+        "subtitle": "Review & Proof of Concept",
+        "desc": "We validate critical architecture decisions through proofs of concept, load testing estimates, and expert peer reviews — ensuring the design holds up under real-world conditions."
+      },
+      {
+        "step": "04",
+        "title": "Guide",
+        "subtitle": "Implementation Support",
+        "desc": "We work alongside your development team during implementation — reviewing code, answering architectural questions, and adapting the design as real-world constraints emerge."
+      }
+    ],
+    "faq": [
+      { "q": "Do we need a dedicated architect if we have senior developers?", "a": "Senior developers are great at building — architects specialize in system-wide design decisions that affect scalability, maintainability, and long-term cost. Both roles complement each other." },
+      { "q": "Can you audit our existing architecture?", "a": "Yes. We conduct architecture audits that identify technical debt, performance bottlenecks, security gaps, and scalability limits — with a prioritized improvement roadmap." },
+      { "q": "What deliverables do we receive?", "a": "You receive architecture diagrams (C4 model), API specifications, data models, ADRs, infrastructure diagrams, and a written technical specification document." },
+      { "q": "How involved will your architect be during development?", "a": "We offer flexible engagement models — from full-time embedded architect to part-time advisory. We adapt to your team's needs and project complexity." }
+    ]
+  },
+  {
+    "slug": "qa-and-testing-services",
+    "title": "QA and Testing Services",
+    "badge": "Quality Assurance",
+    "icon": "fas fa-vial",
+    "intro_heading": "Quality You Can<br/><span class=\"text-[#0E78E9]\">Always Trust</span>",
+    "intro_desc": "Microlent, with its reliable QA testing specialists, expertise, technologies, and processes, provides QA and software testing services that you can always trust. We ensure your software is bug-free, performant, and ready to deliver an exceptional user experience.",
+    "tech_desc": "We use industry-leading QA tools and frameworks to deliver comprehensive testing coverage across all layers of your application.",
+    "offerings": [
+      {
+        "icon": "fas fa-tasks",
+        "title": "Manual Testing",
+        "desc": "Our QA specialists conduct thorough exploratory, functional, and regression testing — uncovering defects that automated tools miss by applying human intuition and real-world usage scenarios."
+      },
+      {
+        "icon": "fas fa-robot",
+        "title": "Test Automation",
+        "desc": "We build robust automated test suites using Selenium, Cypress, Playwright, and Appium — enabling fast, reliable regression testing that integrates seamlessly into your CI/CD pipeline."
+      },
+      {
+        "icon": "fas fa-tachometer-alt",
+        "title": "Performance & Load Testing",
+        "desc": "We simulate real-world traffic loads using JMeter and k6 to identify performance bottlenecks, stress limits, and scalability issues before they impact your users in production."
+      },
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Security Testing",
+        "desc": "We conduct penetration testing, vulnerability assessments, and OWASP-aligned security reviews to identify and remediate security weaknesses in your application before attackers do."
+      },
+      {
+        "icon": "fas fa-mobile-alt",
+        "title": "Mobile App Testing",
+        "desc": "We test your iOS and Android apps across a wide range of real devices and screen sizes — validating functionality, performance, usability, and compatibility under diverse conditions."
+      },
+      {
+        "icon": "fas fa-check-double",
+        "title": "API Testing",
+        "desc": "We validate the correctness, reliability, and performance of your APIs using Postman, REST Assured, and automated contract testing — ensuring every endpoint behaves as expected."
+      }
+    ],
+    "tech": ["Selenium", "Cypress", "Playwright", "Appium", "JMeter", "k6", "Postman", "REST Assured", "Jest", "TestNG", "JIRA", "Allure Reports", "Jenkins", "GitHub Actions"],
+    "why": [
+      {
+        "title": "Shift-Left Quality Approach",
+        "desc": "We embed QA from the very beginning of your development cycle — catching defects early when they are cheapest to fix, rather than discovering critical bugs in production."
+      },
+      {
+        "title": "Comprehensive Test Coverage",
+        "desc": "We test across functional, performance, security, compatibility, and usability dimensions — ensuring no aspect of your software's quality is overlooked before release."
+      },
+      {
+        "title": "CI/CD Integrated Testing",
+        "desc": "Our automated test suites integrate directly into your CI/CD pipelines — providing immediate quality feedback on every code commit and preventing regressions from reaching production."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Plan",
+        "subtitle": "Test Strategy & Planning",
+        "desc": "We analyze requirements and define the test strategy — identifying scope, test types, tools, coverage targets, and entry/exit criteria for each phase of testing."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "subtitle": "Test Case Design",
+        "desc": "We design comprehensive test cases, test scripts, and automation frameworks — covering positive, negative, boundary, and edge case scenarios for complete coverage."
+      },
+      {
+        "step": "03",
+        "title": "Execute",
+        "subtitle": "Testing & Defect Reporting",
+        "desc": "We execute test cycles, log defects with detailed reproduction steps, track fixes, and perform regression testing to ensure issues are fully resolved."
+      },
+      {
+        "step": "04",
+        "title": "Report",
+        "subtitle": "Quality Sign-Off",
+        "desc": "We deliver a comprehensive test summary report with defect metrics, coverage data, and a clear quality sign-off — giving stakeholders confidence to release with certainty."
+      }
+    ],
+    "faq": [
+      { "q": "Do you offer QA as a standalone service?", "a": "Yes. We provide dedicated QA services for projects built by any team — you don't need to be a Microlent development client to engage our QA specialists." },
+      { "q": "How do you handle regression testing for frequent releases?", "a": "We build automated regression suites that run on every deployment, providing fast feedback and ensuring new releases don't break existing functionality." },
+      { "q": "Can you work with our existing project management tools?", "a": "Yes. We integrate with JIRA, Azure DevOps, Trello, Linear, and other tools — logging defects and tracking test progress within your existing workflow." },
+      { "q": "Do you provide testing for legacy systems?", "a": "Yes. We adapt our testing approach for legacy applications — including systems without APIs or automated testability — using a combination of manual and record-playback testing tools." }
+    ]
+  },
+  {
+    "slug": "tv-application-development-services",
+    "title": "TV Application Development",
+    "badge": "Smart TV",
+    "icon": "fas fa-tv",
+    "intro_heading": "TV Apps That Reach<br/><span class=\"text-[#0E78E9]\">Every Screen</span>",
+    "intro_desc": "Microlent helps television specialists, like service distributors, telecoms, content providers, and OTT platforms reach viewers across the world with our user-friendly TV applications. We build high-quality smart TV and streaming apps for all major platforms.",
+    "tech_desc": "We build TV applications using platform-native and cross-platform technologies that deliver smooth, high-performance streaming experiences.",
+    "offerings": [
+      {
+        "icon": "fab fa-android",
+        "title": "Android TV App Development",
+        "desc": "We build feature-rich Android TV applications that leverage the full capabilities of the platform — including voice search, Google Play integration, and optimized 10-foot UI for remote navigation."
+      },
+      {
+        "icon": "fas fa-apple-alt",
+        "title": "Apple TV App Development",
+        "desc": "Our Apple TV developers create polished tvOS applications using Swift and SwiftUI — delivering premium experiences that feel native to the Apple ecosystem with support for Siri, Focus Engine, and AirPlay."
+      },
+      {
+        "icon": "fas fa-fire",
+        "title": "Amazon Fire TV App Development",
+        "desc": "We develop Fire TV apps optimized for Amazon's ecosystem — including Alexa voice integration, Prime Video Channels support, and seamless performance on Fire TV Stick and Fire TV Cube devices."
+      },
+      {
+        "icon": "fas fa-play-circle",
+        "title": "OTT Platform Development",
+        "desc": "We build complete OTT streaming platforms — from content management and video encoding to subscription billing, DRM protection, and multi-device playback — helping content providers launch their own streaming service."
+      },
+      {
+        "icon": "fas fa-laptop",
+        "title": "Samsung & LG Smart TV Apps",
+        "desc": "We develop apps for Samsung Tizen and LG webOS platforms — ensuring your streaming service is available on the most popular smart TV brands worldwide with optimal performance."
+      },
+      {
+        "icon": "fas fa-cogs",
+        "title": "TV App Maintenance & Support",
+        "desc": "We provide ongoing maintenance for TV applications — including OS update compatibility, performance optimization, new feature development, and 24/7 monitoring to ensure uninterrupted viewing."
+      }
+    ],
+    "tech": ["React Native TV", "Android TV", "tvOS/Swift", "Tizen", "webOS", "Roku SDK", "HLS", "DASH", "ExoPlayer", "AVPlayer", "Bitmovin", "DRM", "AWS MediaServices"],
+    "why": [
+      {
+        "title": "Multi-Platform Expertise",
+        "desc": "We have experience across every major TV platform — Android TV, Apple TV, Fire TV, Tizen, and webOS — ensuring your app reaches the widest possible audience without compromising on quality."
+      },
+      {
+        "title": "Optimized 10-Foot UX",
+        "desc": "TV interfaces require a fundamentally different design approach. Our team specializes in 10-foot UI design — large typography, clear focus states, and remote-friendly navigation that feels natural on the big screen."
+      },
+      {
+        "title": "End-to-End Streaming Expertise",
+        "desc": "From video encoding and CDN configuration to DRM, adaptive bitrate streaming, and analytics — we handle every technical aspect of delivering high-quality video to your viewers."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "subtitle": "Platform & Content Strategy",
+        "desc": "We define your target platforms, content strategy, monetization model, and feature requirements — creating a product specification that guides development."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "subtitle": "10-Foot UI Design",
+        "desc": "We design TV-optimized interfaces with clear visual hierarchy, accessible navigation, and engaging content presentation tailored for the living room viewing experience."
+      },
+      {
+        "step": "03",
+        "title": "Develop",
+        "subtitle": "Build & Integrate",
+        "desc": "We build your TV app with seamless video playback, backend CMS integration, user authentication, and subscription management — tested across real devices."
+      },
+      {
+        "step": "04",
+        "title": "Launch",
+        "subtitle": "Certification & Deployment",
+        "desc": "We handle app store certification and submission for each platform, ensuring your app meets all technical and content guidelines before going live to viewers."
+      }
+    ],
+    "faq": [
+      { "q": "Which TV platforms do you support?", "a": "We develop for Android TV, Apple TV (tvOS), Amazon Fire TV, Samsung Tizen, LG webOS, and Roku — covering the major smart TV platforms globally." },
+      { "q": "Can you build a cross-platform TV app to save cost?", "a": "Yes. Using React Native TV and shared backend services, we can target multiple platforms from a single codebase — significantly reducing development time and cost." },
+      { "q": "Do you handle video streaming infrastructure?", "a": "Yes. We set up complete streaming infrastructure using AWS Media Services, Cloudfront CDN, HLS/DASH protocols, and DRM for secure, scalable content delivery." },
+      { "q": "Can you integrate subscription billing into the TV app?", "a": "Absolutely. We integrate platform-native in-app purchases (Google Play Billing, Apple In-App Purchases) as well as third-party subscription management platforms." }
+    ]
+  },
+  {
+    "slug": "android-apple-watch-application-development",
+    "title": "Wearable App Development",
+    "badge": "Wearables",
+    "icon": "fas fa-watch",
+    "intro_heading": "Wearable Apps That<br/><span class=\"text-[#0E78E9]\">Connect Every Moment</span>",
+    "intro_desc": "Wearable technology, also known as wearables, is one of the fastest-growing technology markets in the world. Microlent develops cutting-edge smartwatch and wearable applications for Android Wear and Apple Watch that extend your digital experience to your wrist.",
+    "tech_desc": "We build wearable applications using platform-native frameworks that leverage the full hardware capabilities of modern smartwatches.",
+    "offerings": [
+      {
+        "icon": "fab fa-apple",
+        "title": "Apple Watch App Development",
+        "desc": "We build native watchOS applications using Swift and WatchKit — delivering complications, notifications, health data integration, and Siri shortcuts that make your app an indispensable companion on the wrist."
+      },
+      {
+        "icon": "fab fa-android",
+        "title": "Wear OS App Development",
+        "desc": "We develop feature-rich Wear OS applications using Jetpack Compose for Wear — creating round-display optimized UIs with offline capability, ambient mode support, and Google Fit integration."
+      },
+      {
+        "icon": "fas fa-heartbeat",
+        "title": "Health & Fitness Wearable Apps",
+        "desc": "We build health monitoring and fitness tracking apps that access heart rate, SpO2, step count, workout data, and sleep metrics — integrating with HealthKit and Google Health Connect for a complete wellness picture."
+      },
+      {
+        "icon": "fas fa-bell",
+        "title": "Notification & Alert Systems",
+        "desc": "We design rich, actionable notifications for smartwatches that allow users to respond to messages, approve requests, and act on alerts directly from their wrist — without reaching for their phone."
+      },
+      {
+        "icon": "fas fa-link",
+        "title": "Phone-Watch App Synchronization",
+        "desc": "We build seamlessly synchronized companion apps where data flows between your mobile app and smartwatch in real time — ensuring a consistent experience across both devices."
+      },
+      {
+        "icon": "fas fa-cogs",
+        "title": "Custom Wearable SDK Development",
+        "desc": "For enterprise wearable deployments and specialized hardware, we develop custom SDKs and integrations that connect proprietary wearable devices with your mobile and backend systems."
+      }
+    ],
+    "tech": ["watchOS", "WatchKit", "SwiftUI", "Wear OS", "Jetpack Compose", "Kotlin", "HealthKit", "Google Fit", "CoreMotion", "Bluetooth LE", "WearConnectivity", "Firebase"],
+    "why": [
+      {
+        "title": "Micro-Interaction Design Experts",
+        "desc": "Wearable UX demands a completely different design philosophy — glanceable information, minimal input, and immediate value. Our team specializes in designing micro-interactions that feel natural on a 1.5-inch screen."
+      },
+      {
+        "title": "Health & Sensor Data Expertise",
+        "desc": "We have deep expertise integrating with health sensors, biometric APIs, and fitness platforms — ensuring accurate data collection, proper permissions handling, and compliant health data processing."
+      },
+      {
+        "title": "Companion App Synchronization",
+        "desc": "We ensure seamless data synchronization between your wearable app and its mobile companion — so users have a consistent, real-time experience whether they're checking their watch or their phone."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "subtitle": "Use Case Definition",
+        "desc": "We identify the core wearable use cases — what information users need at a glance, which actions they'll perform from their wrist, and how the app integrates with the mobile experience."
+      },
+      {
+        "step": "02",
+        "title": "Design",
+        "subtitle": "Wearable UX Design",
+        "desc": "We design round-display-optimized interfaces, complications, and notification templates — prototyping the experience on actual watch hardware before development begins."
+      },
+      {
+        "step": "03",
+        "title": "Develop",
+        "subtitle": "Build & Integrate",
+        "desc": "We develop the watchOS or Wear OS app, implement health data integrations, build the phone-watch communication layer, and connect to your backend APIs."
+      },
+      {
+        "step": "04",
+        "title": "Test & Launch",
+        "subtitle": "Device Testing & Submission",
+        "desc": "We test across multiple watch sizes and OS versions, optimize battery performance, and submit to the App Store and Google Play alongside your companion mobile app."
+      }
+    ],
+    "faq": [
+      { "q": "Do you build for both Apple Watch and Wear OS?", "a": "Yes. We develop for both platforms — either as standalone wearable apps or as extensions of your existing iOS and Android mobile apps." },
+      { "q": "Can you access health and fitness data from the watch?", "a": "Yes. We integrate with HealthKit (Apple) and Google Health Connect (Android) to access heart rate, steps, workouts, sleep, and other health metrics with proper user consent." },
+      { "q": "Does the watch app need to be paired with a phone?", "a": "It depends on the use case. We build both companion apps (paired with phone) and standalone watch apps that work independently via cellular or Wi-Fi." },
+      { "q": "How do you handle the small screen design challenge?", "a": "We follow platform-specific design guidelines and apply micro-interaction principles — prioritizing the most essential information and actions that are genuinely useful at a glance." }
+    ]
+  },
+  {
+    "slug": "enterprise-solution",
+    "title": "Enterprise Solution",
+    "badge": "Enterprise",
+    "icon": "fas fa-building",
+    "intro_heading": "Enterprise Solutions<br/><span class=\"text-[#0E78E9]\">That Scale with You</span>",
+    "intro_desc": "We build cutting-edge enterprise solutions to enable businesses to adapt to the rapidly changing market conditions effectively. Microlent delivers robust, secure, and scalable enterprise software that powers large organizations across every industry.",
+    "tech_desc": "We architect enterprise solutions using proven technologies and cloud platforms designed to handle the scale, security, and complexity demands of large organizations.",
+    "offerings": [
+      {
+        "icon": "fas fa-cogs",
+        "title": "Custom Enterprise Software",
+        "desc": "We design and build bespoke enterprise applications — from workflow management and approval systems to complex operational platforms — tailored precisely to your organization's processes and compliance requirements."
+      },
+      {
+        "icon": "fas fa-sitemap",
+        "title": "Enterprise Resource Planning",
+        "desc": "We implement, customize, and integrate ERP systems that unify finance, HR, supply chain, manufacturing, and operations — providing a single source of truth across your entire enterprise."
+      },
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Enterprise Security & Compliance",
+        "desc": "We build enterprise applications with security and compliance at their core — implementing SSO, RBAC, audit logging, data encryption, and compliance controls for GDPR, HIPAA, ISO 27001, and more."
+      },
+      {
+        "icon": "fas fa-exchange-alt",
+        "title": "Enterprise System Integration",
+        "desc": "We integrate disparate enterprise systems — SAP, Salesforce, Oracle, legacy mainframes, and third-party APIs — into a unified ecosystem using ESBs, iPaaS platforms, and custom middleware."
+      },
+      {
+        "icon": "fas fa-users-cog",
+        "title": "Workforce & Collaboration Tools",
+        "desc": "We build internal enterprise portals, HR management systems, document management platforms, and team collaboration tools that improve productivity and communication across large distributed organizations."
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "Enterprise Cloud Migration",
+        "desc": "We help large organizations migrate complex on-premise systems to the cloud — designing lift-and-shift and re-architecture strategies that minimize risk while maximizing cloud-native benefits."
+      }
+    ],
+    "tech": ["Java", "Spring Boot", ".NET", "SAP", "Salesforce", "Oracle", "AWS", "Azure", "Kubernetes", "Apache Kafka", "PostgreSQL", "LDAP/Active Directory", "OAuth2/SAML", "Terraform"],
+    "why": [
+      {
+        "title": "Built for Scale & Reliability",
+        "desc": "Our enterprise solutions are designed from the ground up for high availability, fault tolerance, and horizontal scalability — ensuring your systems perform reliably even under peak enterprise-scale loads."
+      },
+      {
+        "title": "Security & Compliance First",
+        "desc": "Enterprise software faces unique security and regulatory demands. We integrate compliance controls, audit trails, and security frameworks as foundational architecture — not afterthoughts."
+      },
+      {
+        "title": "Experienced Enterprise Team",
+        "desc": "Our team has delivered enterprise projects for organizations across manufacturing, banking, healthcare, and logistics — bringing the project management discipline, technical depth, and stakeholder communication skills that enterprise engagements demand."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Discover",
+        "subtitle": "Enterprise Requirements",
+        "desc": "We conduct stakeholder workshops, process mapping sessions, and technical assessments to fully understand your organizational requirements, constraints, and success criteria."
+      },
+      {
+        "step": "02",
+        "title": "Architect",
+        "subtitle": "Solution Design",
+        "desc": "We design a comprehensive solution architecture covering application layers, integration points, security controls, and deployment topology — reviewed and approved before development begins."
+      },
+      {
+        "step": "03",
+        "title": "Deliver",
+        "subtitle": "Phased Implementation",
+        "desc": "We deliver the solution in structured phases with regular milestones, UAT cycles, and stakeholder reviews — managing scope, risk, and change throughout the program."
+      },
+      {
+        "step": "04",
+        "title": "Support",
+        "subtitle": "Hypercare & Operations",
+        "desc": "We provide dedicated hypercare support post-launch and transition to a managed service model with SLA-backed support, monitoring, and continuous improvement."
+      }
+    ],
+    "faq": [
+      { "q": "Do you work with Fortune 500 companies?", "a": "Yes. We have delivered enterprise solutions for large organizations across multiple industries. Our team is experienced in the governance, compliance, and complexity that enterprise projects require." },
+      { "q": "How do you handle data security in enterprise projects?", "a": "Security is built into every layer — from architecture and code to deployment. We implement SSO, RBAC, encryption at rest and in transit, audit logging, and compliance controls aligned to your regulatory requirements." },
+      { "q": "Can you integrate with our SAP or Oracle systems?", "a": "Yes. We have experience integrating with SAP, Oracle, Microsoft Dynamics, and other enterprise platforms via certified connectors, APIs, and custom middleware." },
+      { "q": "What is your approach to enterprise project governance?", "a": "We follow PMI/PRINCE2-aligned governance with defined RACI matrices, change control processes, weekly steering committee updates, and formal milestone sign-offs." }
+    ]
+  },
+  {
+    "slug": "iot-hardware-integrated-solutions",
+    "title": "IOT / Hardware Integrated Solutions",
+    "badge": "IoT",
+    "icon": "fas fa-network-wired",
+    "intro_heading": "Smart IoT Solutions<br/><span class=\"text-[#0E78E9]\">Connecting Your World</span>",
+    "intro_desc": "As the world of technology is changing rapidly, every business now needs to function as a technology-first business. Microlent delivers end-to-end IoT and hardware-integrated solutions that connect physical devices to digital intelligence — enabling smarter operations and new business models.",
+    "tech_desc": "We build IoT solutions using robust edge computing, cloud platforms, and communication protocols that reliably connect and manage devices at any scale.",
+    "offerings": [
+      {
+        "icon": "fas fa-microchip",
+        "title": "IoT Solution Architecture",
+        "desc": "We design complete IoT ecosystems — from device selection and firmware considerations to gateway architecture, cloud connectivity, and data pipeline design — ensuring a scalable and secure connected solution."
+      },
+      {
+        "icon": "fas fa-mobile-alt",
+        "title": "IoT Mobile & Web Applications",
+        "desc": "We build the mobile and web dashboards that make IoT data actionable — real-time device monitoring, remote control, alerts, analytics, and fleet management interfaces for your connected devices."
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "IoT Cloud Platform Integration",
+        "desc": "We integrate your devices with AWS IoT Core, Azure IoT Hub, or Google Cloud IoT — enabling secure device registration, telemetry ingestion, over-the-air updates, and device shadow management."
+      },
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "IoT Security Solutions",
+        "desc": "We implement device authentication, encrypted communication, secure boot, and network segmentation to protect your IoT infrastructure from the unique security threats facing connected devices."
+      },
+      {
+        "icon": "fas fa-industry",
+        "title": "Industrial IoT (IIoT)",
+        "desc": "We build Industrial IoT solutions for manufacturing, logistics, and energy — connecting PLCs, sensors, and equipment to digital monitoring systems that enable predictive maintenance and operational efficiency."
+      },
+      {
+        "icon": "fas fa-chart-bar",
+        "title": "IoT Data Analytics & Insights",
+        "desc": "We build data pipelines and analytics layers on top of your IoT data — turning raw sensor readings into actionable insights, predictive alerts, and business intelligence that drives better decisions."
+      }
+    ],
+    "tech": ["MQTT", "CoAP", "AWS IoT Core", "Azure IoT Hub", "Raspberry Pi", "Arduino", "ESP32", "LoRaWAN", "Zigbee", "Bluetooth LE", "Node.js", "Python", "InfluxDB", "Grafana"],
+    "why": [
+      {
+        "title": "End-to-End IoT Capability",
+        "desc": "From hardware selection guidance and firmware integration to cloud connectivity and application development — we cover the full IoT stack, eliminating the coordination overhead of managing multiple vendors."
+      },
+      {
+        "title": "Scalable Device Management",
+        "desc": "Our IoT solutions are architected to scale from tens to millions of devices — with robust OTA update systems, device lifecycle management, and monitoring that keeps your fleet healthy at any size."
+      },
+      {
+        "title": "Security by Design",
+        "desc": "IoT devices introduce unique attack surfaces. We implement security at every layer — device identity, encrypted communication, network segmentation, and cloud access controls — from the very start of the project."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Assess",
+        "subtitle": "IoT Opportunity Analysis",
+        "desc": "We analyze your operations, identify IoT use cases with the highest ROI, assess connectivity and infrastructure requirements, and define the solution scope and architecture approach."
+      },
+      {
+        "step": "02",
+        "title": "Prototype",
+        "subtitle": "Proof of Concept",
+        "desc": "We build a working proof of concept with real hardware and cloud connectivity to validate the technical approach, measure data quality, and demonstrate business value before full investment."
+      },
+      {
+        "step": "03",
+        "title": "Build",
+        "subtitle": "Full Solution Development",
+        "desc": "We develop the complete IoT solution — firmware integration, cloud platform setup, data pipelines, and user-facing applications — with robust testing across real device environments."
+      },
+      {
+        "step": "04",
+        "title": "Scale",
+        "subtitle": "Deployment & Monitoring",
+        "desc": "We deploy and manage your IoT solution at scale — with monitoring dashboards, alerting, OTA update capabilities, and ongoing support to keep your connected devices running reliably."
+      }
+    ],
+    "faq": [
+      { "q": "Do you manufacture hardware?", "a": "We focus on software and integration. We work with your existing hardware or help you select and source appropriate off-the-shelf devices, then build the complete software stack around them." },
+      { "q": "Which IoT cloud platforms do you work with?", "a": "We work with AWS IoT Core, Azure IoT Hub, Google Cloud IoT, and can also build on open-source platforms like EMQX for on-premise deployments." },
+      { "q": "How do you handle connectivity in low-bandwidth environments?", "a": "We design solutions using low-power protocols like LoRaWAN, NB-IoT, and MQTT with efficient payload formats — ensuring reliable connectivity even in remote or bandwidth-constrained environments." },
+      { "q": "Can you integrate IoT data with our existing ERP or BI tools?", "a": "Yes. We build data pipelines that feed IoT telemetry into your existing ERP, CRM, BI dashboards, or data warehouse — making connected device data actionable within your existing business tools." }
+    ]
+  },
+  {
+    "slug": "devops-and-automation-services",
+    "title": "DevOps and Automation Services",
+    "badge": "DevOps",
+    "icon": "fas fa-infinity",
+    "intro_heading": "DevOps That Accelerates<br/><span class=\"text-[#0E78E9]\">Your Delivery</span>",
+    "intro_desc": "Automated tasks have significantly higher efficiency and accuracy compared to manual development processes. Microlent's DevOps and automation services help you build faster, release more confidently, and operate more reliably — transforming your software delivery pipeline.",
+    "tech_desc": "We implement DevOps practices and automation using industry-leading tools that integrate with your existing technology stack.",
+    "offerings": [
+      {
+        "icon": "fas fa-code-branch",
+        "title": "CI/CD Pipeline Implementation",
+        "desc": "We design and implement automated CI/CD pipelines using Jenkins, GitHub Actions, or GitLab CI — enabling teams to ship code faster with automated testing, security scanning, and one-click deployments."
+      },
+      {
+        "icon": "fas fa-cube",
+        "title": "Infrastructure as Code",
+        "desc": "We codify your cloud infrastructure using Terraform, CloudFormation, and Ansible — enabling reproducible, version-controlled infrastructure that can be provisioned in minutes and rolled back instantly."
+      },
+      {
+        "icon": "fas fa-docker",
+        "title": "Containerization & Orchestration",
+        "desc": "We containerize your applications using Docker and orchestrate them with Kubernetes — enabling scalable, portable deployments that are consistent from development through to production."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "Monitoring & Observability",
+        "desc": "We set up comprehensive observability stacks using Prometheus, Grafana, ELK, and Datadog — providing full visibility into application performance, infrastructure health, and user experience."
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "Cloud Cost Optimization",
+        "desc": "We audit your cloud infrastructure, identify waste, and implement right-sizing, reserved instances, and auto-scaling strategies — typically reducing cloud spend by 20–40% without impacting performance."
+      },
+      {
+        "icon": "fas fa-robot",
+        "title": "Process Automation",
+        "desc": "We automate manual operational tasks — environment provisioning, database backups, security scans, compliance reports, and incident response — freeing your engineering team to focus on building products."
+      }
+    ],
+    "tech": ["Docker", "Kubernetes", "Terraform", "Ansible", "Jenkins", "GitHub Actions", "GitLab CI", "AWS", "Azure", "GCP", "Prometheus", "Grafana", "ELK Stack", "Datadog", "Helm"],
+    "why": [
+      {
+        "title": "Faster, More Reliable Releases",
+        "desc": "Our CI/CD implementations reduce release cycles from weeks to days — with automated testing and deployment gates that catch issues before they reach users and enable confident, frequent releases."
+      },
+      {
+        "title": "Reduced Operational Overhead",
+        "desc": "By automating infrastructure provisioning, monitoring, and routine operations, we free your engineering team from toil — letting them focus on building features rather than managing infrastructure."
+      },
+      {
+        "title": "Culture & Tooling Together",
+        "desc": "DevOps transformation is as much about people as tools. We work with your teams to establish DevOps practices, runbooks, and on-call processes alongside the technical automation — ensuring lasting change."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Assess",
+        "subtitle": "DevOps Maturity Audit",
+        "desc": "We assess your current development, deployment, and operations practices — identifying bottlenecks, manual handoffs, and automation opportunities across your delivery pipeline."
+      },
+      {
+        "step": "02",
+        "title": "Plan",
+        "subtitle": "Transformation Roadmap",
+        "desc": "We create a prioritized DevOps transformation roadmap — phasing automation improvements to deliver quick wins while building toward a fully automated, observable delivery pipeline."
+      },
+      {
+        "step": "03",
+        "title": "Implement",
+        "subtitle": "Pipeline & Infrastructure Automation",
+        "desc": "We build CI/CD pipelines, containerize applications, implement IaC, and set up monitoring — working alongside your team to transfer knowledge throughout implementation."
+      },
+      {
+        "step": "04",
+        "title": "Optimize",
+        "subtitle": "Continuous Improvement",
+        "desc": "We monitor pipeline performance metrics, identify new automation opportunities, and continuously optimize your DevOps practices — treating your delivery pipeline as a product that evolves with your team."
+      }
+    ],
+    "faq": [
+      { "q": "We're still on manual deployments — where do we start?", "a": "We start with a DevOps assessment to understand your current state, then prioritize quick wins like source control, automated testing, and basic CI — building toward full automation over time." },
+      { "q": "Do you support multi-cloud or hybrid cloud environments?", "a": "Yes. We design DevOps pipelines and infrastructure that work across AWS, Azure, GCP, and on-premise environments — using tools like Terraform that abstract cloud-specific differences." },
+      { "q": "Can you help reduce our AWS/Azure bill?", "a": "Yes. Our cloud cost optimization audits typically identify 20–40% in savings through right-sizing, reserved instances, auto-scaling, and eliminating unused resources." },
+      { "q": "How long does a DevOps transformation take?", "a": "Initial quick wins (basic CI/CD, containerization) can be delivered in 4–8 weeks. A full DevOps transformation including culture change typically takes 6–12 months." }
+    ]
+  },
+  {
+    "slug": "data-analytics-solutions",
+    "title": "Data Analytics Solutions",
+    "badge": "Data Analytics",
+    "icon": "fas fa-chart-bar",
+    "intro_heading": "Turn Your Data Into<br/><span class=\"text-[#0E78E9]\">Business Intelligence</span>",
+    "intro_desc": "Whether an enterprise wants to discover data-driven insights, switch to the cloud, build a customer-focused organization, or offer IT-powered revenue-creating services, Microlent provides an extensive range of data analytics solutions to help you succeed.",
+    "tech_desc": "We use modern data engineering and analytics platforms to build scalable data infrastructure that turns raw data into actionable business intelligence.",
+    "offerings": [
+      {
+        "icon": "fas fa-database",
+        "title": "Data Warehouse & Lake Design",
+        "desc": "We design and build scalable data warehouses and data lakes that consolidate data from all your business systems — creating a single, reliable source of truth for analytics and reporting across your organization."
+      },
+      {
+        "icon": "fas fa-project-diagram",
+        "title": "ETL & Data Pipeline Development",
+        "desc": "We build robust ETL and ELT pipelines that extract data from diverse sources, transform it into consistent formats, and load it into your analytics platform — reliably and on schedule."
+      },
+      {
+        "icon": "fas fa-chart-pie",
+        "title": "Business Intelligence & Dashboards",
+        "desc": "We build interactive BI dashboards using Power BI, Tableau, and Looker that give business leaders real-time visibility into KPIs, trends, and operational metrics — enabling faster, more confident decisions."
+      },
+      {
+        "icon": "fas fa-brain",
+        "title": "Predictive & Advanced Analytics",
+        "desc": "We build ML-powered predictive models that forecast demand, identify churn risk, detect fraud, and surface opportunities — giving your business a competitive advantage through data-driven foresight."
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "Cloud Data Platform Migration",
+        "desc": "We migrate on-premise data infrastructure to modern cloud data platforms like Snowflake, BigQuery, Redshift, and Databricks — enabling elastic scale, reduced cost, and access to advanced analytics capabilities."
+      },
+      {
+        "icon": "fas fa-shield-alt",
+        "title": "Data Governance & Quality",
+        "desc": "We implement data governance frameworks, data quality monitoring, and master data management practices that ensure your analytics are built on accurate, consistent, and trusted data."
+      }
+    ],
+    "tech": ["Snowflake", "BigQuery", "Redshift", "Databricks", "Apache Spark", "dbt", "Airflow", "Power BI", "Tableau", "Looker", "Python", "SQL", "Kafka", "Azure Data Factory"],
+    "why": [
+      {
+        "title": "Business-Outcome Focused",
+        "desc": "We don't build data infrastructure for its own sake. Every pipeline, dashboard, and model we build is tied to a specific business decision or outcome — ensuring your data investment delivers measurable ROI."
+      },
+      {
+        "title": "End-to-End Data Expertise",
+        "desc": "From data ingestion and transformation to visualization and ML modeling, we cover the complete data analytics stack — so you don't need multiple vendors to build a complete data capability."
+      },
+      {
+        "title": "Self-Service Analytics Enablement",
+        "desc": "We build analytics platforms and train your teams to use them independently — creating a data-driven culture where business users can answer their own questions without waiting for IT."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Assess",
+        "subtitle": "Data Landscape Discovery",
+        "desc": "We map your data sources, assess data quality, understand your analytical questions, and define the target state for your data platform — creating a clear analytics strategy."
+      },
+      {
+        "step": "02",
+        "title": "Architect",
+        "subtitle": "Data Platform Design",
+        "desc": "We design your data architecture — warehouse schema, pipeline topology, security model, and BI layer — balancing performance, cost, and maintainability for your scale."
+      },
+      {
+        "step": "03",
+        "title": "Build",
+        "subtitle": "Pipeline & Dashboard Development",
+        "desc": "We build data pipelines, transform and model data using dbt, and develop BI dashboards — delivering analytics capabilities in phases so business users see value quickly."
+      },
+      {
+        "step": "04",
+        "title": "Enable",
+        "subtitle": "Training & Handover",
+        "desc": "We train your team on the platform, document data models and pipelines, and establish ongoing support — ensuring your organization can independently maintain and extend the analytics capability."
+      }
+    ],
+    "faq": [
+      { "q": "Our data is in multiple systems — can you consolidate it?", "a": "Yes. We specialize in building data integration pipelines that pull data from CRMs, ERPs, databases, SaaS tools, and APIs into a unified analytics platform." },
+      { "q": "Which BI tools do you work with?", "a": "We work with Power BI, Tableau, Looker, Metabase, and Google Looker Studio — recommending the best fit based on your team's technical level and existing Microsoft or Google ecosystem." },
+      { "q": "How do you ensure data quality?", "a": "We implement automated data quality checks, anomaly detection, and data validation rules in the pipeline — with monitoring dashboards that alert on quality issues before they affect reports." },
+      { "q": "Can you build predictive models on our data?", "a": "Yes. Our data science team builds custom ML models for churn prediction, demand forecasting, customer segmentation, and other use cases — deployed as APIs or embedded directly in your BI dashboards." }
+    ]
+  },
+  {
+    "slug": "project-management-service",
+    "title": "Project Management Service",
+    "badge": "Project Management",
+    "icon": "fas fa-tasks",
+    "intro_heading": "Projects Delivered<br/><span class=\"text-[#0E78E9]\">On Time, On Budget</span>",
+    "intro_desc": "If your IT project aims to boost process efficiencies, reduce costs, deliver consistent results, and fulfill customer expectations, the entire process from planning to execution should adhere to well-proven project ideologies. Microlent's project management services ensure your initiatives are delivered with discipline, transparency, and excellence.",
+    "tech_desc": "We use proven project management methodologies and collaboration tools to keep your projects on track from kickoff to delivery.",
+    "offerings": [
+      {
+        "icon": "fas fa-map",
+        "title": "Project Planning & Scoping",
+        "desc": "We work with your stakeholders to define project scope, objectives, deliverables, milestones, and success criteria — creating a detailed project plan that serves as the north star for the entire engagement."
+      },
+      {
+        "icon": "fas fa-users",
+        "title": "Agile Project Management",
+        "desc": "We implement Scrum and Kanban frameworks tailored to your team — with sprint planning, daily standups, retrospectives, and backlog grooming that keep teams focused, aligned, and continuously improving."
+      },
+      {
+        "icon": "fas fa-exclamation-triangle",
+        "title": "Risk Management",
+        "desc": "We proactively identify project risks, assess their likelihood and impact, and implement mitigation strategies — preventing common project failures before they derail timelines, budgets, or quality."
+      },
+      {
+        "icon": "fas fa-comments",
+        "title": "Stakeholder Communication",
+        "desc": "We manage stakeholder communication through structured status reports, dashboards, and regular review meetings — ensuring all parties are informed, aligned, and able to make timely decisions."
+      },
+      {
+        "icon": "fas fa-balance-scale",
+        "title": "Scope & Change Management",
+        "desc": "We implement formal change control processes that evaluate the impact of scope changes on timeline and budget — protecting project integrity while accommodating legitimate business evolution."
+      },
+      {
+        "icon": "fas fa-clipboard-check",
+        "title": "Project Rescue & Recovery",
+        "desc": "Is your project off-track? We perform rapid project health assessments and implement recovery plans for troubled projects — stabilizing scope, re-baselining schedules, and restoring team confidence."
+      }
+    ],
+    "tech": ["JIRA", "Confluence", "Asana", "Monday.com", "MS Project", "Trello", "Slack", "Microsoft Teams", "Notion", "GitHub Projects", "Smartsheet", "Miro"],
+    "why": [
+      {
+        "title": "Certified Project Managers",
+        "desc": "Our project managers hold PMP, PRINCE2, and Agile certifications — bringing structured, battle-tested methodologies to your project alongside practical experience delivering complex IT initiatives."
+      },
+      {
+        "title": "Complete Transparency",
+        "desc": "We believe in radical transparency. Every stakeholder has real-time visibility into project progress, risks, and decisions through shared dashboards and regular structured reporting."
+      },
+      {
+        "title": "Proactive Risk Management",
+        "desc": "Most project failures are predictable. Our PMs identify warning signs early and take corrective action before small problems become project-threatening issues — keeping your project on track."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Initiate",
+        "subtitle": "Project Kickoff",
+        "desc": "We establish the project charter, identify stakeholders, define governance structure, and conduct a kickoff workshop — ensuring all parties start aligned on objectives, roles, and ways of working."
+      },
+      {
+        "step": "02",
+        "title": "Plan",
+        "subtitle": "Detailed Planning",
+        "desc": "We build the project plan, WBS, resource plan, risk register, and communication plan — providing a comprehensive blueprint that guides execution and establishes baselines for tracking."
+      },
+      {
+        "step": "03",
+        "title": "Execute",
+        "subtitle": "Delivery Management",
+        "desc": "We manage day-to-day delivery — coordinating teams, resolving blockers, tracking progress against baselines, managing scope changes, and escalating issues that require stakeholder decisions."
+      },
+      {
+        "step": "04",
+        "title": "Close",
+        "subtitle": "Project Closure",
+        "desc": "We conduct formal project closure — confirming all deliverables are accepted, documenting lessons learned, archiving project artifacts, and celebrating team achievements."
+      }
+    ],
+    "faq": [
+      { "q": "Do you offer project management as a standalone service?", "a": "Yes. We provide dedicated PM services for projects built by any team — you don't need to be using Microlent for development to engage our project management professionals." },
+      { "q": "Do you use Agile or Waterfall methodology?", "a": "We adapt to your project's needs. We apply Agile/Scrum for software development projects, waterfall for fixed-scope implementations, and hybrid approaches where appropriate." },
+      { "q": "Can you rescue a project that is already in trouble?", "a": "Yes. We specialize in project recovery — conducting rapid health assessments, re-baselining the plan, resolving team dysfunction, and implementing controls to get the project back on track." },
+      { "q": "How do you handle remote or distributed teams?", "a": "We're experienced managing globally distributed teams across time zones — using asynchronous communication practices, structured stand-ups, and collaboration tools that keep remote teams aligned and productive." }
+    ]
+  },
+  {
+    "slug": "it-staff-augmentation-services",
+    "title": "IT Staff Augmentation",
+    "badge": "Staff Augmentation",
+    "icon": "fas fa-user-plus",
+    "intro_heading": "Skilled IT Talent<br/><span class=\"text-[#0E78E9]\">On Demand</span>",
+    "intro_desc": "Searching for skilled, experienced, and certified IT resources for your projects? Microlent can help. Our IT staff augmentation services give you instant access to vetted technology professionals who integrate seamlessly with your team and hit the ground running.",
+    "tech_desc": "We provide pre-vetted IT professionals across a wide range of technologies and domains — ready to augment your team on short notice.",
+    "offerings": [
+      {
+        "icon": "fas fa-code",
+        "title": "Software Developer Augmentation",
+        "desc": "We provide experienced frontend, backend, and full-stack developers across all major languages and frameworks — from React and Node.js to Java, Python, and .NET — ready to join your sprint team immediately."
+      },
+      {
+        "icon": "fas fa-mobile-alt",
+        "title": "Mobile Developer Augmentation",
+        "desc": "We supply skilled iOS, Android, React Native, and Flutter developers who can extend your mobile team's capacity — contributing to ongoing sprints or helping deliver a critical release deadline."
+      },
+      {
+        "icon": "fas fa-vial",
+        "title": "QA Engineer Augmentation",
+        "desc": "We provide manual and automation QA engineers who integrate with your development team — conducting regression testing, building automation frameworks, and ensuring release quality at every sprint."
+      },
+      {
+        "icon": "fas fa-infinity",
+        "title": "DevOps Engineer Augmentation",
+        "desc": "We supply experienced DevOps and cloud engineers who can set up CI/CD pipelines, manage cloud infrastructure, implement monitoring, and reduce operational toil for your engineering organization."
+      },
+      {
+        "icon": "fas fa-pencil-ruler",
+        "title": "UI/UX Designer Augmentation",
+        "desc": "We provide product designers and UX researchers who embed within your team — contributing to design systems, wireframing new features, conducting user research, and maintaining design consistency."
+      },
+      {
+        "icon": "fas fa-brain",
+        "title": "Data & AI Engineer Augmentation",
+        "desc": "We supply data engineers, data scientists, and ML engineers who integrate with your data team — building pipelines, developing models, and supporting your analytics and AI initiatives."
+      }
+    ],
+    "tech": ["React", "Angular", "Vue.js", "Node.js", "Python", "Java", "Swift", "Kotlin", "React Native", "Flutter", "AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Figma"],
+    "why": [
+      {
+        "title": "Pre-Vetted Talent",
+        "desc": "Every resource we place has been through a rigorous technical assessment and interview process — ensuring you get professionals who can genuinely contribute from day one without extensive ramp-up time."
+      },
+      {
+        "title": "Flexible Engagement Models",
+        "desc": "We offer hourly, monthly, and project-based engagement models — giving you the flexibility to scale your team up or down based on current project demands without the overhead of permanent hiring."
+      },
+      {
+        "title": "Fast Placement",
+        "desc": "We maintain a ready pool of vetted IT professionals across all major technologies. Most augmentation requests are fulfilled within 1–2 weeks — letting you address capacity gaps before they impact delivery."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Brief",
+        "subtitle": "Requirements Definition",
+        "desc": "We understand your project context, required skills, seniority level, engagement duration, and working preferences — building a precise profile of the resource you need."
+      },
+      {
+        "step": "02",
+        "title": "Match",
+        "subtitle": "Candidate Shortlisting",
+        "desc": "We shortlist pre-vetted candidates from our talent pool who match your requirements — providing profiles and conducting technical screens so you only meet candidates who are genuinely qualified."
+      },
+      {
+        "step": "03",
+        "title": "Select",
+        "subtitle": "Interview & Selection",
+        "desc": "You interview shortlisted candidates, assess cultural fit, and make the selection. We target presenting candidates ready to join within 1–2 weeks of the initial brief."
+      },
+      {
+        "step": "04",
+        "title": "Integrate",
+        "subtitle": "Onboarding & Support",
+        "desc": "We support the onboarding process and remain engaged throughout the placement — conducting regular check-ins with both you and the resource to ensure the engagement is delivering the value you need."
+      }
+    ],
+    "faq": [
+      { "q": "How quickly can you place a resource?", "a": "Most placements are fulfilled within 1–2 weeks. For specialized skills, it may take slightly longer, but we always communicate timelines upfront so you can plan accordingly." },
+      { "q": "What if the resource isn't the right fit?", "a": "We offer a replacement guarantee. If a placed resource doesn't meet your expectations within the first two weeks, we'll replace them at no additional cost." },
+      { "q": "Do your resources work in our time zone?", "a": "We can match resources to your preferred time zone. Many of our augmented professionals work standard business hours with significant overlap for real-time collaboration." },
+      { "q": "Can we hire the resource permanently after the engagement?", "a": "Yes. We offer direct hire options for clients who wish to convert augmented resources to permanent employees — with a transparent transition process and agreed conversion terms." }
+    ]
+  },
+  {
+    "slug": "erp-crm",
+    "title": "ERP & CRM Systems",
+    "badge": "Business Solutions",
+    "icon": "fas fa-sitemap",
+    "intro_heading": "ERP & CRM Systems<br/><span class=\"text-[#0E78E9]\">That Power Your Business</span>",
+    "intro_desc": "Microlent implements, customizes, and integrates ERP and CRM systems that unify your business operations — from finance and HR to sales and customer management — into one connected platform that drives efficiency and growth.",
+    "tech_desc": "We work with leading ERP and CRM platforms as well as building custom solutions tailored to your specific workflows.",
+    "offerings": [
+      { "icon": "fas fa-sitemap", "title": "ERP Implementation", "desc": "We implement and customize ERP systems that connect finance, HR, inventory, procurement, and operations — giving you real-time visibility and control across your entire organization." },
+      { "icon": "fas fa-users", "title": "CRM Implementation", "desc": "We configure and customize CRM platforms that help your sales and support teams manage leads, track customer interactions, and close more deals with less effort." },
+      { "icon": "fas fa-exchange-alt", "title": "System Integration", "desc": "We integrate your ERP and CRM with existing tools — e-commerce platforms, accounting software, marketing tools — creating a unified ecosystem that eliminates data silos." },
+      { "icon": "fas fa-chart-bar", "title": "Custom Dashboards & Reporting", "desc": "We build role-specific dashboards that surface the KPIs that matter most to each team — from executive overviews to operational detail reports — enabling faster, better decisions." }
+    ],
+    "tech": ["SAP", "Salesforce", "Microsoft Dynamics", "Odoo", "HubSpot", "Zoho CRM", "Oracle ERP", "NetSuite", "Freshsales", "PostgreSQL", "REST APIs"],
+    "why": [
+      { "title": "Industry-Specific Expertise", "desc": "We have delivered ERP and CRM solutions across manufacturing, retail, healthcare, and professional services — bringing domain knowledge that ensures the system fits your industry's workflows." },
+      { "title": "Tailored to Your Processes", "desc": "We configure and customize the system around how your business actually works — not the other way around. Your team adopts it faster because it feels familiar." },
+      { "title": "Ongoing Support & Training", "desc": "We provide comprehensive user training, documentation, and post-go-live support — ensuring your team gets maximum value from the system from day one." }
+    ],
+    "process": [
+      { "step": "01", "title": "Assess", "desc": "We analyze your current processes, data sources, and pain points to define the right system scope and configuration strategy." },
+      { "step": "02", "title": "Configure", "desc": "We set up and customize the platform — modules, workflows, roles, and integrations — aligned to your approved requirements." },
+      { "step": "03", "title": "Migrate", "desc": "We migrate your existing data cleanly into the new system with validation checks to ensure accuracy and completeness." },
+      { "step": "04", "title": "Launch", "desc": "We train your team, run parallel testing, and manage go-live — with hypercare support in the weeks following launch." }
+    ],
+    "faq": [
+      { "q": "Which ERP/CRM platforms do you work with?", "a": "We work with SAP, Salesforce, Microsoft Dynamics, Odoo, HubSpot, Zoho, and NetSuite — recommending the best fit based on your size, industry, and budget." },
+      { "q": "Can you migrate our data from our old system?", "a": "Yes. We handle full data migration with cleaning, transformation, and validation to ensure your historical data is accurately transferred." }
+    ]
+  },
+  {
+    "slug": "process-automation",
+    "title": "Process Automation",
+    "badge": "Automation",
+    "icon": "fas fa-robot",
+    "intro_heading": "Automate the Repetitive,<br/><span class=\"text-[#0E78E9]\">Focus on What Matters</span>",
+    "intro_desc": "Microlent identifies manual, repetitive processes in your organization and replaces them with intelligent automated workflows — reducing errors, cutting processing time, and freeing your team to focus on high-value work.",
+    "tech_desc": "We use modern automation platforms and custom-built solutions to automate workflows across every department.",
+    "offerings": [
+      { "icon": "fas fa-cogs", "title": "Workflow Automation", "desc": "We map and automate multi-step business workflows — approvals, notifications, data routing, and document processing — eliminating manual handoffs and reducing cycle times dramatically." },
+      { "icon": "fas fa-robot", "title": "Robotic Process Automation (RPA)", "desc": "We deploy software bots that mimic human interactions with desktop and web applications — automating high-volume, rule-based tasks like data entry, report generation, and invoice processing." },
+      { "icon": "fas fa-plug", "title": "Application Integration & iPaaS", "desc": "We connect your business applications using integration platforms and custom APIs — enabling data to flow automatically between systems without manual exports, copy-paste, or re-entry." },
+      { "icon": "fas fa-chart-line", "title": "Automation Analytics", "desc": "We build monitoring dashboards that track automation performance, ROI, error rates, and throughput — giving you full visibility into what your bots are doing and the value they are delivering." }
+    ],
+    "tech": ["Zapier", "Make (Integromat)", "Power Automate", "UiPath", "Automation Anywhere", "n8n", "Node.js", "Python", "REST APIs", "Webhooks", "Azure Logic Apps"],
+    "why": [
+      { "title": "Rapid ROI", "desc": "Process automation typically delivers ROI within 3–6 months. We prioritize high-volume, time-consuming processes first — maximizing early returns on your automation investment." },
+      { "title": "No-Disruption Implementation", "desc": "We implement automation alongside your existing systems — no big-bang replacement. Your team continues working normally while bots handle the repetitive tasks in the background." },
+      { "title": "Scalable & Maintained", "desc": "As your business grows and processes change, we update and extend your automations — ensuring they continue to deliver value as your organization evolves." }
+    ],
+    "process": [
+      { "step": "01", "title": "Discover", "desc": "We audit your processes to identify automation candidates — ranking them by time saved, error rate, and implementation complexity to prioritize maximum ROI." },
+      { "step": "02", "title": "Design", "desc": "We document the automated workflow in detail — triggers, conditions, actions, error handling — creating a blueprint reviewed and approved before development." },
+      { "step": "03", "title": "Build", "desc": "We build and test the automation in a staging environment, validating accuracy across normal and edge-case scenarios before production deployment." },
+      { "step": "04", "title": "Monitor", "desc": "Post-launch we monitor automation performance, handle exceptions, and continuously optimize — ensuring your automated processes run reliably at scale." }
+    ],
+    "faq": [
+      { "q": "Which processes are good candidates for automation?", "a": "High-volume, rule-based, repetitive tasks with structured inputs are ideal — data entry, invoice processing, report generation, approval workflows, and system-to-system data transfers." },
+      { "q": "Do you work with our existing software?", "a": "Yes. We automate processes within and across your existing tools — no replacement needed. We connect what you already use." }
+    ]
+  },
+  {
+    "slug": "business-consulting",
+    "title": "Business Consulting",
+    "badge": "Consulting",
+    "icon": "fas fa-handshake",
+    "intro_heading": "Strategic Consulting<br/><span class=\"text-[#0E78E9]\">For Digital Growth</span>",
+    "intro_desc": "Microlent's business consulting team works as a strategic technology partner — helping you define your digital roadmap, evaluate technology investments, and make confident decisions that align IT with your business goals.",
+    "tech_desc": "We combine deep technology expertise with business strategy to deliver consulting that drives measurable outcomes.",
+    "offerings": [
+      { "icon": "fas fa-map", "title": "Digital Strategy & Roadmapping", "desc": "We assess your current technology landscape, identify growth opportunities, and create a prioritized digital roadmap that aligns technology investment with your strategic business objectives." },
+      { "icon": "fas fa-search", "title": "Technology Assessment & Selection", "desc": "We evaluate technology options objectively — build vs. buy, platform selection, vendor assessment — ensuring you invest in solutions that genuinely fit your needs and budget." },
+      { "icon": "fas fa-chart-line", "title": "Digital Transformation Consulting", "desc": "We guide organizations through digital transformation — from process redesign and change management to technology implementation — helping you modernize without disrupting ongoing operations." },
+      { "icon": "fas fa-shield-alt", "title": "IT Governance & Risk Advisory", "desc": "We help you establish IT governance frameworks, security policies, and risk management practices that protect your business and ensure technology decisions support long-term organizational goals." }
+    ],
+    "tech": ["TOGAF", "ITIL", "Agile/Scrum", "PRINCE2", "Power BI", "Jira", "Confluence", "Miro", "Microsoft 365", "Google Workspace"],
+    "why": [
+      { "title": "Business-First Approach", "desc": "We start with your business objectives — not technology. Every recommendation we make is grounded in a clear understanding of the business outcome you're trying to achieve." },
+      { "title": "Vendor-Neutral Advice", "desc": "We have no vendor relationships that bias our recommendations. You get objective advice on technology choices — focused entirely on what's best for your organization." },
+      { "title": "Practical, Actionable Outcomes", "desc": "Our consulting engagements produce concrete deliverables — roadmaps, business cases, RFPs, architecture blueprints — that your team can act on immediately." }
+    ],
+    "process": [
+      { "step": "01", "title": "Discover", "desc": "We conduct stakeholder interviews, process reviews, and technology assessments to build a complete picture of your current state and strategic ambitions." },
+      { "step": "02", "title": "Analyse", "desc": "We synthesize our findings to identify gaps, opportunities, and risks — prioritizing initiatives by business impact and implementation feasibility." },
+      { "step": "03", "title": "Recommend", "desc": "We present a clear, prioritized set of recommendations with supporting business cases — giving you the information needed to make confident investment decisions." },
+      { "step": "04", "title": "Support", "desc": "We remain engaged to support implementation — answering questions, reviewing vendor proposals, and adapting the strategy as your business evolves." }
+    ],
+    "faq": [
+      { "q": "What size organizations do you consult for?", "a": "We work with startups through to mid-market enterprises. Our consulting approach scales to your organization's complexity and the scope of the challenge you're addressing." },
+      { "q": "How long does a consulting engagement typically last?", "a": "Strategy and roadmapping engagements typically run 4–8 weeks. Ongoing advisory retainers can be structured monthly. We adapt to your timeline and budget." }
+    ]
+  },
+  {
+    "slug": "seo-ppc",
+    "title": "SEO & PPC",
+    "badge": "Search Marketing",
+    "icon": "fas fa-search-dollar",
+    "intro_heading": "Search Marketing That<br/><span class=\"text-[#0E78E9]\">Drives Real Traffic</span>",
+    "intro_desc": "Microlent's search marketing team combines organic SEO and paid PPC advertising to maximize your visibility in search results — driving qualified traffic that converts into customers and delivers measurable ROI.",
+    "tech_desc": "We use industry-leading search marketing tools to research, execute, and optimize campaigns that grow your business.",
+    "offerings": [
+      { "icon": "fas fa-search", "title": "Technical SEO", "desc": "We audit and optimize your website's technical foundation — site speed, crawlability, indexation, structured data, and Core Web Vitals — ensuring search engines can efficiently discover and rank your content." },
+      { "icon": "fas fa-pen-nib", "title": "On-Page SEO & Content Strategy", "desc": "We conduct keyword research, optimize page content, meta tags, and internal linking — and develop a content strategy that consistently attracts organic traffic for high-intent search queries." },
+      { "icon": "fas fa-link", "title": "Link Building & Off-Page SEO", "desc": "We build high-quality backlinks through outreach, content partnerships, and digital PR — increasing your domain authority and improving rankings for competitive keywords over time." },
+      { "icon": "fas fa-ad", "title": "Google & Bing Ads (PPC)", "desc": "We manage pay-per-click campaigns across Google and Bing — keyword selection, ad copywriting, bid strategy, and landing page optimization — to maximize conversions at the lowest possible cost per click." }
+    ],
+    "tech": ["Google Search Console", "Google Ads", "Bing Ads", "SEMrush", "Ahrefs", "Moz", "Screaming Frog", "Google Analytics 4", "Google Tag Manager", "Hotjar", "Looker Studio"],
+    "why": [
+      { "title": "Integrated Search Strategy", "desc": "We combine SEO and PPC into a unified search strategy — using PPC data to inform SEO keyword priorities and organic rankings to reduce paid ad spend on terms you already rank for." },
+      { "title": "Transparent Reporting", "desc": "Every month you receive a clear report covering rankings, traffic, conversions, cost-per-click, and ROAS — so you always know exactly what you're getting for your investment." },
+      { "title": "Long-Term & Short-Term Results", "desc": "PPC delivers immediate traffic while SEO builds sustainable organic growth. We balance both to give you quick wins and long-term value from your search marketing investment." }
+    ],
+    "process": [
+      { "step": "01", "title": "Audit", "desc": "We audit your current SEO and PPC performance, competitor positioning, and keyword opportunities — establishing baselines and identifying the highest-impact areas to prioritize." },
+      { "step": "02", "title": "Strategy", "desc": "We build a 90-day search marketing plan covering technical fixes, content priorities, link building targets, and PPC campaign structure aligned to your business goals." },
+      { "step": "03", "title": "Execute", "desc": "We implement technical SEO changes, publish optimized content, launch PPC campaigns, and begin link building — working to plan while adapting to performance data." },
+      { "step": "04", "title": "Optimize", "desc": "We continuously monitor performance, test ad copy and landing pages, refine keyword bids, and update content — compounding results month over month." }
+    ],
+    "faq": [
+      { "q": "How long before SEO shows results?", "a": "Meaningful SEO results typically appear in 3–6 months. Competitive keywords may take 6–12 months. PPC delivers traffic from day one." },
+      { "q": "What budget do I need for PPC?", "a": "We recommend a minimum ad spend of ₹30,000/month for effective campaigns. Our management fee is separate and scales with campaign size." }
+    ]
+  },
+  {
+    "slug": "social-media",
+    "title": "Social Media Marketing",
+    "badge": "Social Media",
+    "icon": "fas fa-share-alt",
+    "intro_heading": "Social Media That<br/><span class=\"text-[#0E78E9]\">Builds Your Brand</span>",
+    "intro_desc": "Microlent's social media team creates and manages strategic campaigns across all major platforms — building brand awareness, engaging your audience, and converting followers into loyal customers through consistent, compelling content.",
+    "tech_desc": "We use leading social media management and analytics platforms to plan, publish, and optimize your social presence.",
+    "offerings": [
+      { "icon": "fab fa-instagram", "title": "Instagram & Facebook Marketing", "desc": "We create visually compelling content strategies for Instagram and Facebook — combining organic posts, stories, reels, and paid campaigns to grow your audience and drive measurable business outcomes." },
+      { "icon": "fab fa-linkedin-in", "title": "LinkedIn Marketing", "desc": "We build your professional presence on LinkedIn with thought leadership content, company page management, and targeted paid campaigns that generate B2B leads and establish your brand as an industry authority." },
+      { "icon": "fab fa-x-twitter", "title": "X (Twitter) Marketing", "desc": "We manage your X presence with timely, engaging content that joins relevant conversations, builds community, and increases brand visibility among your target audience." },
+      { "icon": "fas fa-ad", "title": "Paid Social Advertising", "desc": "We run targeted paid social campaigns across Meta, LinkedIn, and other platforms — precise audience targeting, compelling creative, and conversion-optimized landing pages that maximize your ad spend ROI." }
+    ],
+    "tech": ["Meta Business Suite", "LinkedIn Campaign Manager", "Hootsuite", "Buffer", "Sprout Social", "Canva", "Adobe Creative Suite", "Meta Ads Manager", "Google Analytics 4", "Brandwatch"],
+    "why": [
+      { "title": "Platform-Specific Expertise", "desc": "Each social platform has its own algorithm, content format, and audience behaviour. We tailor our approach for each platform — not a one-size-fits-all strategy copy-pasted across channels." },
+      { "title": "Content That Converts", "desc": "We create content with a purpose — every post is designed to drive a specific outcome, whether that's awareness, engagement, website traffic, or direct conversion." },
+      { "title": "Data-Driven Optimization", "desc": "We track performance metrics weekly and optimize content strategy, posting times, and ad targeting based on what the data tells us — continuously improving results." }
+    ],
+    "process": [
+      { "step": "01", "title": "Audit", "desc": "We review your existing social presence, competitor activity, and audience insights to identify opportunities and define a clear strategy for each platform." },
+      { "step": "02", "title": "Plan", "desc": "We create a monthly content calendar with copy, visuals, and scheduling — aligned to your brand voice, marketing calendar, and platform best practices." },
+      { "step": "03", "title": "Publish", "desc": "We create and publish content consistently across your chosen platforms — managing community engagement, responding to comments, and monitoring brand mentions." },
+      { "step": "04", "title": "Report", "desc": "We deliver monthly performance reports covering reach, engagement, follower growth, and campaign ROI — with recommendations for the following month." }
+    ],
+    "faq": [
+      { "q": "Which social media platforms do you manage?", "a": "We manage Instagram, Facebook, LinkedIn, X (Twitter), YouTube, and Pinterest — recommending the right mix based on where your target audience is most active." },
+      { "q": "Do you create the visual content as well?", "a": "Yes. Our team includes graphic designers and copywriters who create all content — graphics, videos, captions, and hashtag strategies — as part of the service." }
+    ]
+  },
+  {
+    "slug": "maintenance-support",
+    "title": "Maintenance & Support",
+    "badge": "Support",
+    "icon": "fas fa-headset",
+    "intro_heading": "Reliable Support<br/><span class=\"text-[#0E78E9]\">After Every Launch</span>",
+    "intro_desc": "Microlent's maintenance and support services keep your digital products running smoothly after launch — with proactive monitoring, rapid bug fixes, security patches, and performance optimization to ensure your systems deliver consistent value.",
+    "tech_desc": "We use modern monitoring and support tools to maintain your applications proactively and respond rapidly when issues arise.",
+    "offerings": [
+      { "icon": "fas fa-bug", "title": "Bug Fixes & Hotfixes", "desc": "We triage and resolve bugs rapidly — from minor UI glitches to critical production issues — with clear SLAs that ensure your team and customers experience minimal disruption." },
+      { "icon": "fas fa-shield-alt", "title": "Security Patch Management", "desc": "We monitor your technology stack for security vulnerabilities and apply patches promptly — keeping your application protected against emerging threats without disrupting normal operations." },
+      { "icon": "fas fa-tachometer-alt", "title": "Performance Monitoring & Optimization", "desc": "We continuously monitor application performance — response times, error rates, resource utilization — and proactively optimize before performance issues impact your users." },
+      { "icon": "fas fa-sync-alt", "title": "Dependency & Platform Updates", "desc": "We manage framework, library, and platform updates — keeping your application compatible with the latest versions and avoiding technical debt accumulation over time." }
+    ],
+    "tech": ["Datadog", "New Relic", "Sentry", "PagerDuty", "AWS CloudWatch", "Grafana", "Prometheus", "JIRA", "Freshdesk", "GitHub", "Jenkins", "Docker"],
+    "why": [
+      { "title": "Proactive, Not Reactive", "desc": "We monitor your systems 24/7 and resolve issues before they affect users — not after your customers report them. Prevention is always cheaper than recovery." },
+      { "title": "Dedicated Support Team", "desc": "You get a named support team familiar with your specific codebase and infrastructure — not a generic helpdesk. Faster resolution because they already know your system." },
+      { "title": "Flexible SLA Options", "desc": "We offer tiered support packages with SLAs from 4-hour response for critical issues to next-business-day for minor requests — scaled to your business's tolerance for downtime." }
+    ],
+    "process": [
+      { "step": "01", "title": "Onboard", "desc": "We conduct a thorough system handover — reviewing architecture, known issues, deployment processes, and monitoring setup before taking on support responsibility." },
+      { "step": "02", "title": "Monitor", "desc": "We configure comprehensive monitoring covering uptime, performance, errors, and security — establishing baselines and alerting thresholds tailored to your application." },
+      { "step": "03", "title": "Respond", "desc": "When issues arise, we triage by severity, communicate status transparently, and resolve within agreed SLA windows — keeping you informed throughout." },
+      { "step": "04", "title": "Report", "desc": "Monthly we provide a support summary covering incidents, resolution times, system health trends, and upcoming maintenance recommendations." }
+    ],
+    "faq": [
+      { "q": "Do you support applications built by other teams?", "a": "Yes. We take on support for applications built by any development team — after a structured onboarding period to understand the codebase and infrastructure." },
+      { "q": "What are your support hours?", "a": "We offer business hours support (Mon–Fri), extended hours, and 24/7 support packages — depending on your application's criticality and your SLA requirements." }
+    ]
+  },
+  {
+    "slug": "performance-audit",
+    "title": "Performance Audit",
+    "badge": "Audit",
+    "icon": "fas fa-microscope",
+    "intro_heading": "Know Exactly Where<br/><span class=\"text-[#0E78E9]\">Your System Slows Down</span>",
+    "intro_desc": "Microlent's performance audit service provides a deep technical analysis of your web application, API, or database — identifying bottlenecks, inefficiencies, and quick wins that unlock significant performance improvements.",
+    "tech_desc": "We use professional profiling, load testing, and analytics tools to identify performance bottlenecks with precision.",
+    "offerings": [
+      { "icon": "fas fa-tachometer-alt", "title": "Frontend Performance Audit", "desc": "We audit your website's frontend using Lighthouse, WebPageTest, and Core Web Vitals analysis — identifying render-blocking resources, image optimization opportunities, and JavaScript performance issues." },
+      { "icon": "fas fa-server", "title": "Backend & API Profiling", "desc": "We profile your server-side code and API endpoints under load — identifying slow queries, N+1 problems, memory leaks, and inefficient algorithms that degrade response times at scale." },
+      { "icon": "fas fa-database", "title": "Database Query Optimization", "desc": "We analyze query execution plans, index usage, and schema design — identifying slow queries and structural issues that are costing your application response time and infrastructure cost." },
+      { "icon": "fas fa-chart-bar", "title": "Load & Stress Testing", "desc": "We simulate real-world traffic using JMeter and k6 — identifying the traffic volume at which your system degrades, where bottlenecks emerge under load, and what needs to change before you scale." }
+    ],
+    "tech": ["Lighthouse", "WebPageTest", "Google PageSpeed", "k6", "JMeter", "New Relic", "Datadog APM", "pgAnalyze", "Chrome DevTools", "Sentry", "Grafana", "AWS X-Ray"],
+    "why": [
+      { "title": "Precise, Evidence-Based Findings", "desc": "We don't guess — every finding is backed by profiling data, load test results, and query execution plans. You receive a prioritized report with specific, actionable recommendations." },
+      { "title": "Immediate & Long-Term Wins", "desc": "We identify both quick wins (config changes, query fixes) that improve performance in days, and structural improvements that deliver lasting scalability gains." },
+      { "title": "Independent Perspective", "desc": "An external audit finds issues that internal teams miss through familiarity. We bring fresh eyes, broad experience across many systems, and no organizational bias." }
+    ],
+    "process": [
+      { "step": "01", "title": "Scope", "desc": "We agree on audit scope — which systems, layers, and performance dimensions to cover — and gather access to environments, monitoring tools, and codebase." },
+      { "step": "02", "title": "Measure", "desc": "We run profiling, load tests, and analytics reviews — collecting objective performance data across frontend, backend, APIs, and database layers." },
+      { "step": "03", "title": "Analyse", "desc": "We analyse findings to identify root causes — distinguishing symptoms from underlying issues and prioritizing by performance impact and implementation effort." },
+      { "step": "04", "title": "Report", "desc": "We deliver a detailed audit report with prioritized findings, specific recommendations, expected impact estimates, and implementation guidance for your development team." }
+    ],
+    "faq": [
+      { "q": "How long does a performance audit take?", "a": "A standard audit covering frontend, backend, and database layers takes 1–2 weeks. The timeline depends on system complexity and the scope of load testing required." },
+      { "q": "Do you fix the issues you find?", "a": "The audit itself is a discovery and reporting engagement. We can also quote for implementing the recommended improvements as a separate engagement." }
+    ]
+  }
+]

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title id="page-title">Service – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems" class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#0E78E9] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a active text-[#0E78E9] flex items-center gap-1">Our Services <i class="fas fa-chevron-down text-[9px]"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#0E78E9] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact us</a>
+        <a href="blog.html" class="nav-a hover:text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="contact.html" class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html?s=web-application-development" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ HERO BANNER ═══ -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+      <div class="flex items-center gap-2 text-[#1e3a6e]/60 text-[12px] font-medium mb-4">
+        <a href="index.html" class="hover:text-[#0E78E9] transition-colors">Home</a>
+        <i class="fas fa-chevron-right text-[9px]"></i>
+        <span id="breadcrumb" class="text-[#1e3a6e]"></span>
+      </div>
+      <h1 id="hero-title" class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]"></h1>
+    </div>
+  </div>
+
+  <!-- ═══ INTRO ═══ -->
+  <section class="relative bg-white py-20">
+    <div class="pointer-events-none absolute blob-services-blue"></div>
+    <div class="pointer-events-none absolute blob-services-orange"></div>
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+      <div class="flex flex-col lg:flex-row lg:items-start gap-12">
+        <div class="lg:w-[45%] flex-shrink-0 sr">
+          <div id="intro-badge" class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5 sr visible"></div>
+          <h2 id="intro-heading" class="text-[clamp(28px,3.5vw,42px)] font-bold text-[#0F172A] leading-tight mb-6"></h2>
+        
+        </div>
+        <div class="lg:w-[55%] sr">
+          <p id="intro-desc" class="text-[15px] text-[#64748B] leading-relaxed mb-8"></p>
+      
+        </div>
+      </div>
+      <div id="offerings-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ═══ WHY US ═══ -->
+  <section id="why-section" class="py-20 bg-[#F8FAFF]" style="display:none">
+    <div class="container mx-auto px-4 lg:px-16">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+        <div class="sr">
+          <div class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5 sr visible">Why Choose Us</div>
+          <h2 class="text-[clamp(26px,3vw,38px)] font-bold text-[#0F172A] leading-tight">What Sets Us <span class="text-[#0E78E9]">Apart</span></h2>
+        </div>
+     
+      </div>
+      <div id="why-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5"></div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESS ═══ -->
+  <section id="process-section" class="py-20 bg-white" style="display:none">
+    <div class="container mx-auto px-4 lg:px-16">
+      <div class="text-center max-w-2xl mx-auto mb-14 sr">
+        <div class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5 sr visible">Our Process</div>
+        <h2 class="text-[clamp(26px,3vw,38px)] font-bold text-[#0F172A] leading-tight">How We <span class="text-[#0E78E9]">Work</span></h2>
+        <p class="text-[15px] text-[#64748B] mt-4 leading-relaxed">A structured, transparent process — so you always know what's happening and why.</p>
+      </div>
+      <div id="process-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span></h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div><div class="text-body-sm text-[#64748B]">admin@microlent.com</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div><div class="text-body-sm text-[#64748B]">+91 97999 41913</div></div>
+          <div><div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div><div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB-6 RIICO Cyber Park, Jodhpur, Rajasthan 342003</div></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    var slug = new URLSearchParams(window.location.search).get('s') || 'web-application-development';
+
+    fetch('assets/data/services.json')
+      .then(function(r) { return r.json(); })
+      .then(function(services) {
+        var svc = services.find(function(s) { return s.slug === slug; });
+        if (!svc) return;
+
+        document.getElementById('page-title').textContent = svc.title + ' – Microlent Systems';
+        document.getElementById('breadcrumb').textContent = svc.title;
+        document.getElementById('hero-title').textContent = svc.title;
+        document.getElementById('intro-badge').textContent = svc.badge;
+        document.getElementById('intro-heading').innerHTML = svc.intro_heading;
+        document.getElementById('intro-desc').textContent = svc.intro_desc;
+
+        // What we do – home-page style cards
+        var offerGrid = document.getElementById('offerings-grid');
+        if (offerGrid) {
+          var gradients = [
+            'linear-gradient(135deg,#EFF6FF 0%,#DBEAFE 100%)',
+            'linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%)',
+            'linear-gradient(135deg,#FFF7ED 0%,#FFEDD5 100%)',
+            'linear-gradient(135deg,#FDF4FF 0%,#F3E8FF 100%)',
+            'linear-gradient(135deg,#EFF6FF 0%,#DBEAFE 100%)',
+            'linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%)',
+          ];
+          var iconColors = ['#0E78E9','#16A34A','#EA580C','#9333EA','#0E78E9','#16A34A'];
+          offerGrid.innerHTML = svc.offerings.map(function(o, i) {
+            return '<div class="bg-white border border-[#E2E8F0] rounded-[24px] overflow-hidden hover:shadow-[0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col">'
+              + '<div style="height:180px;background:' + gradients[i % gradients.length] + ';display:flex;align-items:center;justify-content:center;flex-shrink:0">'
+              + '<i class="' + o.icon + '" style="font-size:52px;color:' + iconColors[i % iconColors.length] + ';opacity:0.75"></i></div>'
+              + '<div style="padding:20px;flex:1;display:flex;flex-direction:column">'
+              + '<h3 style="font-size:15px;font-weight:700;color:#0F172A;margin-bottom:8px;line-height:1.35">' + o.title + '</h3>'
+              + '<p style="font-size:13px;color:#64748B;line-height:1.65;flex:1">' + o.desc + '</p>'
+              + '<div style="margin-top:16px">'
+                         + '</div></div></div>';
+          }).join('');
+        }
+
+        // Why us – clean icon cards on dark bg
+        if (svc.why && svc.why.length) {
+          document.getElementById('why-section').style.display = '';
+          var whyIcons = ['fas fa-bolt','fas fa-shield-halved','fas fa-chart-line','fas fa-users','fas fa-code','fas fa-headset'];
+          var whyGrid = document.getElementById('why-grid');
+          whyGrid.innerHTML = svc.why.map(function(w, i) {
+            var isHighlight = i === 1;
+            return '<div style="background:' + (isHighlight ? '#0E78E9' : '#fff') + ';border:1px solid ' + (isHighlight ? 'transparent' : '#E2E8F0') + ';border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px">'
+              + '<div style="width:48px;height:48px;border-radius:14px;background:' + (isHighlight ? 'rgba(255,255,255,0.25)' : '#EFF6FF') + ';display:flex;align-items:center;justify-content:center;flex-shrink:0">'
+              + '<i class="' + whyIcons[i % whyIcons.length] + '" style="color:' + (isHighlight ? '#fff' : '#0E78E9') + ';font-size:18px"></i></div>'
+              + '<div>'
+              + '<h3 style="font-size:16px;font-weight:700;color:' + (isHighlight ? '#fff' : '#0F172A') + ';margin-bottom:8px;line-height:1.35">' + w.title + '</h3>'
+              + '<p style="font-size:13px;color:' + (isHighlight ? 'rgba(255,255,255,0.75)' : '#64748B') + ';line-height:1.7">' + w.desc + '</p>'
+              + '</div>'
+              + '<a href="contact.html" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:' + (isHighlight ? '#fff' : '#0E78E9') + ';margin-top:auto">Learn more <i class="fas fa-arrow-right" style="font-size:10px"></i></a>'
+              + '</div>';
+          }).join('');
+        }
+
+        // Process – numbered step cards
+        if (svc.process && svc.process.length) {
+          document.getElementById('process-section').style.display = '';
+          var procGrid = document.getElementById('process-grid');
+          procGrid.innerHTML = svc.process.map(function(p, i) {
+            return '<div style="background:#F8FAFF;border:1px solid #E2E8F0;border-radius:20px;padding:28px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px">'
+              + '<div style="position:absolute;right:16px;top:12px;font-size:64px;font-weight:900;color:rgba(14,120,233,0.06);line-height:1;pointer-events:none">' + p.step + '</div>'
+              + '<div style="width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#0E78E9,#60A5FA);display:flex;align-items:center;justify-content:center;flex-shrink:0">'
+              + '<span style="font-size:15px;font-weight:800;color:#fff">' + p.step + '</span></div>'
+              + '<h3 style="font-size:15px;font-weight:700;color:#0F172A;line-height:1.35">' + p.title + '</h3>'
+              + '<p style="font-size:13px;color:#64748B;line-height:1.65">' + p.desc + '</p>'
+              + '</div>';
+          }).join('');
+        }
+
+
+        if (typeof window._observeSR === 'function') window._observeSR();
+      });
+  </script>
+
+</body>
+</html>

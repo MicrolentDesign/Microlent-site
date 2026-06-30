@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Contact Us – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems" class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!--  NAVBAR  -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-black flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#60A5FA] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#60A5FA] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#60A5FA] transition-colors flex items-center gap-1">
+            Our Services <i class="fas fa-chevron-down text-[9px] text-black"></i>
+          </a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#60A5FA] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#60A5FA] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a active text-[#0E78E9] transition-colors">Contact us</a>
+        <a href="blog.html" class="nav-a hover:text-[#60A5FA] transition-colors">Blog</a>
+      </div>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+
+        <a href="contact.html" class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link active-link">Contact Us</a>
+      <a href="blog.html" class="mob-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!--  HERO BANNER  -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+     
+      <h1 class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]">Get in Touch</h1>
+    </div>
+  </div>
+
+  <!--  CONTACT SECTION  -->
+   <section class="relative  py-20 ">
+ 
+ 
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+        <div class="pointer-events-none absolute blob-contact-orange-tl">
+    </div>
+        <div class="pointer-events-none absolute blob-contact-blue-mid">
+    </div>
+        <div class="pointer-events-none absolute blob-contact-blue-right">
+    </div>
+      <div class="flex flex-col lg:flex-row gap-14 items-start z-10 relative">
+
+        <!-- LEFT: form card -->
+        <div class="w-full lg:w-[50%] flex-shrink-0 bg-[#f8f8f6e6] border border-[#E2E8F0] rounded-[24px] p-6 sm:p-10 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] backdrop-blur-[4px]">
+          <h2 class="text-[32px] font-extrabold text-[#0F172A] mb-3">
+            Let's <span class="text-[#60A5FA]">get started!</span>
+          </h2>
+          <p class="text-body-sm text-[#64748B] leading-relaxed mb-7">
+            Are you looking for a cutting-edge custom software solution? How about a user-friendly and feature-packed mobile application to reach your audience? Microlent Systems can help
+          </p>
+
+          <form id="contact-page-form" novalidate onsubmit="event.preventDefault()">
+
+            <input type="hidden" name="subject" value="New Enquiry - Microlent Systems Website" />
+            <input type="checkbox" name="botcheck" style="display:none" />
+            <div class="mb-4">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Name</label>
+              <input type="text" name="name" placeholder="Name" required class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors font-sans" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Email</label>
+              <input type="email" name="email" placeholder="you@company.com" required class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors font-sans" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Phone number</label>
+              <input type="tel" name="phone" id="contact-phone" placeholder="+91 00000-00000" maxlength="15"
+                oninput="this.value=this.value.replace(/[^\d\+\-\s]/g,'')"
+                class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors font-sans" / required>
+              <p id="contact-phone-err" class="hidden mt-1.5 flex items-center gap-1.5 text-[12px] text-red-500 bg-red-50 border border-red-100 px-3 py-2 rounded-[8px]"><i class="fas fa-circle-exclamation text-[11px]"></i><span></span></p>
+            </div>
+            <div class="mb-6">
+              <label class="block text-caption font-medium text-[#0F172A] mb-1.5">Message</label>
+              <textarea name="message" placeholder="Message" rows="4" required class="w-full px-4 py-3 border border-[#E2E8F0] rounded-[12px] text-body-sm text-[#0F172A] outline-none focus:border-accent transition-colors resize-none font-sans"></textarea>
+            </div>
+            <div id="contact-form-msg" class="hidden mb-4 px-4 py-3 rounded-[12px] text-[13px] font-medium flex items-center gap-2"></div>
+            <button type="submit" class="w-full py-3.5 bg-[#0E78E9] text-white font-semibold text-btn rounded-[12px] flex items-center justify-center gap-2 hover:bg-brand transition-colors cursor-pointer">
+              Send <i class="fas fa-paper-plane text-xs"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT: contact info -->
+        <div class="flex-1 pt-2">
+
+          <div class="mb-8">
+            <h3 class="text-h4 font-bold text-[#0F172A] mb-4">Email us</h3>
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-9 h-9 bg-[#F8F8F6] rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-envelope text-[#60A5FA] text-sm"></i>
+              </div>
+              <span class="text-[15px] font-medium text-[#0F172A]">admin@microlent.com</span>
+            </div>
+            <p class="text-caption text-disabled ml-12">Send us an email anytime</p>
+          </div>
+          <hr class="border-[#E2E8F0] mb-8" />
+
+          <div class="mb-8">
+            <h3 class="text-h4 font-bold text-[#0F172A] mb-4">Call us</h3>
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-9 h-9 bg-[#F8F8F6] rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-phone text-[#60A5FA] text-sm"></i>
+              </div>
+              <span class="text-[15px] font-medium text-[#0F172A]">+91 97999 41913</span>
+            </div>
+            <!-- <p class="text-caption text-disabled ml-12">Mon-Fri 9AM–6PM IST</p> -->
+          </div>
+          <hr class="border-[#E2E8F0] mb-8" />
+
+          <div class="mb-8">
+            <h3 class="text-h4 font-bold text-[#0F172A] mb-4">Office</h3>
+            <div class="flex items-start gap-3">
+              <div class="w-9 h-9 bg-[#F8F8F6] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="fas fa-map-marker-alt text-[#60A5FA] text-sm"></i>
+              </div>
+              <span class="text-[15px] font-medium text-[#0F172A] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber Park, near Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  MAP SECTION  -->
+  <section class="pb-20 py-20 relative z-10">
+    <div class="container mx-auto px-4 lg:px-16">
+      <div class="bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] shadow-[0_6px_32px_rgba(14,120,233,0.07)] overflow-hidden">
+        <div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#E2E8F0]">
+          <div>
+            <div class="text-[15px] font-bold text-[#0F172A]">Our Office Location</div>
+            <div class="text-[13px] text-[#64748B] mt-0.5">RIICO Cyber Park, Jodhpur, Rajasthan</div>
+          </div>
+          <a href="https://maps.app.goo.gl/jT5vy5DnRecW7coK6" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#EEF6FF] text-[#0E78E9] text-[13px] font-semibold px-4 py-2 rounded-[20px] hover:bg-[#0E78E9] hover:text-white transition-colors flex-shrink-0">
+            <i class="fas fa-location-dot text-xs"></i> Open in Maps
+          </a>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.0!2d72.997044!3d26.2531772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c31970b284f%3A0xa9d8d755894f17d8!2sMicrolent+Systems+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1750000000000"
+          width="100%" height="360" class="map-frame" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!--  FOOTER  -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-[clamp(20px,2.5vw,28px)] font-bold text-[#0F172A] leading-tight mb-4">
+            Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span>
+          </h2>
+          <p class="text-[13px] text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div>
+            <div class="text-[13px] text-[#64748B]">admin@microlent.com</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div>
+            <div class="text-[13px] text-[#64748B]">+91 97999 41913</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div>
+            <div class="text-[13px] text-[#64748B] leading-relaxed">Manohar 5th Floor CYB-6, RIICO Cyber Park, Jodhpur, Rajasthan 342003</div>
+          </div>
+        </div>
+      </div>
+
+                  <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] font-medium bg-white px-5 border border-[#E2E8F0] py-2 rounded-full hover:bg-[#60A5FA] hover:text-white transition-colors">Contact Us</a>
+      </div>
+
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-[13px] text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+<script>
+  var phoneErrStyle = 'display:flex;align-items:center;gap:8px;background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:10px 14px;border-radius:10px;font-size:12px;font-weight:500;margin-top:6px;';
+  function showPhoneErr(errEl, input, msg) {
+    errEl.style.cssText = phoneErrStyle;
+    errEl.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0;font-size:11px"></i><span>' + msg + '</span>';
+    input.style.borderColor = '#ef4444';
+  }
+  function validatePhone(input, errId) {
+    input.value = input.value.replace(/[^\d\+\-\s]/g, '');
+    var digits = input.value.replace(/\D/g, '');
+    var errEl = document.getElementById(errId);
+    if (input.value.trim().length === 0 || digits.length < 7) {
+      showPhoneErr(errEl, input, 'Phone number too short — minimum 7 digits required.');
+    } else if (digits.length > 13) {
+      showPhoneErr(errEl, input, 'Phone number too long — maximum 13 digits allowed.');
+    } else {
+      errEl.style.display = 'none';
+      input.style.borderColor = '';
+    }
+  }
+
+  function fieldErr(input, msg) {
+    input.style.borderColor = '#ef4444';
+    var next = input.nextElementSibling;
+    if (next && next.classList.contains('custom-field-err')) { next.style.cssText = phoneErrStyle; next.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0;font-size:11px"></i><span>' + msg + '</span>'; return; }
+    var el = document.createElement('p');
+    el.className = 'custom-field-err';
+    el.style.cssText = phoneErrStyle;
+    el.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0;font-size:11px"></i><span>' + msg + '</span>';
+    input.insertAdjacentElement('afterend', el);
+  }
+  function clearFieldErr(input) {
+    input.style.borderColor = '';
+    var next = input.nextElementSibling;
+    if (next && next.classList.contains('custom-field-err')) next.remove();
+  }
+
+  async function submitForm(e, formId, msgId) {
+    e.preventDefault();
+    var form = document.getElementById(formId);
+    var msgEl = document.getElementById(msgId);
+    var btn = form.querySelector('button[type="submit"]');
+
+    form.querySelectorAll('.custom-field-err').forEach(function(el){ el.remove(); });
+    form.querySelectorAll('input,textarea').forEach(function(el){ el.style.borderColor = ''; });
+
+    var valid = true;
+    var nameInput = form.querySelector('input[name="name"]');
+    if (nameInput && nameInput.value.trim().length === 0) { fieldErr(nameInput, 'Please enter your name.'); valid = false; }
+
+    var emailInput = form.querySelector('input[name="email"]');
+    if (emailInput && (emailInput.value.trim().length === 0 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim()))) { fieldErr(emailInput, 'Please enter a valid email address.'); valid = false; }
+
+    var phoneInput = form.querySelector('input[name="phone"]');
+    if (phoneInput) {
+      var digits = phoneInput.value.replace(/\D/g, '');
+      if (phoneInput.value.trim().length === 0 || digits.length < 7 || digits.length > 13) {
+        var errEl = document.getElementById('contact-phone-err');
+        if (errEl) showPhoneErr(errEl, phoneInput, 'Please enter a valid phone number (minimum 7 digits).');
+        else fieldErr(phoneInput, 'Please enter a valid phone number.');
+        valid = false;
+      }
+    }
+
+    var msgInput = form.querySelector('textarea[name="message"]');
+    if (msgInput && msgInput.value.trim().length === 0) { fieldErr(msgInput, 'Please enter your message.'); valid = false; }
+
+    if (!valid) return;
+    btn.disabled = true;
+    btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin text-xs"></i>';
+    var successStyle = 'display:flex;align-items:center;gap:10px;background:#f0fdf4;border:1px solid #bbf7d0;color:#15803d;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:500;margin-bottom:16px;';
+    var errorStyle   = 'display:flex;align-items:center;gap:10px;background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:12px 16px;border-radius:12px;font-size:13px;font-weight:500;margin-bottom:16px;';
+    var nameInput2 = form.querySelector('input[name="name"]');
+    var emailInput2 = form.querySelector('input[name="email"]');
+    var phoneInput2 = form.querySelector('input[name="phone"]');
+    var msgInput2 = form.querySelector('textarea[name="message"]');
+    try {
+      await emailjs.send('service_g1xzfqr', 'template_21wiehh', {
+        name: nameInput2 ? nameInput2.value.trim() : '',
+        email: emailInput2 ? emailInput2.value.trim() : '',
+        phone: phoneInput2 ? phoneInput2.value.trim() : '',
+        message: msgInput2 ? msgInput2.value.trim() : '',
+        title: 'New Enquiry'
+      });
+      msgEl.style.cssText = successStyle;
+      msgEl.innerHTML = '<i class="fas fa-circle-check" style="flex-shrink:0;color:#16a34a"></i><span>Message sent! We will get back to you soon.</span>';
+      form.reset();
+      setTimeout(function(){ msgEl.style.display = 'none'; }, 5000);
+    } catch(err) {
+      msgEl.style.cssText = errorStyle;
+      msgEl.innerHTML = '<i class="fas fa-circle-exclamation" style="flex-shrink:0"></i><span>Something went wrong. Please try again.</span>';
+    }
+    btn.disabled = false;
+    btn.innerHTML = 'Send <i class="fas fa-paper-plane text-xs"></i>';
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init('AkHSQ7TiY1MY-P_C4');</script>
+
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>
+
+

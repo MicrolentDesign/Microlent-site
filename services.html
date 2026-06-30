@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>Our Services – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems"
+        class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="main-nav" class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a hover:text-[#0E78E9] transition-colors">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a active text-[#0E78E9] flex items-center gap-1">
+            Our Services <i class="fas fa-chevron-down text-[9px]"></i>
+          </a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#0E78E9] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact us</a>
+        <a href="blog.html" class="nav-a hover:text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="contact.html"
+          class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="contact.html" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══ HERO BANNER ═══ -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex flex-col justify-center px-4 lg:px-16 pb-7">
+      <h1 class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]">Our Services</h1>
+    </div>
+  </div>
+
+  <!-- ═══ INTRO SECTION ═══ -->
+  <section class="relative bg-white py-20">
+    <div class="pointer-events-none absolute blob-services-blue"></div>
+    <div class="pointer-events-none absolute blob-services-orange"></div>
+    <div class="relative z-10 container mx-auto px-4 lg:px-16">
+      <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-4">
+        <div class="lg:w-[38%] flex-shrink-0 sr">
+          <div class="inline-flex items-center text-[#0E78E9] bg-[#F8F8F6] text-label font-semibold px-4 py-1.5 rounded-full mb-5">
+            Services we offer
+          </div>
+          <h2 class="text-[clamp(28px,3.5vw,45px)] font-semibold text-[#0F172A] leading-tight tracking-tight">
+            Full-Stack Solutions,<br />
+            <span class="text-[#0E78E9]">End to End</span>
+          </h2>
+        </div>
+        <p class="lg:w-[62%] text-body-default text-[#64748B] leading-relaxed lg:pt-16 sr">
+          At Microlent Systems, we deliver a full spectrum of technology services — from custom web and mobile
+          applications to AI-powered tools, IoT integrations, and digital marketing strategies. Whether you're a
+          startup launching your first product or an enterprise scaling operations, our expert teams partner with
+          you at every step to turn your vision into reality.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ SERVICES GRID ═══ -->
+  <section id="services-grid" class="py-16" >
+    <div class="container mx-auto px-6">
+
+     
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 1. Web App Development -->
+        <div class="svc-card sr sr-d1">
+          <div class="svc-card-inner">
+            <span class="svc-num">01</span>
+            <div class="svc-icon-wrap"><i class="fas fa-globe text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">Web App Development</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Scalable, fast, and responsive web applications built with modern frameworks tailored to your business needs.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">React</span><span class="svc-tag">Angular</span><span class="svc-tag">Node.js</span>
+            </div>
+            <a href="service.html" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 2. Software Development -->
+        <div class="svc-card sr sr-d2">
+          <div class="svc-card-inner">
+            <span class="svc-num">02</span>
+            <div class="svc-icon-wrap"><i class="fas fa-code text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">Software Development</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Custom software solutions designed from scratch to solve your unique business challenges efficiently and reliably.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">.NET</span><span class="svc-tag">Python</span><span class="svc-tag">Java</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 3. Software Architecture -->
+        <div class="svc-card sr sr-d3">
+          <div class="svc-card-inner">
+            <span class="svc-num">03</span>
+            <div class="svc-icon-wrap"><i class="fas fa-sitemap text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">Software Architecture</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Robust system design and architecture planning to ensure your platform scales confidently as your business grows.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">Microservices</span><span class="svc-tag">Cloud</span><span class="svc-tag">AWS</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 4. Mobile App Development -->
+        <div class="svc-card sr sr-d4">
+          <div class="svc-card-inner">
+            <span class="svc-num">04</span>
+            <div class="svc-icon-wrap"><i class="fas fa-mobile-screen text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">Mobile App Development</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Native and cross-platform mobile apps for iOS and Android that deliver fast, beautiful user experiences.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">Flutter</span><span class="svc-tag">React Native</span><span class="svc-tag">Swift</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 5. AI & ML Solutions -->
+        <div class="svc-card sr sr-d5">
+          <div class="svc-card-inner">
+            <span class="svc-num">05</span>
+            <div class="svc-icon-wrap"><i class="fas fa-brain text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">AI &amp; ML Solutions</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Intelligent automation, predictive analytics, and AI-powered tools to future-proof your business operations.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">TensorFlow</span><span class="svc-tag">OpenAI</span><span class="svc-tag">Python</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 6. QA and Testing -->
+        <div class="svc-card sr sr-d6">
+          <div class="svc-card-inner">
+            <span class="svc-num">06</span>
+            <div class="svc-icon-wrap"><i class="fas fa-vial text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">QA and Testing Services</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Comprehensive quality assurance and testing to ensure your software is reliable, secure, and completely bug-free.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">Selenium</span><span class="svc-tag">Cypress</span><span class="svc-tag">Jest</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 7. Digital Marketing -->
+        <div class="svc-card sr sr-d1">
+          <div class="svc-card-inner">
+            <span class="svc-num">07</span>
+            <div class="svc-icon-wrap"><i class="fas fa-bullhorn text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">Digital Marketing</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Data-driven marketing strategies to grow your online presence, generate leads, and reach the right audience.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">SEO</span><span class="svc-tag">PPC</span><span class="svc-tag">Social Media</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 8. Shopify Services -->
+        <div class="svc-card sr sr-d2">
+          <div class="svc-card-inner">
+            <span class="svc-num">08</span>
+            <div class="svc-icon-wrap"><i class="fab fa-shopify text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">Shopify Services</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">End-to-end Shopify store setup, theme customization, app integrations, and conversion optimization.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">Shopify</span><span class="svc-tag">Liquid</span><span class="svc-tag">eCommerce</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 9. IOT / Hardware -->
+        <div class="svc-card sr sr-d3">
+          <div class="svc-card-inner">
+            <span class="svc-num">09</span>
+            <div class="svc-icon-wrap"><i class="fas fa-microchip text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">IOT / Hardware Integrated Solutions</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Smart IoT solutions that connect physical devices to digital systems for real-time monitoring and insights.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">Raspberry Pi</span><span class="svc-tag">MQTT</span><span class="svc-tag">Arduino</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 10. UI/UX Designing -->
+        <div class="svc-card sr sr-d4">
+          <div class="svc-card-inner">
+            <span class="svc-num">10</span>
+            <div class="svc-icon-wrap"><i class="fas fa-pen-ruler text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">UI/UX Designing</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">User-centric design combining aesthetics and functionality to create interfaces that users love and remember.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">Figma</span><span class="svc-tag">Prototyping</span><span class="svc-tag">Wireframing</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+        <!-- 11. Business Solutions -->
+        <div class="svc-card sr sr-d5">
+          <div class="svc-card-inner">
+            <span class="svc-num">11</span>
+            <div class="svc-icon-wrap"><i class="fas fa-briefcase text-[#0E78E9] text-[22px]"></i></div>
+            <h3 class="text-[17px] font-bold text-[#0F172A] mb-2">Business Solutions</h3>
+            <p class="text-[13.5px] text-[#64748B] leading-relaxed">Strategic business process solutions, ERP systems, and automation tools to streamline operations and boost productivity.</p>
+            <div class="svc-tags">
+              <span class="svc-tag">ERP</span><span class="svc-tag">CRM</span><span class="svc-tag">Automation</span>
+            </div>
+            <a href="#" class="svc-learn">Learn more <i class="fas fa-arrow-right text-[11px]"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+
+    <div class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] rounded-bl-[0px] rounded-br-[0px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-h2 font-bold text-[#0F172A] leading-tight mb-4">
+            Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span class="text-[#60A5FA]">Digitally</span>
+          </h2>
+          <p class="text-body-sm text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp; UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div>
+            <div class="text-body-sm text-[#64748B]">admin@microlent.com</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div>
+            <div class="text-body-sm text-[#64748B]">+91 97999 41913</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div>
+            <div class="text-body-sm text-[#64748B] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber Park, near Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</div>
+          </div>
+        </div>
+      </div>
+
+                  <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-body-sm text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors"><i class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors"><i class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white hover:border-accent transition-colors"><i class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>
+

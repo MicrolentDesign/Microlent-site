@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>About Us – Microlent Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="tailwind.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="bg-white">
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-logo">
+      <img src="assets/img/logo.png" alt="Microlent Systems"
+        class="loader-img" />
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+
+  <!--  NAVBAR  -->
+  <nav id="main-nav"
+    class="fixed top-[20px] left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 lg:px-16 h-[68px] flex items-center justify-between gap-6">
+
+      <a href="index.html" class="flex-shrink-0">
+        <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto object-contain" />
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-[#0F172A] flex-1 justify-center">
+        <a href="index.html" class="nav-a hover:text-[#0E78E9] transition-colors">Home</a>
+        <a href="about.html" class="nav-a active text-[#0E78E9]">About Us</a>
+        <div class="nav-dropdown-wrap">
+          <a href="#" class="nav-a hover:text-[#0E78E9] transition-colors flex items-center gap-1">
+            Our Services <i class="fas fa-chevron-down text-[9px]"></i>
+          </a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-box">
+              <div class="dd-left">
+                <div class="dd-left-title">Full-Stack <span>Solutions,</span><br/>End to End</div>
+
+              </div>
+              <div class="dd-right">
+                <div class="dd-col">
+                  <div class="dd-col-title">Web Development</div>
+                  <a href="service.html?s=web-application-development" class="dd-link">Web App Development</a>
+                  <a href="service.html?s=software-development" class="dd-link">Software Development</a>
+                  <a href="service.html?s=software-architecture-designing-solutions" class="dd-link">Software Architecture</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Mobile &amp; Design</div>
+                  <a href="service.html?s=mobile-app-development" class="dd-link">Mobile App Development</a>
+                  <a href="service.html?s=uiux-design" class="dd-link">UI/UX Designing</a>
+                  <a href="service.html?s=shopify-services" class="dd-link">Shopify Services</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Technology</div>
+                  <a href="service.html?s=ai-ml-solutions" class="dd-link">AI &amp; ML Solutions</a>
+                  <a href="service.html?s=iot-hardware-integrated-solutions" class="dd-link">IOT / Hardware</a>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">QA &amp; Testing</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Business Solutions</div>
+                  <a href="service.html?s=erp-crm" class="dd-link">ERP &amp; CRM Systems</a>
+                  <a href="service.html?s=process-automation" class="dd-link">Process Automation</a>
+                  <a href="service.html?s=business-consulting" class="dd-link">Business Consulting</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Marketing &amp; Growth</div>
+                  <a href="service.html?s=digital-marketing" class="dd-link">Digital Marketing</a>
+                  <a href="service.html?s=seo-ppc" class="dd-link">SEO &amp; PPC</a>
+                  <a href="service.html?s=social-media" class="dd-link">Social Media</a>
+                </div>
+                <div class="dd-col">
+                  <div class="dd-col-title">Support &amp; QA</div>
+                  <a href="service.html?s=qa-and-testing-services" class="dd-link">Quality Assurance</a>
+                  <a href="service.html?s=maintenance-support" class="dd-link">Maintenance &amp; Support</a>
+                  <a href="service.html?s=performance-audit" class="dd-link">Performance Audit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="projects.html" class="nav-a hover:text-[#0E78E9] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="nav-a hover:text-[#0E78E9] transition-colors">Media Coverage</a>
+        <a href="contact.html" class="nav-a hover:text-[#0E78E9] transition-colors">Contact Us</a>
+        <a href="blog.html" class="nav-a hover:text-[#0E78E9] transition-colors">Blog</a>
+      </div>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+
+        <a href="contact.html"
+          class="hidden sm:flex bg-[#0E78E9] text-white text-[14px] font-semibold px-5 py-2.5 rounded-[30px] items-center gap-1.5">
+          Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 flex items-center justify-center text-[#0F172A]">
+          <i id="hamburger-icon" class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+  <div id="mobile-menu">
+    <div class="mob-header">
+      <img src="assets/img/logo.png" alt="Microlent" class="mob-logo" />
+      <button onclick="toggleMobileMenu()" class="mob-close-btn"><i class="fas fa-times text-sm"></i></button>
+    </div>
+    <div class="mob-links">
+      <a href="index.html" class="mob-link">Home</a>
+      <a href="about.html" class="mob-link active-link">About Us</a>
+      <button id="mob-services-btn" onclick="toggleMobServices()" class="mob-services-toggle">Our Services <i class="fas fa-chevron-down mob-chevron"></i></button>
+      <div id="mob-services-sub" class="mob-services-sub">
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Web Development</div>
+          <a href="service.html" class="mob-sub-link">Web App Development</a>
+          <a href="service.html?s=software-development" class="mob-sub-link">Software Development</a>
+          <a href="service.html?s=software-architecture-designing-solutions" class="mob-sub-link">Software Architecture</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Mobile &amp; Design</div>
+          <a href="service.html?s=mobile-app-development" class="mob-sub-link">Mobile App Development</a>
+          <a href="service.html?s=uiux-design" class="mob-sub-link">UI/UX Designing</a>
+          <a href="service.html?s=shopify-services" class="mob-sub-link">Shopify Services</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Technology</div>
+          <a href="service.html?s=ai-ml-solutions" class="mob-sub-link">AI &amp; ML Solutions</a>
+          <a href="service.html?s=iot-hardware-integrated-solutions" class="mob-sub-link">IOT / Hardware</a>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">QA &amp; Testing</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Business Solutions</div>
+          <a href="service.html?s=erp-crm" class="mob-sub-link">ERP &amp; CRM Systems</a>
+          <a href="service.html?s=process-automation" class="mob-sub-link">Process Automation</a>
+          <a href="service.html?s=business-consulting" class="mob-sub-link">Business Consulting</a>
+        </div>
+        <div class="mob-sub-section">
+          <div class="mob-sub-title">Marketing &amp; Growth</div>
+          <a href="service.html?s=digital-marketing" class="mob-sub-link">Digital Marketing</a>
+          <a href="service.html?s=seo-ppc" class="mob-sub-link">SEO &amp; PPC</a>
+          <a href="service.html?s=social-media" class="mob-sub-link">Social Media</a>
+        </div>
+        <div class="mob-sub-section mob-sub-last">
+          <div class="mob-sub-title">Support &amp; QA</div>
+          <a href="service.html?s=qa-and-testing-services" class="mob-sub-link">Quality Assurance</a>
+          <a href="service.html?s=maintenance-support" class="mob-sub-link">Maintenance &amp; Support</a>
+          <a href="service.html?s=performance-audit" class="mob-sub-link">Performance Audit</a>
+        </div>
+      </div>
+      <a href="projects.html" class="mob-link">Projects</a>
+      <a href="media-coverage.html" class="mob-link">Media Coverage</a>
+      <a href="contact.html" class="mob-link">Contact Us</a>
+      <a href="blog.html" class="mob-link">Blog</a>
+    </div>
+    <div class="mob-cta-wrap">
+      <a href="#" class="mob-cta-btn">Get a FREE Quotation <i class="fas fa-arrow-right text-xs"></i></a>
+      <div class="mob-social">
+        <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener" class="mob-social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  HERO BANNER  -->
+  <div class="pt-[68px] relative overflow-hidden m-4 rounded-[10px] page-hero">
+    <img src="assets/img/bg-hero.png" class="absolute inset-0 w-full h-full object-cover" alt="" />
+    <div class="relative z-10 h-full flex items-center px-4 lg:px-16 pb-7">
+      <h1 class="text-[clamp(28px,4vw,44px)] font-bold text-[#1e3a6e]">About Us</h1>
+    </div>
+  </div>
+
+  <!--  ABOUT SECTION (same as home page)  -->
+  <section class="relative py-20 bg-white">
+    <div class="pointer-events-none absolute blob-about-blue-tr"></div>
+    <div class="pointer-events-none absolute blob-about-blue-bl"></div>
+    <div class="pointer-events-none absolute blob-about-orange-tl"></div>
+
+    <div class="relative z-10 container mx-auto px-6">
+      <div
+        class="bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] overflow-hidden shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)]">
+
+        <!-- Top row -->
+        <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-4 p-7">
+          <div class="lg:w-[45%] flex-shrink-0">
+            <div
+              class="inline-flex items-center border border-[#E2E8F0] text-[#64748B] text-label font-medium px-4 py-1.5 rounded-full mb-5">
+              About Us
+            </div>
+            <h2 class="text-[clamp(28px,3vw,38px)] font-bold text-[#0F172A] leading-tight tracking-tight">
+              <span class="text-[#0E78E9]">Built on Quality,</span><br />
+              Driven by Innovation
+            </h2>
+          </div>
+          <p class="lg:w-[55%] text-body-default text-[#64748B] leading-relaxed lg:pt-14">
+            Founded in 2013, Microlent Systems is a leading software development company based in Jodhpur, India. We deliver innovative, scalable, and high-quality digital solutions to startups and enterprises across the globe — helping them solve complex business challenges through custom web, mobile, AI-driven, and IoT technologies.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row">
+
+          <!-- Left: dark image card -->
+          <div
+            class="lg:w-[45%] relative bg-[#0F172A] rounded-[20px] m-4 overflow-hidden min-h-[320px] flex flex-col justify-end p-7">
+            <img src="./assets/img/image_1.png" alt=""
+              class="absolute inset-0 w-full h-full object-cover opacity-70 pointer-events-none" />
+            <div class="absolute inset-0 pointer-events-none about-dark-overlay"></div>
+            <div class="relative z-10">
+              <h3 class="text-[20px] font-bold text-white mb-2 leading-snug">12+ Years of Delivering Smart Digital Solutions</h3>
+              <p class="text-body-sm text-white/60 leading-relaxed">From startups to enterprises — we design, build, and scale technology products that enhance user experience, streamline operations, and accelerate growth.</p>
+            </div>
+          </div>
+
+          <!-- Right: partner info + stats -->
+          <div class="lg:w-[55%] p-6 flex flex-col justify-between gap-6">
+            <div class="bg-white rounded-[16px] p-6">
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <h3 class="text-[20px] font-bold text-[#0E78E9] leading-snug">Your Trusted Technology Partner</h3>
+                <!-- <button class="w-9 h-9 bg-[#60A5FA] rounded-full flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-arrow-right -rotate-45 text-white text-xs"></i>
+                </button> -->
+              </div>
+              <p class="text-body-sm text-[#64748B] leading-relaxed">We don't just build software — we create solutions that align with your business goals. From ideation to deployment, our team ensures seamless execution, consistent innovation, and long-term success.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-white rounded-[16px] p-6 text-center">
+              <div>
+                <div class="text-[28px] font-black text-[#21539A] leading-none counter" data-target="450"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Projects Delivered</div>
+              </div>
+              <div>
+                <div class="text-[28px] font-black text-[#21539A] leading-none counter" data-target="50"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Global Clients</div>
+              </div>
+              <div>
+                <div class="text-[28px] font-black text-[#21539A] leading-none counter" data-target="12"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Years of Experience</div>
+              </div>
+              <div>
+                <div class="text-[28px] font-black text-[#21539A] leading-none counter" data-target="70"
+                  data-suffix="+">0+</div>
+                <div class="text-body-sm text-[#64748B] mt-1">Expert Developers</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+  <!--  TEAM  -->
+  <section class="py-20 relative ">
+
+    <div class="pointer-events-none absolute blob-about-blue-tr"></div>
+    <div class="pointer-events-none absolute blob-about-orange-tl"></div>
+    <!-- Section header -->
+      <div class="relative z-10 container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-10 p-4">
+          <div class="lg:w-[45%] flex-shrink-0">
+            <div
+              class="inline-flex items-center border border-[#E2E8F0] bg-white text-[#64748B] text-[13px] font-medium px-4 py-1.5 rounded-full mb-5">
+              Our Team
+            </div>
+            <h2 class="text-[clamp(28px,3vw,38px)] font-bold text-[#0F172A] leading-tight tracking-tight">
+              Meet the <span class="text-[#0E78E9]">team</span><br />building <span class="text-[#0E78E9]">Microlent</span>
+            </h2>
+          </div>
+          <p class=”lg:w-[55%] text-[15px] text-[#64748B] leading-relaxed lg:pt-14”>
+            We design, develop, and scale technology products that solve real business problems. Whether you need a consumer mobile app, an enterprise platform, or a complete digital strategy — our teams handle it all under one roof.
+          </p>
+        </div>
+    
+        <!-- Team grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <!-- Card 1 -->
+          <div class="group bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] overflow-hidden  p-6 text-center hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] backdrop-filter:blur(4px) hover:-translate-y-1.5 transition-all duration-300 sr sr-d1">
+            <div class="relative w-[110px] h-[110px] mx-auto mb-5">
+              <div class="absolute inset-0 rounded-full  p-[3px]">
+                <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                  <img src="./assets/img/Dr.RajeshRolen.png" class="w-full h-full object-cover" alt="Dr. Rajesh Rolen" />
+                </div>
+              </div>
+            </div>
+            <div class="text-[15px] font-bold text-[#0F172A] mb-1">Dr. Rajesh Rolen</div>
+            <div class="inline-flex items-center bg-[#EEF6FF] text-[#0E78E9] text-[12px] font-semibold px-3 py-1 rounded-full mb-4">CEO</div>
+            <!-- <div class="flex justify-center gap-2">
+              <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-[#f1f5f9] hover:bg-[#0E78E9] hover:text-white text-[#64748B] flex items-center justify-center transition-colors text-[13px]"><i class="fab fa-linkedin-in"></i></a>
+            </div> -->
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] overflow-hidden  p-6 text-center hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] backdrop-filter:blur(4px) hover:-translate-y-1.5 transition-all duration-300 sr sr-d1">
+            <div class="relative w-[110px] h-[110px] mx-auto mb-5">
+              <div class="absolute inset-0 rounded-full  p-[3px]">
+                <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                  <img src="./assets/img/JatinDhoot.png" class="w-full h-full object-cover" alt="Jatin Dhoot" />
+                </div>
+              </div>
+            </div>
+            <div class="text-[15px] font-bold text-[#0F172A] mb-1">Jatin Dhoot</div>
+            <div class="inline-flex items-center bg-[#EEF6FF] text-[#0E78E9] text-[12px] font-semibold px-3 py-1 rounded-full mb-4">CEO</div>
+            <!-- <div class="flex justify-center gap-2">
+              <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-[#f1f5f9] hover:bg-[#0E78E9] hover:text-white text-[#64748B] flex items-center justify-center transition-colors text-[13px]"><i class="fab fa-linkedin-in"></i></a>
+            </div> -->
+          </div>
+
+          <!-- Card 3 -->
+          <div class="group bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] overflow-hidden  p-6 text-center hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] backdrop-filter:blur(4px) hover:-translate-y-1.5 transition-all duration-300 sr sr-d1">
+            <div class="relative w-[110px] h-[110px] mx-auto mb-5">
+              <div class="absolute inset-0 rounded-full  p-[3px]">
+                <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                  <img src="./assets/img/MeenaVyas.png" class="w-full h-full object-cover" alt="Meena Vyas" />
+                </div>
+              </div>
+            </div>
+            <div class="text-[15px] font-bold text-[#0F172A] mb-1">Meena Vyas</div>
+            <div class="inline-flex items-center bg-[#EEF6FF] text-[#0E78E9] text-[12px] font-semibold px-3 py-1 rounded-full mb-4">Project Manager</div>
+            <!-- <div class="flex justify-center gap-2">
+              <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-[#f1f5f9] hover:bg-[#0E78E9] hover:text-white text-[#64748B] flex items-center justify-center transition-colors text-[13px]"><i class="fab fa-linkedin-in"></i></a>
+            </div> -->
+          </div>
+
+          <!-- Card 4 -->
+          <div class="group bg-[#F8F8F6B3] border border-[#E2E8F0] rounded-[24px] overflow-hidden  p-6 text-center hover:shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] backdrop-filter:blur(4px) hover:-translate-y-1.5 transition-all duration-300 sr sr-d1">
+            <div class="relative w-[110px] h-[110px] mx-auto mb-5">
+              <div class="absolute inset-0 rounded-full  p-[3px]">
+                <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                  <img src="./assets/img/PraveenIndaliya.png" class="w-full h-full object-cover" alt="Praveen Indaliya" />
+                </div>
+              </div>
+            </div>
+            <div class="text-[15px] font-bold text-[#0F172A] mb-1">Praveen Indaliya</div>
+            <div class="inline-flex items-center bg-[#EEF6FF] text-[#0E78E9] text-[12px] font-semibold px-3 py-1 rounded-full mb-4">Project Lead</div>
+            <!-- <div class="flex justify-center gap-2">
+              <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-[#f1f5f9] hover:bg-[#0E78E9] hover:text-white text-[#64748B] flex items-center justify-center transition-colors text-[13px]"><i class="fab fa-linkedin-in"></i></a>
+            </div> -->
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--  FOOTER  -->
+  <footer class="pt-10 px-6 relative">
+    <div class="pointer-events-none absolute blob-footer-blue"></div>
+    <div class="pointer-events-none absolute blob-footer-orange"></div>
+
+    <div
+      class="relative mx-auto bg-[#f8f8f6b3] rounded-tl-[28px] rounded-tr-[28px] px-4 sm:px-10 py-10 sm:py-12 shadow-[0_53px_32px_rgba(0,0,0,0.02),0_23px_23px_rgba(0,0,0,0.04),0_6px_13px_rgba(0,0,0,0.04)] z-20">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
+        <div>
+          <img src="assets/img/logo.png" alt="Microlent Systems" class="h-14 w-auto mb-6 object-contain" />
+          <h2 class="text-[22px] font-bold text-[#0F172A] leading-tight mb-4">
+            Smart <span class="text-[#60A5FA]">Insights</span> to Grow Your Business <span
+              class="text-[#60A5FA]">Digitally</span>
+          </h2>
+          <p class="text-[13px] text-[#64748B]">Web App Development &nbsp;|&nbsp; Mobile App Development &nbsp;|&nbsp;
+            UX/UI Design &nbsp;|&nbsp; Digital Marketing</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Email us</div>
+            <div class="text-[13px] text-[#64748B]">admin@microlent.com</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Call us</div>
+            <div class="text-[13px] text-[#64748B]">+91 97999 41913</div>
+          </div>
+          <div>
+            <div class="text-[13px] font-semibold text-[#0F172A] mb-1">Office</div>
+            <div class="text-[13px] text-[#64748B] leading-relaxed">Manohar 5th Floor CYB -6 RIICO Cyber Park, near
+              Saras Dairy, HI Area Phase II, Jodhpur, Rajasthan 342003</div>
+          </div>
+        </div>
+      </div>
+
+                  <div class="flex flex-wrap justify-center lg:justify-between items-center gap-x-6 gap-y-3 mb-8">
+        <a href="index.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Home</a>
+        <a href="terms.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Terms and Conditions</a>
+        <a href="careers.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Careers</a>
+        <a href="projects.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Projects</a>
+        <a href="media-coverage.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Media Coverage</a>
+        <a href="about.html" class="text-body-sm text-[#64748B] font-medium bg-white px-5 border border-[#E2E8F0] py-2 rounded-full hover:bg-[#60A5FA] hover:text-white transition-colors">About Us</a>
+        <a href="contact.html" class="text-body-sm text-[#64748B] hover:text-[#0F172A] transition-colors">Contact Us</a>
+      </div>
+
+      <div class="border-t border-[#E2E8F0] mb-7"></div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-[13px] text-[#64748B]">© 2026 Microlent Systems Pvt. Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/microlent" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i
+              class="fab fa-facebook-f text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/microlent-systems-pvt-ltd-/" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i
+              class="fab fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.instagram.com/microlent.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener"
+            class="w-9 h-9 rounded-full border border-[#E2E8F0] flex items-center justify-center text-[#64748B] hover:bg-[#60A5FA] hover:text-white transition-colors"><i
+              class="fab fa-instagram text-sm"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <i class="fas fa-chevron-up text-sm"></i>
+  </button>
+
+</body>
+
+<script src="assets/js/script.js"></script>
+
+</html>
+
+
